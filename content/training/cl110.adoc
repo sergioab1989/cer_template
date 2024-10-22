@@ -1,0 +1,29 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenStack Administration I: Core Operations for Domain Operators (CL110)
+
+[.big]#*Descripción del curso*#
+
+Introducción a Red Hat OpenStack Platform:: 
+Describa al personal de los equipos de OpenStack, inicie una instancia y describa los elementos y la arquitectura de OpenStack.
+Gestión de los proyectos de aplicaciones en una nube multiempresa:: 
+Cree y configure proyectos con acceso seguro para los usuarios y recursos suficientes para respaldar los requisitos de implementación de las aplicaciones en la nube.
+Gestión de las redes de OpenStack:: 
+Describa la implementación de las redes IP en OpenStack, incluido el comportamiento básico de la stack de TCP/IP, los elementos de red definidos por software y los tipos de redes comunes disponibles para los usuarios de autoservicio en la nube.
+Configuración de los recursos para iniciar una instancia privada:: 
+Configure los tipos de recursos necesarios para iniciar una instancia privada básica, incluidas las CPU virtuales, la memoria y la imagen de disco del sistema, e inicie la instancia de un elemento de aplicación que se ejecute en una red tenant sin acceso público.
+Configuración de los discos del sistema de la máquina virtual:: 
+Identifique las opciones disponibles para configurar, almacenar y seleccionar discos del sistema de la máquina virtual (VM) basados en bloques, incluida la opción de discos efímeros o de almacenamiento permanente para casos prácticos específicos.
+Estrategias de almacenamiento adicionales:: 
+Identifique las opciones disponibles en cuanto a las técnicas adicionales de almacenamiento en la nube, incluido el almacenamiento basado en objetos, el uso compartido de archivos de red y los volúmenes que se obtienen del servicio de uso compartido de archivos.
+Configuración de los recursos para iniciar una instancia con acceso público:: 
+Identifique y configure los tipos de recursos adicionales necesarios para iniciar instancias con acceso público para casos prácticos específicos, incluidos los elementos de seguridad de acceso y redes.
+Automatización del inicio de las aplicaciones personalizadas en la nube:: 
+Configure e implemente una stack común de aplicaciones en la nube de varios niveles, definida como una plantilla de instancias de máquinas virtuales adaptables, incluidas las personalizaciones de inicio para cada instancia.
+Gestión de la ubicación de las aplicaciones en la nube:: 
+Presente disposiciones de overcloud más complejas que las de un solo lugar e indique los recursos de gestión para controlar la ubicación de las instancias iniciadas, incluidos los elementos de segregación, como las celdas y las zonas de disponibilidad, y los atributos de ubicación, como los recursos de nodos informáticos necesarios.
+
+*Nota:* La descripción del curso está sujeta a cambios según avance la tecnología y evolucione la naturaleza de las tareas relacionadas. Si tiene dudas o necesita confirmación sobre cierto objetivo o tema concreto, https://www.redhat.com/es/services/training-and-certification/contact-us[póngase en contacto con un representante de Red Hat].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/cl110-red-hat-openstack-administration-i

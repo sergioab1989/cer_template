@@ -1,0 +1,20 @@
+= Procedimiento de implementación en VMWare vSphere
+Esta sección describe los pasos realizados para implementar y configurar el clúster de OpenShift en VMware para el cliente Banco G&T. Los pasos que se mencionan en esta sección se basan en los siguientes procedimientos a partir de la documentación oficial:
+
+
+* https://access.redhat.com/documentation/en-us/openshift_container_platform/4.16/html/installing_on_vsphere/installing-on-vsphere[Installing a cluster on vSphere]
+* https://access.redhat.com/documentation/en-us/openshift_container_platform/4.16/html/authentication/index[Configuring user authentication, encryption, and access controls for users and services]
+* https://access.redhat.com/documentation/en-us/openshift_container_platform/4.16/html/networking/configuring-ingress[Ingress operator in OpenShift Container Platform]
+* https://access.redhat.com/documentation/en-us/openshift_container_platform/4.16/html/registry/index[Configuring registries for OpenShift Container Platform]
+* https://access.redhat.com/documentation/en-us/openshift_container_platform/4.16/html/logging/index[Configuring cluster logging in OpenShift Container Platform]
+* https://access.redhat.com/documentation/en-us/openshift_container_platform/{ocp_version}/html/monitoring/index[Configuring and using the monitoring stack in OpenShift Container Platform]
+
+//== Preparación de requisitos
+//include::ocp4x-vmware-appendix-pre-reqs.adoc[leveloffset=+2]
+
+//== Implementación de OpenShift en VMWare usando Installer Provisioned Infrastructure (IPI)
+//include::ocp4x-vmware-appendix-vsphere-deploy.adoc[leveloffset=+2]
+
+//== Configuraciones Post Implementación
+//include::ocp4x-vmware-appendix-post-deployment.adoc[leveloffset=+2]
+

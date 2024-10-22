@@ -1,0 +1,23 @@
+// German translation, courtesy of Eric Lavarde <elavarde@redhat.com>
+:appendix-caption: Anhang
+:appendix-refsig: {appendix-caption}
+:caution-caption: Vorsicht
+:chapter-signifier: Kapitel
+:chapter-refsig: {chapter-signifier}
+:example-caption: Beispiel
+:figure-caption: Bild
+:important-caption: Wichtig
+:last-update-label: Letzte Aktualisierung
+ifdef::listing-caption[:listing-caption: Code]
+ifdef::manname-title[:manname-title: Name]
+:note-caption: Hinweis
+:part-label: Band
+:part-refsig: {part-label}
+ifdef::preface-title[:preface-title: Einleitung]
+:section-refsig: Abschnitt
+:table-caption: Tabelle
+:tip-caption: Tipp
+:toc-title: Inhaltsverzeichnis
+:untitled-label: Ohne Titel
+:version-label: Version
+:warning-caption: Warnung

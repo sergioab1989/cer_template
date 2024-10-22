@@ -1,0 +1,18 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Managing CentOS Migrations and RHEL Upgrades (RH174)
+
+[.big]#*Descripción del curso*#
+
+. *Planificación de la conversión a Red Hat Enterprise Linux*Descubra la razón para convertir los servidores de CentOS Linux a Red Hat Enterprise Linux y la manera de hacerlo, planifique el proceso e instale las herramientas necesarias.
+. *Análisis antes de la conversión y migración de un servidor*Analice un servidor para identificar y corregir todos los problemas que puedan dificultar la conversión y, luego, conviértalo a Red Hat Enterprise Linux.
+. *Comprobación y solución de los problemas de un servidor convertido*Confirme que una conversión a RHEL se haya completado correctamente y, de no ser así, solucione los posibles problemas.
+. *Conversión a RHEL con Red Hat Satellite*Utilice Red Hat Satellite para convertir un servidor de CentOS Linux a RHEL.
+. *Planificación de una actualización integrada de Red Hat Enterprise Linux*Indique el momento para realizar una actualización integrada de Red Hat Enterprise Linux, los planes que son compatibles y lo que se debe tener en cuenta al planificarla.
+. *Preparación de un servidor para una actualización integrada*Realice los pasos de los requisitos previos para configurar un servidor e instalar el software requerido para una actualización integrada de RHEL.
+. *Creación y revisión de un informe preliminar de la actualización*Ejecute, evalúe y aborde los resultados de un informe preliminar de la actualización para asegurarse de que el servidor esté listo para el proceso.
+. *Actualización de Red Hat Enterprise Linux*Ejecute una actualización integrada de Red Hat Enterprise Linux y prepárese para solucionar posibles problemas relacionados con ella.
+. *Tareas después de la actualización y la verificación*Complete el proceso al realizar las tareas finales y verificar que la actualización integrada se haya realizado correctamente.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/managing-centos-migrations-and-rhel-upgrades-rh174

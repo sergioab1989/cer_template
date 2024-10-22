@@ -1,0 +1,36 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Transitional approach to implementing pragmatic Site Reliability Engineering (SRE) Technical Overview (TL012)
+
+[.big]#*Descripción del curso*#
+
+*Conozca los motivos por los que la SRE se ha convertido en la estrategia de TI que permite ofrecer un mejor rendimiento y tiempo de comercialización*
+
+La ingeniería de confiabilidad del sitio (SRE) es un modelo de responsabilidad compartida que puede mejorar la eficiencia, la resistencia y la seguridad si se ejecuta de forma correcta. Pero las empresas que deseen implementarla deben experimentar un cambio cultural, modificar los procesos y formar y capacitar a los equipos. Para ello, necesitan planificar la transición. En esta descripción técnica, se aborda el enfoque pragmático de la SRE y las herramientas esenciales para lograr una transición gradual hacia este tipo de ingeniería mediante la responsabilidad compartida.
+
+[.big]#*Resumen del curso*#
+
+Mediante una serie de videos en línea que se encuentran disponibles según se soliciten, aprenderá:
+
+* El concepto de la SRE: un enfoque pragmático
+* Las herramientas de responsabilidad compartida 
+* La adaptación de la confiabilidad del servicio 
+* La creación de una cultura en la que los equipos no tengan miedo a equivocarse al generar innovaciones
+* La evaluación de las inconsistencias y la forma en que generan trabajo repetitivo 
+* La importancia de ajustar los sistemas de ITSM con DevOps y la SRE
+* La formación de equipos: su creación y dirección
+* La definición y la adaptación de los objetivos de la gestión de incidentes y de la metodología de DevOps 
+* Los trucos de colaboración: aspectos útiles para comenzar la transición ahora
+* La institucionalización de los indicadores 
+* Resumen: un enfoque pragmático 
+
+[.big]#*Público al que va dirigido el curso*#
+
+Responsables de la toma de decisiones de TI y líderes que estén pensando implementar o mejorar las prácticas de la SRE o ya se estén encargando de ello.
+
+[.big]#*Requisitos previos para el curso*#
+
+La realización de este curso no supone requisitos previos.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/transitional-approach-implementing-pragmatic-site-reliability-engineering-sre-technical-overview

@@ -1,0 +1,27 @@
+////
+Proposito
+-------
+Add additional apéndice includes here or optionally put them directly in line.
+
+Ejemplo
+------
+[appendix]
+== My Additional Appendix
+//include::my_additional_appendix.adoc[]
+
+[appendix]
+== My Additional Appendix 2
+//include::my_additional_appendix_2.adoc[]
+
+[appendix]
+== My Additional Appendix 3
+My inline appendix
+////
+
+//[appendix]
+//= Red Hat OpenShift Container Platform 4 - SDN
+//include::OCP-4x/ocp4x-sdn-additional-appendices.adoc[leveloffset=+1]
+
+//[appendix]
+//= Red Hat OpenShift Container Platform 4 - VMware vSphere
+//include::OCP-4x-VMware-UPI/ocp4x-vmware-additional-appendices.adoc[leveloffset=+1]

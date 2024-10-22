@@ -1,0 +1,25 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Satellite Technical Overview (RH053)
+
+[.big]#*Descripción del curso*#
+
+Introducción a Red Hat Satellite:: 
+En esta serie de videos, se analizarán y demostrarán los conceptos preliminares y los casos de uso principales de Red Hat Satellite.
+Ejecución de parches y gestión de software utilizando Red Hat Satellite (con demostración):: 
+Se explicarán los procesos de ejecución de parches y gestión de software utilizando Red Hat Satellite.
+Gestión de suscripciones con Red Hat Satellite (con demostración):: 
+Se analizará la gestión de suscripciones utilizando Red Hat Satellite.
+Aprovisionamiento con Red Hat Satellite (con demostración):: 
+Se realizarán implementaciones utilizando Red Hat Satellite.
+Gestión de la configuración con Red Hat Satellite (con demostración):: 
+Se explicarán los conceptos básicos sobre gestión de la configuración con Red Hat Satellite.
+Integración de Red Hat Satellite con Ansible e Insights (con demostración):: 
+Se detallarán las integraciones de Red Hat Satellite con Ansible e Insights.
+Recursos y próximos pasos:: 
+Se describirán los recursos y los pasos que se deben seguir luego de completar esta descripción técnica.
+
+*Nota:* La descripción del curso está sujeta a cambios en función del avance de la tecnología y a medida que evolucione la naturaleza de las tareas relacionadas. Si tiene alguna duda o necesita confirmación sobre cierto objetivo o tema concreto, https://www.redhat.com/training-and-certification/contact-us[comuníquese con alguno de nuestros representantes de Red Hat].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh053-red-hat-satellite-technical-overview

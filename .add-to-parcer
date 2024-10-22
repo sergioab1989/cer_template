@@ -1,0 +1,4 @@
+This file ensures indexing in par/CER (CER full-text search)
+You can prevent further indexing by deleting it,
+but the existing document WILL NOT be dropped from par/CER.
+(Re)creating .add-to-parcer manually restarts indexing again.

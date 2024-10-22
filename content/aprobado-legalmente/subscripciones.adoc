@@ -1,0 +1,75 @@
+////
+Proposito
+-------
+This section describes the basic RHEL subscription model which generally
+applies to most Red Hat products.  This section has language which has been
+reviewed and approved by the legal department.  Do not alter this section
+without prior approval from legal.
+
+For further details or to resolve specific queries about subscriptions which
+arise during a consulting engagement, customers should be directed to their
+Red Hat sales representative, TSM, or open a request with support.
+
+Sample
+------
+N/A
+
+////
+
+[appendix]
+= Resumen de suscripciones de Red Hat
+
+Tres (3) factores juegan un parte importante al momento de seleccionar la suscripción correcta de RHEL:
+
+* El (Acuerdo de Nivel de Servicio) ANS
+* El número de Sockets (físicos) y,
+* El número de máquinas virtuales.
+
+Red Hat Enterprise Linux puede tener productos adicionales, como clustering. Estos requieren una suscripción separada.
+
+== Acuerdo de niveles de servicio
+Una parte importante de una suscripción es accesso al soporte de Red Hat. Los ANS asociados con una suscripción juega un papel importante para el cliente, este es donde se definen los tiempos de respuesta.
+
+.Tiempos de respuesta de acuerdo de niveles de servicio
+image::subscriptions/sla_response_time.png[pdfwidth=80%]
+
+== Par de Sockets
+Una suscripción RHEL es basada en pares de sockets. Un socket corresponde a un socket de CPU _físico_
+
+Cualquier subconjunto de uno o dos sockets cuenta como un par, dado esto un nodo con 16 cores y dos sockets requiere una subscripción para ser compilant. Un nodo con cuatro sockets requiere 2 suscripciones par-socket sencillas para ser compilant.
+
+Un nodo con un socket requerira una suscripción para ser compilant y un nodo con tres sockets requerira dos suscripciones.
+
+Por supuesto hay excepciones a la regla, por ejemplo un nodo con cuatro sockets físicos de los cuales solamente dos tienen una CPU asentada requerira solo una suscripción para ser compilant.
+
+== Virtualización
+Una suscripción convencional de RHEL puede ser usado para suscribir maquinas virtuales RHEL. El número de maquinas virtuales que son incluidas con una suscripción es dos (2).
+
+Una suscripción que aplicaría a una maquina de doble socket _físico_ tambien se puede utilizar para dos (2) máquinas virtuales. El número de sockets virtuales o vCPUs asignados a las dos máquinas virtuales suscritas por una suscripción RHEL convencional no es relevante.
+
+=== Suscripciones para Datacenter Virtual
+Las suscripciones de Datacenter Virtual (VDC) difieren de las suscripciones convencionales RHEL en que estas suscriben VMs por hipervisor más que individualmente.
+
+Las suscripciones VDC usan una relación padre-hijo para validar una suscripción de las máquinas virtuales: El padre (El hipervisor) consume una suscripción mientras que los hijos (la VM que están corriendo en un hypervisor en particular) usan esa misma suscripción. Cualquier máquina virtual RHEL compatible que se ejecute en un hipervisor con una suscripción de VDC válida tiene una suscripción válida.
+
+Similar a las suscripciones convencionales, las suscripciones VDC son aplicadas a hypervisores por par de sockets. Ver <<Par de Sockets>>.
+
+
+[NOTE]
+====
+Una suscripción VDC es solamente valida para las máquinas virtuales que se están ejecutando en un hypervisor, no para el hypervisor en si mismo (El hipervisor debe tener una suscripción separada para su propio sistema operativo).
+====
+
+== Productos en capas
+Los productos en capas requieren el mismo SLA y número de pares de sockets como el S.O RHEL en el que se despliegan estos productos.
+
+== Ciclo de vida de Red Hat Enterprise Linux
+.fases ciclo de vida
+image::subscriptions/lifecycle_phases.png[pdfwidth=80%]
+El ciclo de vida tiene diferentes fases con diferentes tipos de soporte. Dependiendo de las aplicaciones, el despliegue de nodos podría alinearse con las diferentes fases; desplegar en Soporte completo, mantener en Soporte de mantenimiento 1 y reemplazar en Soporte de mantenimiento 2 sería un modelo ideal.
+
+.Fechas de ciclo de vida
+image::subscriptions/lifecycle_dates.png[pdfwidth=80%]
+
+El ciclo de vida de RHEL puede ser encontrado acá: +
+link:https://access.redhat.com/support/policy/updates/errata[]

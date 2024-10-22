@@ -1,0 +1,51 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenShift Installation Lab (DO322)
+
+[IMPORTANT]
+====
+
+* Aviso importante: Se recomienda enfáticamente que los estudiantes completen el curso https://www.redhat.com/es/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster[Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster (DO280)] antes de asistir al curso OpenShift Installation Lab
+
+====
+
+[.big]#*Descripción del curso*#
+
+*Cómo instalar OpenShift en una infraestructura de nube, virtual o física*
+
+En el curso Red Hat OpenShift Installation Lab (DO322), podrá adquirir las habilidades necesarias para instalar un clúster de OpenShift en una serie de entornos, desde el estudio de la viabilidad de los conceptos hasta la producción. Además, aprenderá a identificar las personalizaciones que pueden precisarse en función de la infraestructura fundamental, ya sea de nube, física o virtual.
+
+El curso se basa en Red Hat OpenShift Container Platform 4.6.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de tres días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del curso*#
+
+* Validación de los requisitos previos de la infraestructura para un clúster de OpenShift
+* Ejecución del instalador de OpenShift con ajustes personalizados
+* Descripción y supervisión de cada etapa del proceso de instalación de OpenShift
+* Recopilación de información sobre la resolución de problemas durante una instalación en curso, o luego de una fallida
+* Compleción de la configuración de los servicios del clúster en uno recién instalado
+
+[.big]#*Público al que va dirigido este curso*#
+
+* Administradores de clústeres (administradores de sistemas y de nubes júnior) que estén interesados en implementar clústeres adicionales para satisfacer el aumento de la demanda de sus empresas.
+* Ingenieros de clústeres (administradores de sistemas y de nubes sénior, ingenieros de nubes) que estén interesados en planificar y diseñar clústeres de OpenShift para cumplir con los objetivos de rendimiento y confiabilidad de las diferentes cargas de trabajo, y en crear libros de trabajo para estas instalaciones. 
+* Ingenieros de confiabilidad del sitio (SRE) que estén interesados en implementar clústeres de plataformas de prueba para validar nuevas configuraciones, actualizaciones, personalizaciones, procedimientos operativos y respuestas ante incidentes. 
+
+[.big]#*Capacitación recomendada*#
+
+* Se recomienda enfáticamente obtener la acreditación *Red Hat Certified Specialist in OpenShift Administration* en OpenShift 4, o al menos haber realizado el curso https://www.redhat.com/es/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster[Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster (DO280)] antes de este. 
+** No se considera válido tener "conocimientos equivalentes en Kubernetes", ya que a menos que deba realizar una instalación automatizada integral de OpenShift (muy simple y con todos los valores predeterminados) en un proveedor de nube, necesitará tener conocimientos sobre los operadores de clústeres de OpenShift.
+* Antes de realizar el curso DO322, también se recomienda obtener la certificación https://www.redhat.com/es/services/certification/rhcsa-991[Red Hat Certified System Administrator (RHCSA)], o bien, tener conocimientos equivalentes en la administración de sistemas Red Hat Enterprise Linux.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Para el curso DO322, no se ofrece un aula local de capacitación guiada por el instructor (ILT). Todas las modalidades requieren acceso a aulas en la nube.
+* En este curso se utilizan laboratorios en la nube que se implementan en la nube de Red Hat Training.
+* Debe tener conexión a Internet para que la herramienta de instalación funcione como es debido.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do322-red-hat-openshift-installation-lab

@@ -1,0 +1,10 @@
+= Lista de verificación del entorno antes de la implementación
+
+Con anterioridad al proyecto o como parte del mismo, se entregó el documento “Requerimiento para OpenShift Container Platform (OCP) 4”.
+
+Como parte del proyecto, esa lista se completó en función del entorno implementado. Los documentos externos se encuentran aquí:
+
+* TODO_enviornment_1_name - enlace o describir ubicación de documento de requerimiento para el entorno 1
+* TODO_enviornment_2_name - enlace o describir ubicación de documento de requerimiento para el entorno 2
+
+Se calcula que se utilizará la misma lista de verificación para la creación de futuros clústeres de OpenShift 4.x.

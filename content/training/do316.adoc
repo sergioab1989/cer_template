@@ -1,0 +1,55 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Managing Virtual Machines with Red Hat OpenShift Virtualization (DO316)
+
+[.big]#*Oferta relacionada*#
+
+Este curso es parte del paquete https://www.redhat.com/es/services/training/managing-virtual-machines-red-hat-openshift-virtualization-exam[Managing Virtual Machines with Red Hat OpenShift Virtualization with exam (DO317).] El paquete está disponible con un 70 % de descuento sobre el precio de venta sugerido por el fabricante (MSRP) de su región hasta el 31 de agosto de 2024. Haga clic en "Explorar ahora" para finalizar la compra en la página del paquete y seleccione la versión autorregulada del curso más el examen para recibir la oferta. El descuento se aplicará sobre el MSRP de su región en las ofertas aptas al finalizar la compra. No es posible combinar esta oferta con otras ofertas o descuentos.
+
+[.big]#*Descripción del curso*#
+
+*Cree y gestione máquinas virtuales en OpenShift con el operador de Red Hat OpenShift Virtualization*
+
+En este curso, desarrollará las habilidades fundamentales para crear y gestionar máquinas virtuales (VM) en OpenShift mediante el operador de Red Hat OpenShift Virtualization. No necesita conocimientos previos acerca de los contenedores y Kubernetes para realizar este curso.
+
+Con este curso, obtendrá:
+
+* Las habilidades necesarias para crear máquinas virtuales, acceder a ellas y gestionarlas en clústeres de OpenShift.
+* Las habilidades necesarias para controlar el uso y el acceso de la CPU, la memoria, el almacenamiento y los recursos de red de las máquinas virtuales con las mismas funciones de Kubernetes que también controlarían el uso y el acceso a estos recursos para los contenedores.
+* Las arquitecturas de muestra para gestionar la alta disponibilidad (HA) de las máquinas virtuales con las funciones y las extensiones estándares de Kubernetes de OpenShift Virtualization.
+* Las estrategias para conectar máquinas virtuales en OpenShift a los servicios del centro de datos que estén fuera de su clúster de OpenShift, como el almacenamiento y las bases de datos.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cuatro días o en la modalidad autorregulada. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Crear máquinas virtuales a partir de medios de instalación e imágenes de disco
+* Acceder a las consolas gráficas y de texto de una máquina virtual
+* Preparar almacenamiento en las máquinas virtuales mediante el almacenamiento de Kubernetes (PVC, PV y clases de almacenamiento)
+* Iniciar, pausar y detener las máquinas virtuales
+* Clonar las máquinas virtuales y generar instantáneas de ellas
+* Conectar las máquinas virtuales con redes externas y adicionales (fuera de las redes de servicio y del pod de Kubernetes)
+* Preparar los servicios del equilibrador de carga para las máquinas virtuales y, luego, usarlos para habilitar el acceso SSH a ellas
+* Conectar las máquinas virtuales con el almacenamiento del host y el almacenamiento externo
+* Crear máquinas virtuales a partir de plantillas
+* Migrar las máquinas virtuales desde hipervisores compatibles
+
+[.big]#*Público al que va dirigido este curso*#
+
+* Administradores de máquinas virtuales interesados en trasladar las cargas de trabajo virtualizadas de los hipervisores tradicionales a OpenShift Virtualization
+* Administradores de Kubernetes (administradores e ingenieros de clústeres) que deseen admitir cargas de trabajo en contenedores y virtualizadas en el mismo clúster de OpenShift
+* Ingenieros de confiabilidad del sitio interesados en usar GitOps y Ansible Automation para gestionar máquinas virtuales en OpenShift
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/[Se debe realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades.
+* Se recomienda realizar el curso https://www.redhat.com/es/services/training/red-hat-openshift-administration-i-operating-a-production-cluster[Red Hat OpenShift I: Containers & Kubernetes (DO180)], pero no es obligatorio.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Necesitará acceso a ROLE para todas las entregas y el ingreso al entorno de aula remota. No existe una versión presencial y guiada por un instructor (ILT) del aula DO316.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do316-managing-virtual-machines-red-hat-openshift-virtualization

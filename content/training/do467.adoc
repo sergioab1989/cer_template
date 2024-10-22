@@ -1,0 +1,48 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Managing Enterprise Automation with Red Hat Ansible Automation Platform (DO467)
+
+[.big]#*Descripción del curso*#
+
+*Gestione los flujos de trabajo complejos de la automatización de Red Hat Ansible según las necesidades y evite los puntos únicos de fallas.*
+
+El curso Managing Enterprise Automation with Red Hat Ansible Automation Platform (DO467) está dirigido a ingenieros experimentados en la automatización con Ansible, profesionales de DevOps y administradores de sistemas Linux que buscan implementar, controlar y respaldar la ejecución de la automatización centralizada a gran escala. Los estudiantes utilizarán Red Hat Ansible Automation Platform 2 para ampliar la automatización de Ansible. Implementarán un controlador de la automatización para gestionar los flujos de trabajo de forma centralizada, la malla de automatización para ampliar y distribuir la capacidad de ejecución, los centros de automatización privados para gestionar los conjuntos de contenido de Ansible Content Collections y los entornos de ejecución de la automatización para que los utilicen los desarrolladores. También se analizarán el diseño de los clústeres de automatización a gran escala y los enfoques para garantizar la alta disponibilidad de Ansible Automation Platform.
+
+El curso se basa en Red Hat Ansible Automation Platform 2.2.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Análisis de la arquitectura de Red Hat Ansible Automation Platform 2
+* Instalación y configuración de los controladores de la automatización y los centros de automatización privados para coordinar y ajustar Red Hat Ansible Automation desde un solo lugar
+* Integración de Red Hat Ansible Automation Platform en servicios de repositorio de Git centralizados, como GitLab
+* Gestión de los usuarios, los equipos y los permisos de acceso en los servicios de Red Hat Ansible Automation Platform
+* Creación y gestión de los flujos de trabajo que ejecutan la automatización en función del éxito o el fracaso de las tareas anteriores
+* Configuración y gestión de la malla de automatización para distribuir la ejecución entre el controlador de la automatización y los nodos de ejecución remota
+* Solución de problemas y mantenimiento de los servicios de Red Hat Ansible Automation Platform
+* Análisis de las prácticas recomendadas para garantizar la alta disponibilidad y la capacidad de ajuste de un clúster de automatización de gran tamaño
+
+[.big]#*Público al que se dirige el curso*#
+
+El curso está diseñado para los usuarios que necesiten ofrecer, gestionar y mantener la infraestructura de automatización de Ansible para sus empresas, entre los que se incluyen:
+
+* Ingenieros y arquitectos de automatización de Ansible
+* Administradores de sistemas Linux que se encargan de las operaciones de automatización
+* Ingenieros de DevOps
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Contar con la acreditación https://www.redhat.com/es/services/certification/rhce-old[Red Hat Certified Engineer (RHCE®)] en Red Hat Enterprise Linux 8 o demostrar experiencia equivalente en Ansible
+* Completar el curso Developing Advanced Automation with Red Hat Ansible Automation Platform (DO374)
+* Completar el examen EX374 para obtener la certificación https://www.redhat.com/es/services/training/red-hat-certified-specialist-developing-automation-ansible-automation-platform-exam[Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform] en Red Hat Ansible Automation Platform 2
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se recomienda que tener conexión a Internet, pero no es obligatorio.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do467-managing-enterprise-automation-red-hat-ansible-automation-platform

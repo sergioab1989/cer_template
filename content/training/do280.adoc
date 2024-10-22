@@ -1,0 +1,46 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenShift Administration II: Configuring a Production Cluster (DO280)
+
+[.big]#*Descripción del curso*#
+
+*Configure y gestione los clústeres de OpenShift para mantener la seguridad y la confiabilidad en múltiples aplicaciones y equipos de desarrollo.*
+
+En el curso Red Hat OpenShift Administration II: Configuring a Production Cluster (DO280), los administradores de clústeres de OpenShift aprenderán a realizar tareas de administración diarias en los clústeres que alojan las aplicaciones de los equipos internos y los proveedores externos; habilitar el autoservicio para los usuarios del clúster con diferentes funciones; e implementar aplicaciones que requieran permisos especiales, como las herramientas de CI/CD, la supervisión del rendimiento y el análisis de la seguridad. Este curso se centra en la configuración de las funciones de seguridad y de arquitectura multiempresa de OpenShift, así como en la gestión de los complementos de OpenShift basados en operadores.
+
+Podrá poner en práctica las habilidades que adquiera en este curso con todas las versiones de OpenShift, como Red Hat OpenShift on AWS (ROSA), Azure Red Hat OpenShift y OpenShift Container Platform.
+
+El curso se basa en OpenShift Container Platform 4.14.
+
+Una vez que lo haya completado, recibirá acceso extendido a laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:*
+
+El curso se ofrece como clase presencial de cuatro días, clase virtual de cinco días o en la modalidad autorregulado.Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Temas del curso*#
+
+* Implementación de las aplicaciones empaquetadas con manifiestos, plantillas, Kustomize y Helm
+* Configuración de la autenticación y la autorización para los usuarios y las aplicaciones
+* Protección del tráfico de la red con las políticas correspondientes y la exposición de las aplicaciones con el acceso adecuado a la red
+* Implementación y gestión de las aplicaciones con los manifiestos de los recursos
+* Habilitación del autoservicio de los proyectos de aplicaciones para los desarrolladores
+* Gestión de las actualizaciones de los clústeres de OpenShift y de los operadores de Kubernetes
+
+[.big]#*Público al que va dirigido el curso*#
+
+* Administradores de plataforma, administradores de sistemas, administradores de nube y otras personas que cumplan funciones de TI relacionadas con la infraestructura y sean responsables de su gestión y mantenimiento para las aplicaciones
+* Arquitectos empresariales, ingenieros de confiabilidad del sitio, ingenieros de DevOps y otras personas que cumplan funciones de TI relacionadas con las aplicaciones y sean responsables de diseñar la infraestructura para las aplicaciones
+
+[.big]#*Capacitación recomendada*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades.
+* Requisito previo: https://www.redhat.com/es/services/training/red-hat-openshift-administration-i-operating-a-production-cluster[Contar con la certificación Red Hat OpenShift Administration I: Operating a Production Cluster (DO180v4.14)] o tener habilidades equivalentes para implementar y gestionar aplicaciones de Kubernetes mediante la consola web de OpenShift y las interfaces de línea de comandos.
+* No se necesita experiencia significativa con la administración de sistemas Linux para este curso. Es necesario y suficiente contar con las habilidades básicas para operar un shell Bash, manipular archivos y procesos y comprobar las confirmaciones del sistema, como las direcciones de red. Se recomienda que los estudiantes realicen el curso https://www.redhat.com/es/services/training/getting-started-with-linux-fundamentals[Getting Started with Linux Fundamentals (RH104)] antes de inscribirse en el DO280.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Necesitará una conexión a Internet que le permita acceder a un entorno de aprendizaje en la nube, el cual le ofrece un clúster de OpenShift y una estación de trabajo remota para administradores.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do280-red-hat-openshift-administration-i

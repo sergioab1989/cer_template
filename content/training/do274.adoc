@@ -1,0 +1,15 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Introduction to Event-Driven Ansible (DO274)
+
+[.big]#*Descripción del curso*#
+
+* *Primeros pasos con Event-Driven Ansible*
+** Creación de un proceso de automatización de Ansible que ejecute playbooks de eventos que se envían desde diversas fuentes compatibles
+* *Primeros pasos con el controlador de Event-Driven Ansible*
+** Configuración del controlador de Event-Driven Ansible como un servicio que proporciona un motor de reglas para buscar eventos y activar sus rulebooks de Ansible
+* *Ejemplos de casos prácticos para Event-Driven Ansible*
+** Casos prácticos de ejemplo para Event-Driven Ansible
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/introduction-event-driven-ansible-do274

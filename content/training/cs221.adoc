@@ -1,0 +1,26 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Integrating ROSA Applications with AWS Services (CS221)
+
+*Implemente aplicaciones desde registros externos*
+
+Implemente aplicaciones en Red Hat OpenShift Service on AWS (ROSA) desde repositorios de imágenes de contenedores privados en registros externos de imágenes de contenedores concentrados.
+
+*Ofrezca volúmenes de almacenamiento de Amazon para aplicaciones*
+
+Configure volúmenes de Amazon Elastic Block Storage (EBS) o Amazon Elastic File System (EFS) que cumplan con los requisitos de costo, rendimiento y uso compartido de sus aplicaciones.
+
+*Configure el acceso de las aplicaciones a los servicios de AWS*
+
+Ajuste las aplicaciones para acceder a los servicios compartidos de AWS mediante las cuentas de servicio de Kubernetes y prepare los servicios exclusivos de AWS con los recursos personalizados de esta tecnología.
+
+*Determine el estado interno de las aplicaciones de AWS y OpenShift*
+
+Configure los clústeres de ROSA para reenviar los registros de las aplicaciones a Amazon CloudWatch y los indicadores a Amazon Managed Service for Prometheus.
+
+*Use dominios personalizados para las aplicaciones de ROSA*
+
+Exponga las aplicaciones a los usuarios de Internet con URL seguras mediante el uso de dominios DNS comprensibles para las personas.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/integrating-rosa-applications-aws-services-cs221

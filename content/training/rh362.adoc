@@ -1,0 +1,49 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Security: Identity Management and Authentication (RH362)
+
+Brinde ayuda a los servicios de gestión de identidades concentrados y seguros para coordinar la autenticación y la autorización de los usuarios con los sistemas cliente, los servicios de red y los dominios de Windows.
+
+[.big]#*Descripción del curso*#
+
+En el curso Red Hat Security: Identity Management and Authentication (RH362), adquirirá las habilidades necesarias para configurar y gestionar la solución integral de gestión de identidades (IdM) que se incluye con Red Hat Enterprise Linux. Además, desarrollará las habilidades con esta tecnología que más buscan los clientes.
+
+Algunos de los temas que se abordan en este curso son la gestión y la preparación de las cuentas de usuario desde un solo lugar; el diseño y la instalación de las topologías de servidores de IdM; el funcionamiento de los servicios integrados de autoridad de certificación (CA) de DNS y TLS; la gestión de la autenticación de dos factores, la autenticación de tarjetas inteligentes y el funcionamiento como proveedor Single Sign-On (SSO); la integración y la gestión de la confianza bidireccional con Active Directory; y la planificación de la resolución de problemas y la recuperación ante desastres. También se analiza el registro de clientes de Linux en IdM y la operación en los entornos empresariales que usan clientes y servidores de Linux y Microsoft Windows.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Diseño de una topología de gestión de identidades para mejorar la flexibilidad y la resistencia
+* Descripción de las tecnologías esenciales que utiliza IdM, como SSSD, PAM, Kerberos y PKI
+* Instalación de servidores, réplicas y clientes de la gestión de identidades (IdM) con los playbooks de Ansible
+* Gestión de los servicios de IdM, incluidos los DNS y CA integrados
+* Configuración y gestión de los servicios de autenticación y seguridad de Kerberos
+* Configuración y gestión de los certificados TLS
+* Creación y gestión de una relación de confianza con Microsoft Active Directory
+* Aplicación de los ajustes que permitan asegurar la autenticación de los usuarios, lo que incluye la autenticación de dos factores y Single Sign-On (SSO)
+* Configuración y gestión de las políticas de Sudo, HBAC y RBAC
+* Gestión de los secretos, los almacenes de credenciales, los certificados y las claves
+* Solución de los problemas relacionados con la gestión de identidades
+* Integración de Satellite 6 y Red Hat Ansible Automation Platform a la IdM
+* Configuración de las backups y de la recuperación de datos de la IdM
+
+[.big]#*Público al que va dirigido este curso*#
+
+* Especialistas con la certificación Red Hat Certified System Engineers (RHCE) que deseen aprender a preparar y configurar soluciones de gestión de identidades concentradas para clientes de Linux, y a integrarlas a otros servicios de red y sistemas de gestión de identidades 
+** Ingenieros o especialistas en la gestión de identidades
+** Ingenieros o especialistas en la gestión del acceso
+
+[.big]#*Capacitación recomendada*#
+
+* https://www.redhat.com/rhtapps/assessment/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Obtener la certificación RHCE o poseer habilidades equivalentes como requisito previo para realizar este curso
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* No hay requisitos especiales adicionales a los requeridos para los cursos estándar que se imparten en los modos de capacitación guiada por el instructor (ILT), capacitación virtual (VT), sesiones de Red Hat Online Learning (ROLE) o Red Hat Learning Subscription (RHLS).
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh362-red-hat-security-identity-management-and-authentication

@@ -1,0 +1,53 @@
+////
+Proposito
+-------
+This section should contain a minimal list of Red Hat associates who directly
+participated. A good rule of thumb is to restrict the list to associates who
+applied billable hours to the project in conjunction with this engagement.  A
+typical list should include the delivery consultant(s), the project manager,
+and the architect (if present and/or billing).  Also include the TSM if the TSM
+was actively involved (i.e. attending status calls, escalations etc...)
+////
+.Red Hat Participantes
+[cols="4,5,3",options=header]
+|===
+|Nombre
+|Rol
+|Correo Electronico
+
+// Nombre
+| Diana Garcia
+// Titulo
+| Project Manager
+// Correo Electronico
+| diagarci@redhat.com
+
+// Nombre
+| German Pulido
+// Titulo
+| Arquitecto
+// Correo Electronico
+| gpulido@redhta.com
+
+// Nombre
+| Sergio Abarca
+// Titulo
+| Consultor Senior
+// Correo Electronico
+| jmunozag@redhat.com
+
+// Nombre
+| José Muñoz
+// Titulo
+| Consultor
+// Correo Electronico
+| jmunozag@redhat.com
+
+// Nombre
+| Nicolas Palma
+// Titulo
+| Consultor
+// Correo Electronico
+| npalma@redhat.com
+
+|===

@@ -1,0 +1,143 @@
+////
+Proposito
+-------
+This section is intended to record deliberate collaboration between Red Hat and
+the customer. Knowledge transfer is a two-way activity so this includes both
+activities where Red Hat is gathering information from the customer and where
+information is being communicated to the customer.  As this section may be used
+to demonstrate completion of certain SOW tasks it is important to record
+attendance whenever possible.
+
+Activities which should be captured
+- Discovery workshops
+- Meetings to reach consensus on in-flight decisions
+- Documentation review
+- Progress demonstrations
+- Executive briefings
+- Ad-hoc training or review for non-Participants
+
+Ejemplo
+------
+.Working Sessions
+[cols=3*,cols="8,4,16",options="header"]
+|===
+| Session
+| Date
+| Purpose / Attendees
+
+// Session
+| Workshop 1
+
+// Date
+| 1/5/2021
+
+// Purpose / Attendees
+a|
+- Purpose
+ * Architecture Review
+ * Establish Additional Use Cases
+- Attendees
+* John Wick/Red Hat
+* Shinji Mikami/ACME
+
+
+// Session
+| Color Decision Meeting
+
+// Date
+| 1/7/2021
+
+// Purpose / Attendees
+a|
+- Purpose
+ * Choose whether to make the icons "Cornflour Blue"
+- Attendees
+ * John Wick/Red Hat
+ * Shinji Mikami/ACME
+ * Nina McInroe/ACME
+
+
+// Session
+| Sprint 3 Demo
+
+// Date
+| 2/20/2021
+
+//Purpose / Attendees
+a|
+- Purpose
+ * Show Progress To Executive Leadership
+ * Solicit Feedback
+- Attendees
+ * John Wick/Red Hat
+ * Memphis Raines/Red Hat
+ * Pete Mitchell/Red Hat
+ * Shinji Mikami/ACME
+ * Eiji Aounuma/ACME
+
+
+// Session
+| Engagement Report Review
+
+// Date
+| 3/15/2021
+
+// Purpose / Attendees
+a| //Purpose / Attendees
+- Purpose
+ * Review Engagement Report
+ * Identify Gaps And Additional Information Requested
+- Attendees
+ * John Wick/Red Hat
+ * Shinji Mikami/ACME
+
+|===
+////
+
+.Sesiones de trabajo
+[cols=3*,cols="8,4,16",options="header"]
+|===
+| Sesión
+| Día
+| Propósito / Asistentes
+
+// Session
+| Entrega de conocimientos
+
+// Date
+| 02-Sept-2024
+
+//Purpose / Attendees
+a|
+- Propósito
+ * Entrega de cluster y productos middleware
+- Asistentes
+ * npalma@redhat.com
+ * ajorantes@gtc.com.gt
+ * bymejia@gtc.com.gt
+ * cguadalini@gtc.com.gt
+ * dconde@gtc.com.gt
+ * dhidalgo@gtc.com.gt
+ * diagarci@redhat.com
+ * efrmartinez@gtc.com.gt
+ * esazo@gtc.com.gt
+ * gflores@gtc.com.gt
+ * hocabezas@gtc.com.gt
+ * jacifuentes@gtc.com.gt
+ * jacosta@gtc.com.gt
+ * jajuarez@gtc.com.gt
+ * jlvasquez@gtc.com.gt
+ * jmgomez@gtc.com.gt
+ * jmunozag@redhat.com
+ * laquino@gtc.com.gt
+ * lezlie.monge@cr.ey.com
+ * lfherrera@gtc.com.gt
+ * lmonge@gtc.com.gt
+ * mcrispin@gtc.com.gt
+ * omartinez@gtc.com.gt
+ * opineda@gbm.net
+ * rmaldonado@gtc.com.gt
+ * rvasquez@gtc.com.gt
+ * vmleiva@gtc.com.gt
+ * vnoj@gtc.com.gt
+|===

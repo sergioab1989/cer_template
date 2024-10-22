@@ -1,0 +1,1863 @@
+= DR
+
+DR-GTC es un cluster openshift sobre ambiente productivo del cliente G&T
+
+== Información del dominio
+
+- Dominio: domcoin.net
+- Nombre del Cluster: dr-gtc
+
+== Información de VMware
+Los siguiente datos de VMware han sido configurados en el cluster de OpenShift:
+
+.VMware Data
+[options="header"]
+|===
+|Parametro de VMware | Valor
+
+|VCENTER_SERVER
+|bering.domcoin.net
+
+|VCENTER_USER
+|adRHOSvmwareDR@vsphere.local
+
+|VCENTER_PASSWORD
+| * * * * * *
+
+|VCENTER_DC
+|Infraestructura Principal
+
+|VCENTER_DS
+|vsanDatastore
+
+|===
+
+== Información de la red
+
+.Network Data
+[options="header"]
+|===
+|Nombre | CIDR Bloque o Valor | Comentarios
+
+|VNet
+|10.150.28.0/23
+|VNI_TEMENOS_DRP
+
+|Pod Network
+|10.184.0.0/14
+| IP Addresses
+
+|Service Network
+|172.43.0.0/16
+| IP Addresses
+
+|===
+
+== Información de los nodos
+
+.Nodes Data
+[options="header"]
+|===
+|Server FQDN |IP | vCPU | Memoria | Disco |Rol |Labels
+
+|dr-gtc-bj76t-master-0
+|10.150.28.208
+|8
+|32 GB
+|120 GB
+|Master
+|control-plane,master
+
+|dr-gtc-bj76t-master-1
+|10.150.28.207
+|8
+|32 GB
+|120 GB
+|Master
+|control-plane,master
+
+|dr-gtc-bj76t-master-2
+|10.150.28.209
+|8
+|32 GB
+|120 GB
+|Master
+|control-plane,master
+
+|dr-gtc-bj76t-infra-g44ns
+|10.150.28.218
+|8
+|64 GB
+|120 GB
+|Infra
+|infra
+
+|dr-gtc-bj76t-infra-gclr5
+|10.150.28.217
+|8
+|64 GB
+|120 GB
+|Infra
+|infra
+
+|dr-gtc-bj76t-infra-xcdpj
+|10.150.28.219
+|8
+|64 GB
+|120 GB
+|Infra
+|infra
+
+|dr-gtc-bj76t-worker-app-2bsbc
+|10.150.28.239
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-9ch87
+|10.150.28.232
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-c6mmf
+|10.150.28.234
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-cblkp
+|10.150.28.233
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-ghdst
+|10.150.28.237
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-lfz99
+|10.150.28.236
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-m2pd2
+|10.150.28.225
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-nzjb7
+|10.150.28.224
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-pz7wp
+|10.150.28.223
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-rm5sr
+|10.150.28.230
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-rsjn2
+|10.150.28.238
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-wjlhd
+|10.150.28.235
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-app-zpncs
+|10.150.28.231
+|8
+|64 GB
+|120 GB
+|Worker
+|app
+
+|dr-gtc-bj76t-worker-integracion-8hp4p
+|10.150.28.228
+|8
+|32 GB
+|120 GB
+|Worker
+|integracion
+
+|dr-gtc-bj76t-worker-integracion-bc6xc
+|10.150.28.226
+|8
+|32 GB
+|120 GB
+|Worker
+|integracion
+
+|dr-gtc-bj76t-worker-integracion-dxhjg
+|10.150.28.229
+|8
+|32 GB
+|120 GB
+|Worker
+|integracion
+
+|dr-gtc-bj76t-worker-integracion-l8cf5
+|10.150.28.227
+|8
+|32 GB
+|120 GB
+|Worker
+|integracion
+
+|dr-gtc-bj76t-storage-kxd47
+|10.150.28.220
+|24
+|94 GB
+|300 GB
+|Storage
+|Storage
+
+|dr-gtc-bj76t-storage-qfpqs
+|10.150.28.222
+|24
+|94 GB
+|300 GB
+|Storage
+|Storage
+
+|dr-gtc-bj76t-storage-s5t7v
+|10.150.28.221
+|24
+|94 GB
+|300 GB
+|Storage
+|Storage
+
+|PARAUTA.domcoin.net
+|10.150.28.5
+|2
+|8 GB
+|120 GB
+|Bastión
+|N/A
+
+|===
+
+
+
+== Información de Storage
+
+.Storage Data
+[options="header"]
+|===
+|Aplicación |Tipo de Storage  |Backend de Storage |Tamaño
+
+|Metrics
+|Block
+|thin-csi
+a| 
+- 2 x 100GB (prometheus) 
+- 2 x 100GB (alertmanager)
+
+
+|Logging
+|Block
+|thin-csi
+a|
+- 1 x 10GB (loki-compactor)
+- 2 x 50GB (index-gateway)
+- 2 x 10GB (infra-loki-ingester)
+- 2 x 150GB (wal-ingester) 
+
+|Registry
+|File
+|thin-csi
+|300GB
+
+|Application
+|File
+|N/A
+|N/A
+|===
+
+= Implementación Openshift 4.16
+
+== Instalación OCP 
+
+Posterior al cumplimiento de los prerrequisitos por parte del cliente para el despliegue de OpenShift, se procede con el despliegue del clúster acorde a las necesidades y requerimientos del cliente, y al proveedor de la infraestructura donde se desplegará.
+
+=== Método de instalación de los nodos
+
+A diferencia de una plataforma tradicional donde la instalación de las máquinas se realiza de modo manual (creando la máquina virtual, instalando sistema operativo y por último desplegando la aplicación), la plataforma junto con su infraestructura fue instalada mediante método IPI (infraestructura aprovisionada por el instalador). Esto significa que luego del cumplimiento de los prerrequisitos para el óptimo funcionamiento del instalador, se procede a ejecutar el instalador y a alimentarlo con la información relativa a la plataforma de virtualización, los datos de acceso, credenciales y demás información requerida por el instalador.
+
+=== Recopilación de prerrequisitos
+
+De acuerdo al método de instalación y el proveedor de la infraestructura, se procede a recolectar los datos pertinentes a:
+
+- Servidor bastión.
+- Subdominio que usará el cluster de Openshift.
+- IPs balanceadas.
+- Registros DNS
+- Datos de la red donde se desplegará el clúster de OpenShift.
+- Segmentos de redes internas.
+- Accesos a internet.
+- DHCP
+
+=== Configuración del servidor Bastión
+Se define el servidor bastión para generar la instalación de OpenShift, para lo cual se crea una vm con RHEL 9:
+
+.Maquina de instalacion
+[options="header"]
+|===
+|Ip |Sistema operativo  |Ambiente
+
+|10.150.28.5
+|Red Hat Enterprise Linux release 9.4 (Plow)
+|DR
+|===
+
+[NOTE]
+====
+El servidor debe estar suscrito en Red Hat para poder descargar las herramientas necesarias para la instalación.
+====
+
+=== Instalador y pull secrets
+Para la instalación de OpenShift utilizaremos la última versión disponible de OCP 4.16, la que al momento de la instalación corresponde a la versión 4.16.4 Para obtener el instalador y el secreto de instalación, nos dirigimos a la página de Red Hat cloud.redhat.com.
+
+Acá podemos obtener el instalador de OpenShift y el pull secret de instalación
+
+.Instalador de OCP y pull secret
+image::./Implementacion/instalador_de_ocp.png[]
+
+El instalador lo dejamos directamente en el servidor bastión, donde creamos un directorio de instalación para OpenShift junto al pull secret y el cliente OC.
+
+El instalador, archivo pull secret y cliente OC fueron descargados y entregados por Banco G&T Continental.
+
+.Shell
+[source,bash]
+----
+$ mkdir /root/installocp4 ← Se crearán los archivos de instalación y log de la instalación.
+
+$ tar xvf <installation_program>.tar.gz ← Comando para descomprimir el instalador de ocp se debe descargar en la raíz del usuario.
+----
+
+El secret obtenido desde el sitio web, lo dejamos en un archivo
+
+=== Generación de ssh Key
+Para poder acceder durante y posteriormente al proceso de instalación a los servidores RHCoreOS, debemos generar una llave para rsa-keys para posteriormente ser usados con OpenShift:
+
+.Shell
+[source,bash]
+----
+# Para generar la SSH private key
+$ ssh-keygen -t rsa -b 4096 -N '' -f ~/.ssh/id_rsa_dr_gtc
+----
+
+=== Importar certificados vmware en server bastión
+
+Los siguientes comandos deben ejecutarse desde el servidor bastión para importar los certificados desde vmware, para este propósito es necesario contar con los requisitos de red desde bastión hacia vcenter y nodos ESXi.
+
+Shell
+[source,bash]
+----
+$ curl -O -k https://BERING.domcoin.net/certs/download.zip
+$ unzip download.zip
+$ cp certs/lin/* /etc/pki/ca-trust/source/anchors
+$ update-ca-trust extract
+----
+
+
+=== Creando el archivo de configuración de la instalación
+El siguiente comando debe ejecutarse desde la carpeta que se creó para la instalación en este caso se llama "installocp4":
+
+.Shell
+[source,bash]
+----
+./openshift-install create install-config --dir=./<installation_directory>
+----
+
+La variable <installation_directory> obedece al directorio donde se generará el archivo install-config.yaml, el cual nos permitirá cambiar algunos parámetros para la instalación del cluster de forma más personalizada.
+
+En este punto se pueden acordar la cantidad de nodos worker y su configuración de memoria, vCPU y Disco de igual manera para los nodos master. Con estos datos ya podemos generar el archivo de configuración yaml para la instalación. Luego de ejecutar el comando anterior se mostrarán opciones donde se elegirán o cargarán datos que corresponden a esta instalación.
+
+ A continuación, la tabla contiene los valores en orden que se utilizaron:
+
+.Cluster pre-producccion
+[options="header"]
+|===
+|Item |Valor
+
+|SSH Public Key
+|/root/.ssh/id_rsa_dr_gtc.pub
+
+|Platform
+|Vsphere
+
+|Network
+|VNI_TEMENOS_DRP
+
+|Internal API virtual IP
+|10.150.28.11
+
+|Ingress virtual IP
+|10.150.28.12
+
+|Base Domain
+|domain.net
+
+|Cluster Name
+|dr-gtc
+
+|Pull Secret
+|\****
+|===
+
+Se debe crear el archivo install-config.yaml para hacer la configuración de la instalación, el archivo queda de la siguiente forma:
+
+- install-config.yaml Cluster os-nonprod:
+
+.install-config.yaml
+[source,bash]
+----
+additionalTrustBundlePolicy: Proxyonly
+apiVersion: v1
+baseDomain: domcoin.net
+compute:
+- architecture: amd64
+  hyperthreading: Enabled
+  name: worker
+  platform:
+    vsphere:
+      cpus: 8
+      coresPerSocket: 1
+      memoryMB: 32768
+      osDisk:
+        diskSizeGB: 120
+  replicas: 3
+controlPlane:
+  architecture: amd64
+  hyperthreading: Enabled
+  name: master
+  platform:
+    vsphere:
+      cpus: 
+      coresPerSocket: 1
+      memoryMB: 32768
+      osDisk:
+        diskSizeGB: 120
+  replicas: 3
+metadata:
+  creationTimestamp: null
+  name: dr-gtc
+networking:
+  clusterNetwork:
+  - cidr: 10.184.0.0/14
+    hostPrefix: 23
+  machineNetwork:
+  - cidr: 10.150.28.0/23
+  networkType: OVNKubernetes
+  serviceNetwork:
+  - 172.43.0.0/16
+platform:
+  vsphere:
+    apiVIPs:
+    - 10.150.28.11
+    failureDomains:
+    - name: generated-failure-domain
+      region: generated-region
+      server: bering.domcoin.net
+      topology:
+        computeCluster: /Infraestructura Principal/host/Cluster NCORE GTC Aplicaciones
+        datacenter: Infraestructura Principal
+        datastore: /Infraestructura Principal/datastore/vsanDatastore
+        networks:
+        - VNI_TEMENOS_DRP
+        resourcePool: /Infraestructura Principal/host/Cluster NCORE GTC Aplicaciones/Resources
+      zone: generated-zone
+    ingressVIPs:
+    - 10.150.28.12
+    vcenters:
+    - datacenters:
+      - Infraestructura Principal
+      password: '* * * * *' 
+      port: 443
+      server: bering.domcoin.net
+      user: adRHOSvmwareDR@vsphere.local
+pullsecret: '* * * * *'
+sshKey: '* * * * * *'
+----
+
+Es importante sacar una copia de este archivo antes de ejecutar el siguiente comando, ya que se consume al finalizar la instalación y el mismo se puede reutilizar si falla el proceso de instalación o para usarla en otras habilitaciones de OpenShift.
+
+=== Ejecución de install-config.yaml
+Recuerde cambiar <installation_directory> por “installocp4” para el caso de esta instalación.
+
+.install-config.yaml
+[source,bash]
+----
+./openshift-install create cluster --dir=<installation_directory> --log-level=debu
+----
+
+=== Consola web / API
+
+A continuación de listan los puntos de acceso al cluster Openshift instalado
+
+- Console web: https://console-openshift-console.apps.os-nonprod.domcoin.net:443
+- API: https://api.os-nonprod.domcoin.net:6443
+
+
+=== Archivo de autenticación para CLI(oc)
+
+El usuario kubeadmin se crea automáticamente durante la instalación, es posible acceder a la CLI por medio dle siguiente archivo en el servidor bastión (Considerar que este es utilizado al comienzo de la administración del cluster, ya que este será eliminado en las tareas de post configuración).
+
+.Credenciales consola
+[options="header"]
+|===
+|Cluster |Ruta
+
+|os-nonprod
+|export KUBECONFIG=/root/installocp4/auth/kubeconfig
+|===
+
+
+=== Configuración de NTP
+Se crean 4 archivos del tipo Machine Config para poder aplicar la configuración de Chrony (NTP) para todos los nodos. Para esto se utilizan las siguientes definiciones:
+
+Se utilizó Butane, el cual corresponde a una utilidad de línea de comandos que OpenShift Container Platform utiliza para proporcionar una sintaxis breve y conveniente para escribir configuraciones de máquinas.
+
+Se creó un archivo de configuración con extensión de butane llamados 99-worker-chrony-configuration.bu, 99-master-chrony-configuration.bu, 99-infra-chrony-configuration.bu y 99-storage-chrony-configuration.bu que configura la consola del sistema para mostrar mensajes de depuración del kernel y específica configuraciones personalizadas para el servicio chrony time específicamente para los nodos worker, es necesaria su creación para cada tipo de nodo reemplazando name y el label  “machineconfiguration.openshift.io/role: worker” por cada role que corresponda (worker, master, storage e infra):
+
+.Configuracion NTP
+[source,bash]
+----
+$ vi 99-worker-chrony-configuration.bu
+
+variant: openshift
+version: 4.16.0
+metadata:
+  name: 99-worker-chrony
+  labels:
+    machineconfiguration.openshift.io/role: worker
+openshift:
+  kernel_arguments:
+    - loglevel=7
+storage:
+  files:
+    - path: /etc/chrony.conf
+      mode: 0644
+      overwrite: true
+      contents:
+        inline: |
+          server 125.1.203.183 iburst
+          driftfile /var/lib/chrony/drift
+          makestep 1.0 3
+          rtcsync
+          logdir /var/log/chrony
+systemd:
+  units:
+  - contents: |
+      [Unit]
+      Description=set timezone
+      After=network-online.target
+      [Service]
+      Type=oneshot
+      ExecStart=timedatectl set-timezone America/Guatemala
+      [Install]
+      WantedBy=multi-user.target
+    enabled: true
+    name: custom-timezone.service
+----
+
+.Configuracion de los nodos
+[source,bash]
+----
+$ butane 99-worker-chrony-configuration.bu -o ./99-worker-chrony.yaml
+$ butane 99-master-chrony-configuration.bu -o ./99-master-chrony.yaml
+$ butane 99-infra-chrony-configuration.bu -o ./99-infra-chrony.yaml
+$ butane 99-storage-chrony-configuration.bu -o ./99-storage-chrony.yaml
+----
+
+Revisamos el archivo convertido
+
+.Configuracion de los nodos
+[source,bash]
+----
+$ vim 99-worker-chrony.yaml
+
+kind: MachineConfig
+metadata:
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 99-worker-chrony
+spec:
+  config:
+    ignition:
+      version: 3.4.0
+    storage:
+      files:
+        - contents:
+            compression: ""
+            source: data:,server%20125.1.203.183%20iburst%0Adriftfile%20%2Fvar%2Flib%2Fchrony%2Fdrift%0Amakestep%201.0%203%0Artcsync%0Alogdir%20%2Fvar%2Flog%2Fchrony%0A
+          mode: 420
+          overwrite: true
+          path: /etc/chrony.conf
+    systemd:
+      units:
+        - contents: |
+            [Unit]
+            Description=set timezone
+            After=network-online.target
+            [Service]
+            Type=oneshot
+            ExecStart=timedatectl set-timezone America/Guatemala
+
+            [Install]
+            WantedBy=multi-user.target
+          enabled: true
+          name: custom-timezone.service
+  kernelArguments:
+    - loglevel=7
+----
+
+Aplicamos los archivos con el siguiente comando:
+
+.OC command
+[source,bash]
+----
+$ oc create -f 99-worker-chrony.yaml
+$ oc create -f 99-master-chrony.yaml
+$ oc create -f 99-infra-chrony.yaml
+$ oc create -f 99-storage-chrony.yaml
+----
+
+=== Validación Chrony y TimeDateCTL
+
+image::./Implementacion/validacioncrhoni.png[pdfwidth=99%,width=99%]
+
+=== MachineSet Infra	
+A continuación se muestra el YAML utilizado para el MachineSet Infra 
+
+.Configuracion MachinSet Infra
+[source,bash]
+----
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  labels:
+    machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+  name: dr-gtc-bj76t-infra
+  namespace: openshift-machine-api
+  resourceVersion: "24010"
+  uid: 0b51c3a9-f89b-4ac4-b466-f0ae0e45ef1b
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+      machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-infra
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+        machine.openshift.io/cluster-api-machine-role: infra
+        machine.openshift.io/cluster-api-machine-type: infra
+        machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-infra
+    spec:
+      lifecycleHooks: {}
+      taints:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/infra
+        value: reserved
+      - effect: NoExecute
+        key: node-role.kubernetes.io/infra
+        value: reserved
+      metadata:
+        labels:
+          node-role.kubernetes.io/infra: ""
+          node-role.kubernetes.io: infra
+      providerSpec:
+        value:
+          apiVersion: machine.openshift.io/v1beta1
+          credentialsSecret:
+            name: vsphere-cloud-credentials
+          diskGiB: 120
+          kind: VSphereMachineProviderSpec
+          memoryMiB: 65536
+          metadata:
+            creationTimestamp: null
+          network:
+            devices:
+            - networkName: VNI_TEMENOS_DRP
+          numCPUs: 8
+          numCoresPerSocket: 1
+          snapshot: ""
+          template: dr-gtc-bj76t-rhcos-generated-region-generated-zone
+          userDataSecret:
+            name: worker-user-data
+          workspace:
+            datacenter: Infraestructura Principal
+            datastore: /Infraestructura Principal/datastore/vsanDatastore
+            folder: /Infraestructura Principal/vm/dr-gtc-bj76t
+            resourcePool: /Infraestructura Principal/host/Cluster NCORE GTC Aplicaciones/Resources
+            server: bering.domcoin.net
+----
+
+=== MachineSet Storage	
+A continuación se muestra el YAML utilizado para el MachineSet Infra 
+
+.Configuracion MachinSet Storage
+[source,bash]
+----
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  labels:
+    machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+  name: dr-gtc-bj76t-storage
+  namespace: openshift-machine-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+      machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-storage
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+        machine.openshift.io/cluster-api-machine-role: storage
+        machine.openshift.io/cluster-api-machine-type: storage
+        machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-storage
+    spec:
+      lifecycleHooks: {}
+      metadata:
+        labels:
+          node-role.kubernetes.io/storage: ""
+      providerSpec:
+        value:
+          apiVersion: machine.openshift.io/v1beta1
+          credentialsSecret:
+            name: vsphere-cloud-credentials
+          diskGiB: 120
+          kind: VSphereMachineProviderSpec
+          memoryMiB: 98304
+          metadata:
+            creationTimestamp: null
+          network:
+            devices:
+            - networkName: VNI_TEMENOS_DRP
+          numCPUs: 24
+          numCoresPerSocket: 1
+          snapshot: ""
+          template: dr-gtc-bj76t-rhcos-generated-region-generated-zone
+          userDataSecret:
+            name: worker-user-data
+          workspace:
+            datacenter: Infraestructura Principal
+            datastore: /Infraestructura Principal/datastore/vsanDatastore
+            folder: /Infraestructura Principal/vm/dr-gtc-bj76t
+            resourcePool: /Infraestructura Principal/host/Cluster NCORE GTC Aplicaciones/Resources
+            server: bering.domcoin.net
+----
+
+
+=== MachineSet  Workers
+A continuación se muestra el listado y configuraciones de machineset de worker para cada uno de los tipos de nodos solicitados.
+
+- dr-gtc-bj76t-worker-app
+- dr-gtc-bj76t-worker-integracion
+
+
+dr-gtc-bj76t-worker-app
+
+.worker-app
+[source,bash]
+----
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  labels:
+    machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+  name: dr-gtc-bj76t-worker-app
+  namespace: openshift-machine-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+      machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-worker-app
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+        machine.openshift.io/cluster-api-machine-role: worker
+        machine.openshift.io/cluster-api-machine-type: worker
+        machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-worker-app
+    spec:
+      lifecycleHooks: {}
+      metadata: {}
+      providerSpec:
+        value:
+          apiVersion: machine.openshift.io/v1beta1
+          credentialsSecret:
+            name: vsphere-cloud-credentials
+          diskGiB: 120
+          kind: VSphereMachineProviderSpec
+          memoryMiB: 65536
+          metadata:
+            creationTimestamp: null
+          network:
+            devices:
+            - networkName: VNI_TEMENOS_DRP
+          numCPUs: 8
+          numCoresPerSocket: 1
+          snapshot: ""
+          template: dr-gtc-bj76t-rhcos-generated-region-generated-zone
+          userDataSecret:
+            name: worker-user-data
+          workspace:
+            datacenter: Infraestructura Principal
+            datastore: /Infraestructura Principal/datastore/vsanDatastore
+            folder: /Infraestructura Principal/vm/dr-gtc-bj76t
+            resourcePool: /Infraestructura Principal/host/Cluster NCORE GTC Aplicaciones/Resources
+            server: bering.domcoin.net
+----
+
+dr-gtc-bj76t-worker-integracion
+
+.worker-integracion
+[source,bash]
+----
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  labels:
+    machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+  name: dr-gtc-bj76t-worker-app
+  namespace: openshift-machine-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+      machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-worker-app
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: dr-gtc-bj76t
+        machine.openshift.io/cluster-api-machine-role: worker
+        machine.openshift.io/cluster-api-machine-type: worker
+        machine.openshift.io/cluster-api-machineset: dr-gtc-bj76t-worker-app
+    spec:
+      lifecycleHooks: {}
+      metadata: {}
+      providerSpec:
+        value:
+          apiVersion: machine.openshift.io/v1beta1
+          credentialsSecret:
+            name: vsphere-cloud-credentials
+          diskGiB: 120
+          kind: VSphereMachineProviderSpec
+          memoryMiB: 65536
+          metadata:
+            creationTimestamp: null
+          network:
+            devices:
+            - networkName: VNI_TEMENOS_DRP
+          numCPUs: 8
+          numCoresPerSocket: 1
+          snapshot: ""
+          template: dr-gtc-bj76t-rhcos-generated-region-generated-zone
+          userDataSecret:
+            name: worker-user-data
+          workspace:
+            datacenter: Infraestructura Principal
+            datastore: /Infraestructura Principal/datastore/vsanDatastore
+            folder: /Infraestructura Principal/vm/dr-gtc-bj76t
+            resourcePool: /Infraestructura Principal/host/Cluster NCORE GTC Aplicaciones/Resources
+            server: bering.domcoin.net
+----
+
+
+=== Configuración de MCP Infra
+Para la correcta configuración de los nodos infra es necesario crear el MachineConfigPool (MCP) como se muestra a continuación:
+
+.Configuracion de MCP infra
+[source,bash]
+----
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfigPool
+metadata:
+  name: infra
+spec:
+  machineConfigSelector:
+    matchExpressions:
+      - {key: machineconfiguration.openshift.io/role, operator: In, values: [worker,infra]} 
+  nodeSelector:
+    matchLabels:
+      node-role.kubernetes.io/infra: \"""
+----
+
+
+=== Configuración de MCP Storage
+Para la correcta configuración de los nodos storage es necesario crear el MachineConfigPool (MCP) como se muestra a continuación:
+
+.Configuracion de MCP storage
+[source,bash]
+----
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfigPool
+metadata:
+  name: infra
+spec:
+  machineConfigSelector:
+    matchExpressions:
+      - {key: machineconfiguration.openshift.io/role, operator: In, values: [worker,storage]} 
+  nodeSelector:
+    matchLabels:
+      node-role.kubernetes.io/storage: ""
+----
+
+=== Instalación y configuración de ODF
+
+Para la configuración del operador de Openshift Data Foundation es necesario ingresar a la consola web, en el apartado de “Operators” > “Operator Hub” y buscar el Operador “Local Storage”.
+
+image::./Implementacion/local_storage_hub.png[]
+
+Ingresamos a Operator Hub > buscamos el operador Openshift Data Foundation  y seleccionamos el cual se muestra en la siguiente imagen.
+
+image::./Implementacion/odf_operator_hub.png[]
+
+Una vez instalados los dos Operadores, tanto “Local Storage” como “Openshift Data Foundation” es necesario configurar la instancia de “Storage System” dentro del operador de ODF.
+
+Al momento de la creación del storage system se crea con las configuraciones por defecto por lo cual se utilizarán los 3 discos en cada uno de los nodos creando el storagecluster.
+
+- En el primer punto seleccionar la opción "Nuevo Storage Class" y siguiente.
+- En el segundo punto se entrega el nombre "odf". Se selecciona la opción para utilizar discos locales y se seleccionan de la lista de nodos los 3 nodos storage. Se selecciona la opción al final de la pestaña "Add Taint" y siguiente.
+
+Cuando el Storage System está configurado podemos revisar que todos los pods que componen la solución estén en estado running en el proyecto “openshift-storage”
+
+[source,bash]
+----
+$ oc get pods -n openshift-storage
+
+NAME                                                              READY   STATUS      RESTARTS        AGE
+csi-addons-controller-manager-874464fcc-kfkhh                     2/2     Running     0               4d3h
+csi-cephfsplugin-27flr                                            2/2     Running     0               143m
+csi-cephfsplugin-45zjm                                            2/2     Running     1 (3h ago)      3h1m
+csi-cephfsplugin-6sj7m                                            2/2     Running     0               4d1h
+csi-cephfsplugin-7cl6s                                            2/2     Running     0               4d1h
+csi-cephfsplugin-7ztxv                                            2/2     Running     0               3h28m
+csi-cephfsplugin-b7rtn                                            2/2     Running     0               4d1h
+csi-cephfsplugin-bwt6d                                            2/2     Running     0               4d1h
+csi-cephfsplugin-c275m                                            2/2     Running     1 (3h ago)      3h1m
+csi-cephfsplugin-cj8cw                                            2/2     Running     1 (3h1m ago)    3h2m
+csi-cephfsplugin-dn2s2                                            2/2     Running     1 (3h27m ago)   3h28m
+csi-cephfsplugin-fjcrk                                            2/2     Running     0               4d1h
+csi-cephfsplugin-hhgcn                                            2/2     Running     0               4d1h
+csi-cephfsplugin-hz7hn                                            2/2     Running     1 (165m ago)    165m
+csi-cephfsplugin-km7f7                                            2/2     Running     0               4d1h
+csi-cephfsplugin-n5brs                                            2/2     Running     1 (167m ago)    167m
+csi-cephfsplugin-provisioner-69674bb47-czhd4                      6/6     Running     0               4d1h
+csi-cephfsplugin-provisioner-69674bb47-dppcc                      6/6     Running     0               4d1h
+csi-cephfsplugin-pvnxk                                            2/2     Running     0               140m
+csi-cephfsplugin-qhrvm                                            2/2     Running     0               4d1h
+csi-cephfsplugin-rlhrx                                            2/2     Running     1 (165m ago)    166m
+csi-cephfsplugin-tnqmq                                            2/2     Running     0               4d1h
+csi-cephfsplugin-zcght                                            2/2     Running     0               3h27m
+csi-rbdplugin-29wsk                                               3/3     Running     0               4d1h
+csi-rbdplugin-2qx8w                                               3/3     Running     1 (3h ago)      3h1m
+csi-rbdplugin-9j5q2                                               3/3     Running     1 (3h27m ago)   3h28m
+csi-rbdplugin-gjnpf                                               3/3     Running     0               4d1h
+csi-rbdplugin-gkbbb                                               3/3     Running     1 (3h1m ago)    3h2m
+csi-rbdplugin-hhvpb                                               3/3     Running     0               4d1h
+csi-rbdplugin-jpwmh                                               3/3     Running     0               143m
+csi-rbdplugin-jshw5                                               3/3     Running     0               4d1h
+csi-rbdplugin-l8v9j                                               3/3     Running     1 (165m ago)    165m
+csi-rbdplugin-p48ww                                               3/3     Running     0               140m
+csi-rbdplugin-provisioner-57f9dd77cb-8xdlq                        6/6     Running     0               4d1h
+csi-rbdplugin-provisioner-57f9dd77cb-ckt76                        6/6     Running     0               4d1h
+csi-rbdplugin-rpzfq                                               3/3     Running     0               4d1h
+csi-rbdplugin-s5qp7                                               3/3     Running     0               4d1h
+csi-rbdplugin-s8pjt                                               3/3     Running     0               4d1h
+csi-rbdplugin-srp4b                                               3/3     Running     0               4d1h
+csi-rbdplugin-thnz4                                               3/3     Running     1 (167m ago)    167m
+csi-rbdplugin-tshrm                                               3/3     Running     1 (165m ago)    166m
+csi-rbdplugin-vzjg9                                               3/3     Running     0               3h27m
+csi-rbdplugin-w8jxd                                               3/3     Running     0               4d1h
+csi-rbdplugin-xrbvf                                               3/3     Running     0               3h28m
+csi-rbdplugin-znkjn                                               3/3     Running     1 (3h ago)      3h1m
+noobaa-core-0                                                     2/2     Running     0               4d3h
+noobaa-db-pg-0                                                    1/1     Running     0               4d3h
+noobaa-endpoint-545d84db66-wbwfx                                  1/1     Running     0               4d3h
+noobaa-operator-d5f48bbf7-44sbk                                   1/1     Running     0               4d3h
+ocs-metrics-exporter-56c557c7b7-hkcdx                             1/1     Running     0               4d3h
+ocs-operator-68f9cd579f-xztp6                                     1/1     Running     0               4d3h
+odf-console-8577c5594c-qmjqt                                      1/1     Running     0               4d3h
+odf-operator-controller-manager-698b949478-r7zdq                  2/2     Running     1 (4d3h ago)    4d3h
+rook-ceph-crashcollector-dr-gtc-bj76t-storage-kxd47-7445dcn5tdc   1/1     Running     0               4d3h
+rook-ceph-crashcollector-dr-gtc-bj76t-storage-qfpqs-5b498dgh9nx   1/1     Running     0               4d3h
+rook-ceph-crashcollector-dr-gtc-bj76t-storage-s5t7v-5f88989wwwt   1/1     Running     0               4d3h
+rook-ceph-exporter-dr-gtc-bj76t-storage-kxd47-6c8b8754fc-kddm4    1/1     Running     0               4d3h
+rook-ceph-exporter-dr-gtc-bj76t-storage-qfpqs-67ddbd5b6d-tq497    1/1     Running     0               4d3h
+rook-ceph-exporter-dr-gtc-bj76t-storage-s5t7v-65db56df4d-9jphk    1/1     Running     0               4d3h
+rook-ceph-mds-ocs-storagecluster-cephfilesystem-a-7cbcd49d4k6br   2/2     Running     0               4d3h
+rook-ceph-mds-ocs-storagecluster-cephfilesystem-b-84548b48p424k   2/2     Running     0               4d3h
+rook-ceph-mgr-a-7bc888bbd4-wc4mx                                  3/3     Running     0               4d3h
+rook-ceph-mgr-b-6d9cbc68b7-bdspg                                  3/3     Running     0               4d3h
+rook-ceph-mon-a-fbc77679c-r9v8q                                   2/2     Running     0               4d3h
+rook-ceph-mon-b-f794f4cb9-wdkr9                                   2/2     Running     0               4d3h
+rook-ceph-mon-c-7d79b4bdf-stq95                                   2/2     Running     0               4d3h
+rook-ceph-operator-6f57d67c4c-gvsh7                               1/1     Running     0               4d3h
+rook-ceph-osd-0-65ff6b54c8-sv6tz                                  2/2     Running     0               4d3h
+rook-ceph-osd-1-6557fb95b6-kddhx                                  2/2     Running     0               4d3h
+rook-ceph-osd-2-7966b74f4d-wh9b8                                  2/2     Running     0               4d3h
+rook-ceph-osd-prepare-ocs-deviceset-odf-0-data-0prrzv-89dgp       0/1     Completed   0               4d3h
+rook-ceph-osd-prepare-ocs-deviceset-odf-0-data-1264nt-f8xmd       0/1     Completed   0               4d3h
+rook-ceph-osd-prepare-ocs-deviceset-odf-0-data-2tt27k-455xc       0/1     Completed   0               4d3h
+rook-ceph-rgw-ocs-storagecluster-cephobjectstore-a-78ccc8c97phz   2/2     Running     0               4d3h
+ux-backend-server-7d45d88bd9-c7sld                                2/2     Running     0               4d3h
+----
+
+
+=== Instalación y configuración Stack de Logging
+
+Ingresamos a Operator Hub > buscamos el operador logging  y seleccionamos el cual se muestra en la siguiente imagen.
+
+
+image::./Implementacion/operador_openshift_loggin.png[pdfwidth=99%,width=99%]
+
+Luego se nos desplegará al costado derecho la siguiente pestaña y le damos en instalar el operador
+
+image::./Implementacion/instalar_operador.png[pdfwidth=99%,width=99%]
+
+Una vez dado click se nos recargara mostrando las siguientes opciones , las cuales debes seleccionar “stable” y dar click en “install” para continuar con la instalación del operador
+
+image::./Implementacion/install_operator.png[pdfwidth=99%,width=99%]
+
+Ingresamos a Operator Hub > buscamos el operador loki  y seleccionamos el cual se muestra en la siguiente imagen
+
+image::./Implementacion/loki_operator.png[pdfwidth=99%,width=99%]
+
+Una vez encontrado le damos en instalar y no llevará a la siguiente pantalla y seleccionamos el canal “stable” como se muestra en la imagen y create para iniciar con la instalación.
+
+image::./Implementacion/configuracion_loki.png[pdfwidth=99%,width=99%]
+
+Una vez que termine la instalación nos aparecerá el mensaje en pantalla que la instalación del operador ha finalizado.
+
+A continuación se crearán las instancias necesarias y almacenamiento para la configuración del ClusterLogging y Lokistack.
+
+
+.Instancia ClusterLogging
+[source,bash]
+----
+# Crar archivo y agregar siguiente contenido
+$ vi clusterlogging-instance.yaml
+
+kind: ClusterLogging
+apiVersion: logging.openshift.io/v1
+metadata:
+  name: instance
+  namespace: openshift-logging
+spec:
+  collection:
+    tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/infra
+        value: reserved
+      - effect: NoExecute
+        key: node-role.kubernetes.io/infra
+        value: reserved
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/master
+        value: ''
+      - effect: NoSchedule
+        key: node.ocs.openshift.io/storage
+        value: 'true'
+    type: vector
+  logStore:
+    lokistack:
+      name: infra-loki
+    retentionPolicy:
+      application:
+        maxAge: 7d
+      audit:
+        maxAge: 7d
+      infra:
+        maxAge: 7d
+    type: lokistack
+  managementState: Managed
+  visualization:
+    type: ocp-console
+
+# Aplicar instancia
+$ oc apply -f clusterlogging-instance.yaml
+----
+
+
+.Instancia loki-stack
+[source,bash]
+----
+# Crar archivo y agregar siguiente contenido
+$ vi lokistack-instance.yaml
+
+kind: LokiStack
+apiVersion: loki.grafana.com/v1
+metadata:
+  name: infra-loki
+  namespace: openshift-logging
+spec:
+  managementState: Managed
+  size: 1x.extra-small
+  storage:
+    schemas:
+    - effectiveDate: "2024-04-02"
+      version: v13
+    secret:
+      name: logging-loki-odf
+      type: s3
+    tls:
+      caName: openshift-service-ca.crt
+  storageClassName: thin-csi
+  template:
+    compactor:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    distributor:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    gateway:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    indexGateway:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    ingester:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    querier:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    queryFrontend:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+    ruler:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      tolerations:
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/infra
+          value: reserved
+        - effect: NoExecute
+          key: node-role.kubernetes.io/infra
+          value: reserved
+  tenants:
+    mode: openshift-logging
+
+# Aplicar instancia
+$ oc apply -f lokistack-instance.yaml
+----
+
+.Creación de OBC
+[source,bash]
+----
+# Crar archivo y agregar siguiente contenido
+$ vi obc-loki.yaml
+
+apiVersion: objectbucket.io/v1alpha1
+kind: ObjectBucketClaim
+metadata:
+  name: loki-bucket-odf
+  namespace: openshift-logging
+spec:
+  generateBucketName: loki-bucket-odf
+  storageClassName: openshift-storage.noobaa.io
+
+# Aplicar OBC
+$ oc apply -f obc-loki.yaml
+----
+
+
+.Creación secret OBC
+[source,bash]
+----
+$ oc create -n openshift-logging secret generic logging-loki-odf \
+--from-literal=access_key_id="w5zTlVlByMJ1Ibw9dz3G" \
+--from-literal=access_key_secret="z0osGSxEGFfwYxI7g433q5ZTAFtA77z1/3Lpd0XY" \
+--from-literal=bucketnames="loki-bucket-odf-9d6be967-9b3b-4ba6-b039-49a20251d135" \
+--from-literal=endpoint="https://s3.openshift-storage.svc:443"
+----
+
+Una vez ingrese este formato de YAML el operador quedará disponible para el uso dentro del OCP {ocp_version}.
+
+
+=== Configuración de persistencia de datos en Registry
+
+Crear el PVC para utilizar por operador de registry:
+
+.crear el PVC
+[source,bash]
+----
+# Crar archivo y agregar siguiente contenido
+$ vi pvc-registry.yaml
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: registry-storage
+  namespace: openshift-image-registry
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 300Gi
+  storageClassName: thin-csi
+
+# Aplicar PVC
+$ oc apply -f pvc-registry.yaml
+----
+
+Y realizamos la modificación y/o adición de las líneas resaltadas dentro de la configuración del operador para que pueda utilizar la persistencia de datos creada.
+
+.configs.imageregistry
+[source,bash]
+----
+#Editar recurso image registry operator
+$ oc edit configs.imageregistry.operator.openshift.io
+
+spec:
+  logLevel: Normal
+  managementState: Managed
+  nodeSelector:
+    node-role.kubernetes.io/infra: ""
+…
+  replicas: 1
+…
+  rolloutStrategy: Recreate
+  routes:
+  - hostname: internal-registry.apps.apps.os-nonprod.domcoin.net
+    name: internal-registry-route
+  storage:
+    managementState: Unmanaged
+    pvc:
+      claim: registry-storage
+  tolerations:
+    - effect: NoSchedule
+      key: node-role.kubernetes.io/infra
+      value: reserved
+    - effect: NoExecute
+      key: node-role.kubernetes.io/infra
+      value: reserved
+----
+
+=== Configuración de proveedor de identidades
+En esta habilitación se utilizará Htpasswd para la gestión de usuarios en el cluster de Openshift, a continuación se lista los  usuarios creados:
+
+.Proveedor de identidades
+[options="header"]
+|===
+|User |Password | Role
+
+|adminocp
+|masT3rpa554dmiN
+|cluster-admin
+|=== 
+
+posterior a esto se ha configurado el operador de oauth para que se integre con Active Directory mediante protocolo LDAP por puerto 389.
+
+
+.protocolo LDAP por puerto 389
+[source,bash]
+----
+spec:
+  identityProviders:
+  - htpasswd:
+      fileData:
+        name: htpass-secret
+    mappingMethod: claim
+    name: users_htpasswd
+    type: HTPasswd
+  - ldap:
+      attributes:
+        email:
+        - mail
+        id:
+        - dn
+        name:
+        - cn
+        preferredUsername:
+        - sAMAccountName
+      bindDN: CN=ldap RedHat OpenShift DR,OU=OpenShift Red Hat,OU=Usuarios de sistemas,OU=Servidores,DC=domcoin,DC=net
+      bindPassword:
+        name: ldap-secret
+      insecure: true
+      url: ldap://domcoin.net:389/DC=domcoin,DC=net?sAMAccountName?sub?(&(objectclass=*)(|(memberOf=CN=OpenShift
+        Red Hat - DR,OU=Administracion Open Shift Red Hat,OU=Servidores,DC=domcoin,DC=net)))
+    name: users_ad
+    type: LDAP
+----
+
+=== Eliminación de usuario Kubeadmin
+
+Con el siguiente comando podremos eliminar el usuario kubeadmin de nuestro OCP {ocp_version}
+
+.OC command
+[source,bash]
+----
+$ oc delete secret kubeadmin -n kube-system
+ “kubeadmin” deleted
+----
+
+=== Eliminar permiso de creación de proyecto para usuarios identificados
+
+Primero se deben visualizar los roles de cluster
+
+.OC command
+[source,bash]
+----
+$ oc describe clusterrolebinding.rbac self-provisioners
+----
+
+
+Editar el recurso de configuración del proyecto mediante la consola CLI
+
+.OC command
+[source,bash]
+----
+$ oc edit project.config.openshift.io/cluster
+----
+
+Actualizar la sección spec para incluir los parámetros projectRequestTemplate y name , y establezca el nombre de la plantilla de proyecto cargada. El nombre predeterminado es project-request.
+
+.Project-request
+[source,bash]
+----
+spec:
+  projectRequestTemplate:
+    name: project-request
+----
+
+Luego quitar el self-provisioner del cluster del grupo system:authenticated:oauth
+
+.OC command
+[source,bash]
+----
+$ oc patch clusterrolebinding.rbac self-provisioners -p '{"subjects": null}'
+----
+
+Después se debe actualizar el enlace de roles mediante el siguiente comando
+
+.OC command
+[source,bash]
+----
+$ oc patch clusterrolebinding.rbac self-provisioners -p '{ "metadata": {
+"annotations": { "rbac.authorization.kubernetes.io/autoupdate": "false" } } }'
+----
+
+=== Definición de políticas de Red Default (Permit Ingress, Monitor y pod del mismo project)
+
+Editar la plantilla predeterminada para un nuevo proyecto .
+
+.OC project
+[source,bash]
+----
+$ oc edit template project-request -n openshift-config
+----
+
+Ingresar las políticas de Red Default en la plantilla después de name: ${PROJECT_ADMIN_USER} y antes de parameters:
+
+.PROJECT_ADMIN_USER
+[source,bash]
+----
+name: ${PROJECT_ADMIN_USER}
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-openshift-monitoring
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            network.openshift.io/policy-group: monitoring
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-same-namespace
+  spec:
+    ingress:
+    - from:
+      - podSelector: {}
+    podSelector: {}
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-openshift-ingress
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            network.openshift.io/policy-group: ingress
+    podSelector: {}
+    policyTypes:
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-kube-apiserver-operator
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            kubernetes.io/metadata.name: openshift-kube-apiserver-operator
+        podSelector:
+          matchLabels:
+            app: kube-apiserver-operator
+    policyTypes:
+    - Ingress
+parameters:
+----
+
+Luego creamos un proyecto:
+
+.OC command
+[source,bash]
+----
+$ oc new-project pruebas_funcionales
+----
+
+Y visualizamos las políticas de Red:
+
+.Get network
+[source,bash]
+----
+$ oc get networkpolicy
+----
+
+image::./Implementacion/network_policity.png[]
+
+=== Configuración de monitoring stack
+
+Para la configuración del stack. de monitoreo es necesaria la reubicación de sus pods core sobre los nodos infra y la configuración de su persistencia de datos, a continuación se muestra el procedimiento utilizado para esta finalidad.
+
+
+.Configuración core
+
+Creamos un archivo con la configuración del stack de monitoreo.
+[source,bash]
+----
+# Creamos un archivo
+
+$ touch monitoring-stack.yaml
+
+#Agregamos el siguiente contenido
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cluster-monitoring-config
+  namespace: openshift-monitoring
+data:
+  config.yaml: |
+    alertmanagerMain:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: thin-csi
+          resources:
+            requests:
+              storage: 100Gi
+      nodeSelector: 
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    prometheusK8s:
+      retention: 7d
+      volumeClaimTemplate:
+        spec:
+          storageClassName: thin-csi
+          resources:
+            requests:
+              storage: 100Gi
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    prometheusOperator:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    kubeStateMetrics:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    telemeterClient:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    openshiftStateMetrics:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    thanosQuerier:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    monitoringPlugin:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+    metricsServer:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+      tolerations:
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/infra
+        value: reserved
+        effect: NoExecute
+----
+
+Configuramos el recurso a través del archivo previamente creado:
+
+[source,bash]
+----
+$ oc apply -f monitoring-stack.yaml
+----
+
+
+=== Reubicación servicio routers
+
+Para este proceso es necesario contar con permisos de cluster-admin y ejecutar el siguiente procedimiento sobre el operador de ingresscontroller que es el responsable de los pods de router:
+
+
+[source,bash]
+----
+# Comando para editar operador de ingresscontroller
+$ oc edit ingresscontroller default -n openshift-ingress-operator
+
+# Agregamos lo siguiente dentro del recurso en yaml sin modificar las líneas ya existentes
+
+spec:
+  nodePlacement:
+    nodeSelector:
+      matchLabels:
+        node-role.kubernetes.io/infra: ""
+    tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/infra
+        value: reserved
+      - effect: NoExecute
+        key: node-role.kubernetes.io/infra
+        value: reserved
+  replicas: 2
+----
+
+=== Actualización certificados ingress
+
+Para la correcta configuración de los certificados es necesario contar con los requisitos que se listan en la documentación. A continuación se muestran los comandos utilizados con la finalidad de reemplazar el certificados de ingress que viene por defecto por uno autofirmado por la CA interna del cliente.
+
+.Get cert and key
+[source,bash]
+----
+# Generar la key desde el archivo .pfx entregado por cliente
+$ openssl pkcs12 -in archivo.pfx -nocerts -out claveprivada.key
+
+# Generar crt desde el archivo .pfx entregado por cliente
+$ openssl x509 -in archivo.pfx -out os-nonprod.domcoin.net.crt
+
+# Desencriptar key
+$ openssl rsa -in claveprivada.key -out os-nonprod.domcoin.net.crt.key
+----
+
+Con los archivos necesarios para la configuración del nuevo certificados se procede a su reemplazo.
+
+.Get cert and key
+[source,bash]
+----
+# Crear configmap custom-ca en proyecto openshift-config
+$ oc create configmap custom-ca --from-file=ca-bundle.crt=os-nonprod.domcoin.net.crt -n openshift-config
+
+# Agregar nuevo cm custom-ca a config de proxy/cluster
+$ oc patch proxy/cluster --type=merge --patch='{"spec":{"trustedCA":{"name":"custom-ca"}}}'
+
+#  Crear secret tipo tls llamado secret-tls-ingress con archivos .crt y .key creados en pasos anteriores
+$ oc create secret tls secret-tls-ingress --cert=os-nonprod.domcoin.net.crt --key=os-nonprod.domcoin.net.crt.key -n openshift-ingress
+
+# Agregar secret recien creado como defaultCertificate a config de ingresscontroller.operator/default
+$ oc patch ingresscontroller.operator default --type=merge -p '{"spec":{"defaultCertificate": {"name": "secret-tls-ingress"}}}' -n openshift-ingress-operator
+----
+
+.Escalado pods ingresscontroller
+[source,bash]
+----
+$ oc patch ingresscontroller/default -n openshift-ingress-operator --type=merge -p '{"spec":{"replicas": 3}}'
+----
+
+.Validación operadores
+
+Una vez actualizados los certificados es necesario revisar el estado saludable de los operadores, principalmente authentication, console e ingress.
+
+[source,bash]
+----
+$ oc get co
+----
+
+=== Backup base de datos ETCD
+
+etcd es el almacén de clave=valor para OpenShift Container Platform, que conserva el estado de todos los objetos de recursos.
+
+Realice copias de seguridad de los datos de etcd de su clúster con regularidad y guárdelos en una ubicación segura, idealmente fuera del entorno de OpenShift Container Platform. No realice una copia de seguridad de etcd antes de que se complete la primera rotación de certificados, lo que ocurre 24 horas después de la instalación; de lo contrario, la copia de seguridad contendrá certificados vencidos. También se recomienda realizar copias de seguridad de etcd durante las horas de menor uso, ya que la instantánea de etcd tiene un alto costo de E/S.
+
+A continuación se muestra el procedimiento utilizado para la configuración automática del backup etcd del cluster. Los arcivos .yaml pueden ser creados desde cli o en el botón + desde la consola web. 
+
+Cabe mencionar que el procedimiento de descarga de estos snapshot del etcd realizados por el cronjob deben ser realizados manualmente.
+
+.Creación de proyecto
+[source,bash]
+----
+$ oc new-project ocp-etcd-backup --description "Openshift Backup Automation Tool" --display-name "Backup ETCD Automation"
+----
+
+.Creación service account
+[source,bash]
+----
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: openshift-backup
+  namespace: ocp-etcd-backup
+  labels:
+    app: openshift-backup
+----
+
+.Crear ClusterRole
+[source,bash]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cluster-etcd-backup
+rules:
+- apiGroups: [""]
+  resources:
+     - "nodes"
+  verbs: ["get", "list"]
+- apiGroups: [""]
+  resources:
+     - "pods"
+     - "pods/log"
+     - "pods/attach"
+  verbs: ["get", "list", "create", "delete", "watch"]
+- apiGroups: [""]
+  resources:
+     - "namespaces"
+  verbs: ["get", "list", "create"]
+----
+
+.Create ClusterRoleBinding
+[source,bash]
+----
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: openshift-backup
+  labels:
+    app: openshift-backup
+subjects:
+  - kind: ServiceAccount
+    name: openshift-backup
+    namespace: ocp-etcd-backup
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-etcd-backup
+----
+
+.Agregar permisos SCC a SA openshift-backup
+[source,bash]
+----
+$ oc adm policy add-scc-to-user privileged -z openshift-backup
+----
+
+.Crear CronJob
+[source,bash]
+----
+kind: CronJob
+apiVersion: batch/v1
+metadata:
+  name: openshift-backup
+  namespace: ocp-etcd-backup
+  labels:
+    app: openshift-backup
+spec:
+  schedule: "0 0 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 5
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    metadata:
+      labels:
+        app: openshift-backup
+    spec:
+      backoffLimit: 0
+      template:
+        metadata:
+          labels:
+            app: openshift-backup
+        spec:
+          containers:
+            - name: backup
+              image: "registry.redhat.io/openshift4/ose-cli"
+              command:
+                - "/bin/bash"
+                - "-c"
+                - oc get no -l node-role.kubernetes.io/master --no-headers -o name | head -n 1 |xargs -I {} -- oc debug {}  --to-namespace=ocp-etcd-backup -- bash -c 'chroot /host rm -rf /home/core/backup && chroot /host  mkdir /home/core/backup && chroot /host sudo -E /usr/local/bin/cluster-backup.sh /home/core/backup && chroot /host sudo -E find /home/core/backup/ -type f -mmin +"1" -delete'
+          restartPolicy: "Never"
+          terminationGracePeriodSeconds: 30
+          activeDeadlineSeconds: 500
+          dnsPolicy: "ClusterFirst"
+          serviceAccountName: "openshift-backup"
+          serviceAccount: "openshift-backup"
+----
+
+En caso que se quiera ejecutar el Job sin necesidad de esperar que se ejecute desde el Cron a la hora especificado se puede ejecutar el siguiente comando:
+
+[source,bash]
+----
+$ oc create job backup --from=cronjob/openshift-backup
+----

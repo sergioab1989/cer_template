@@ -1,0 +1,32 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Running Containers with Red Hat Technical Overview (RH065)
+
+[.big]#*Descripción del curso*#
+
+*Introducción básica a la gestión de contenedores en Red Hat Enterprise Linux*
+
+Los contenedores de Linux son una tecnología muy importante que le permite implementar sus aplicaciones con todo su entorno de tiempo de ejecución, y trasladarlas fácilmente de un entorno operativo a otro (de desarrollo, prueba y producción) de manera confiable, ajustable y segura.  Los contenedores le brindan a su equipo herramientas que puede usar para implementar las prácticas de CI/CD (integración e implementación continuas) y DevOps y otros elementos del enfoque de desarrollo de aplicaciones en la nube.  El curso Running Containers with Red Hat Technical Overview (RH065) ofrece una introducción básica a la gestión de contenedores en Red Hat Enterprise Linux. Los estudiantes aprenderán qué son los contenedores y cómo usarlos para implementar aplicaciones de software en un servidor de Red Hat Enterprise Linux.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Obtener, ejecutar y gestionar servicios ligeros y sencillos como contenedores en un solo servidor de Red Hat Enterprise Linux
+* Explicar qué son los contenedores y cómo se usan para gestionar e implementar aplicaciones con sus dependencias y bibliotecas de software de respaldo
+* Instalar herramientas de gestión de contenedores y ejecutar contenedores sencillos sin raíz
+* Buscar, recuperar, analizar y gestionar imágenes de contenedores extraídas de un registro remoto de contenedores y almacenadas en su servidor
+* Ejecutar contenedores con opciones avanzadas; enumerar los contenedores que se ejecutan en el sistema; e iniciar, detener y terminar la ejecución de los contenedores
+* Montar un directorio desde el host del contenedor dentro de un contenedor en ejecución a fin de proporcionar almacenamiento permanente para sus datos
+* Iniciar y detener un contenedor como servicio del sistema, y verificar su estado
+
+[.big]#*Público objetivo*#
+
+* Este curso está dirigido a los estudiantes que estén interesados en recibir una introducción básica a la gestión de contenedores en Red Hat Enterprise Linux.
+* Estudiantes con conocimientos básicos de Red Hat Enterprise Linux.
+
+[.big]#*Capacitación recomendada*#
+
+* Se recomienda tener habilidades básicas de Red Hat Enterprise Linux o haber obtenido la certificación https://www.redhat.com/es/services/certification/rhcsa-991[Red Hat Certified System Administrator (RHCSA)]
+* https://www.redhat.com/es/node/212491[Red Hat OpenShift I: Containers & Kubernetes (DO180)]
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh065-running-containers-red-hat-technical-overview

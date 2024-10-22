@@ -1,0 +1,47 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Microsoft Windows Automation with Red Hat Ansible (DO417)
+
+[.big]#*Descripción del curso*#
+
+*Aprenda a automatizar la administración en Windows Server para poder implementar el flujo de trabajo de DevOps*
+
+El curso Microsoft Windows Automation with Red Hat Ansible (DO417) está diseñado para los especialistas de Windows Server sin experiencia previa en Ansible®. Utilizará este programa para escribir playbooks de automatización. Esto posibilitará que los sistemas de Microsoft Windows lleven a cabo tareas comunes de administración de sistemas de manera reproducible según sea necesario. También aprenderá a utilizar Red Hat® Ansible Tower para gestionar y ejecutar los playbooks de Ansible de forma segura desde una interfaz de usuario web central.
+
+Este curso se basa en Red Hat Ansible Engine 2.8, Red Hat Ansible Tower 3.5 y Windows Server 2016 y 2019.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* La duración del curso es de cinco días. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Configuración de los sistemas de Microsoft Windows para que se gestionen con Ansible.
+* Creación y administración de inventarios de hosts gestionados y suministro de credenciales para gestionarlos en Red Hat Ansible Tower.
+* Redacción de los playbooks de Ansible para automatizar varias tareas de forma uniforme y aplicarlos a los hosts gestionados.
+* Ejecución de tareas individuales específicas de automatización y playbooks complejos desde Red Hat Ansible Tower.
+* Creación de formularios de encuestas en Red Hat Ansible Tower para simplificar el funcionamiento de los playbooks.
+* Establecimiento de los parámetros para los playbooks con variables y datos.
+* Redacción y reutilización de las funciones actuales de Ansible para simplificar la creación de playbooks y reciclar el código.
+* Uso del código DSC de PowerShell actual para ampliar el impacto de la automatización de Ansible.
+* Automatización de las tareas comunes de administración de sistemas Windows Server con Ansible.
+
+[.big]#*Público al que se dirige el curso*#
+
+Administradores de Windows Server interesados en automatizar las tareas de gestión y en usar las herramientas de automatización para implementar el flujo de trabajo de DevOps.
+
+[.big]#*Requisitos previos para este curso*#
+
+Se espera que tenga experiencia como administrador de Windows Server, pero no se requiere experiencia previa con Linux® ni Red Hat Ansible Automation.
+
+[.big]#*Requisitos técnicos*#
+
+* Para esta clase necesitará conexión a Internet.
+* Se espera que use su propio dispositivo (la modalidad es BYOD).
+* Su dispositivo debe contar con un protocolo de escritorio remoto (RDP). 
+** Si ejecuta Microsoft Windows, debe tener *Microsoft Remote Desktop* instalado.
+** Si ejecuta macOS, deberá instalar *Microsoft Remote Desktop for Mac* (de Microsoft) desde la App Store.
+** Si ejecuta Linux, puede instalar *Remmina* desde su distribución (si está disponible) o siguiendo las instrucciones que aparecen en https://remmina.org[https://remmina.org] (si no es así).  Si lo prefiere, puede instalar los clientes de FreeRDP desde la distribución de Linux (en el paquete de FreeRDP en Red Hat Enterprise Linux).
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do417-microsoft-windows-automation-red-hat-ansible

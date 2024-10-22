@@ -1,0 +1,38 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Ansible Basics: Automation Technical Overview (DO007)
+
+[.big]#*Resumen del curso*#
+
+*Descripción del curso:* expectativas de aprendizaje
+
+*Introducción a Ansible:* beneficios de Ansible Automation Platform
+
+*Desarrollo de la automatización:* explicación del funcionamiento de Ansible 
+
+*Conceptos básicos de Ansible:* uso de los inventarios, el archivo de configuración principal y los módulos de Ansible
+
+*Conceptos básicos de los playbooks:* uso de los plays, las tareas y los módulos de Ansible, y las ejecuciones de los playbooks
+
+*Variables de Ansible:* explicación de las variables, el módulo de depuración, y los datos de sistemas remotos de Ansible
+
+*Elementos de Ansible:* uso de condicionales, controladores y bucles
+
+*Creación de plantillas:* diseño de plantillas, módulo de plantillas y Jinja2
+
+*Funciones:* definición de las funciones, y uso de Galaxy y Automation Hub
+
+*Introducción al controlador de la automatización:* ejecución de la automatización
+
+*Creación de un trabajo de automatización:* explicación sobre los inventarios, las credenciales, la sincronización de los proyectos y el diseño de las plantillas de trabajo
+
+*TI de autoservicio:* uso de encuestas y diseño de plantillas de trabajo
+
+*Control de acceso basado en funciones:* configuración de los controles de acceso para las empresas y los equipos
+
+*Flujos de trabajo:* uso de la herramienta para visualizar los flujos de trabajo y explicación de la convergencia y la divergencia
+
+*Próximos pasos:* recomendaciones para seguir aprendiendo a utilizar Ansible
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do007-ansible-essentials-simplicity-automation-technical-overview

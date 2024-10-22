@@ -1,0 +1,21 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Developing Event-Driven Applications with Apache Kafka and Red Hat AMQ Streams with Exam (AD483)
+
+[.big]#*Resumen del curso*#
+
+Diseño de aplicaciones basadas en eventos:: 
+Describa los principios de las aplicaciones basadas en eventos.
+Presentación de los conceptos de Kafka y AMQ Streams:: 
+Cree aplicaciones con las funciones básicas de mensajería: de lectura y de escritura.
+Desarrollo de aplicaciones con la API de Streams:: 
+Aproveche la API de Streams para crear aplicaciones de transmisión de datos.
+Creación de servicios asíncronos con colaboración de eventos:: 
+Cree y adopte servicios asíncronos con el patrón de colaboración de eventos.
+Integración de sistemas de datos con Kafka Connect:: 
+Conecte los sistemas de datos y responda ante los cambios en la base de datos con Kafka Connect y Debezium.
+Solución de problemas de las aplicaciones de AMQ Streams:: 
+Solucione los problemas comunes en las aplicaciones de Kafka y AMQ Streams.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/developing-event-driven-applications-apache-kafka-and-red-hat-amq-streams-exam

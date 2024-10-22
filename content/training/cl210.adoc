@@ -1,0 +1,47 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenStack Administration II: Day 2 Operations for Cloud Operators (CL210)
+
+[.big]#*Descripción del curso*#
+
+*Desarrolle las habilidades avanzadas que le permitan realizar las operaciones del día 2 de Red Hat OpenStack Platform y gestionar la infraestructura de nube híbrida*
+
+El curso Red Hat OpenStack Administration II: Day 2 Operations for Cloud Operators (CL210) se diseñó para los operadores de nube, los administradores de servicios y los ingenieros de automatización que utilizan Red Hat OpenStack Platform para operar y gestionar un entorno completo de cloud computing privado e híbrido. Aprenderá a gestionar, supervisar y ajustar una infraestructura de Red Hat OpenStack Platform, así como a solucionar los problemas asociados a ella. El curso se centra en el uso de la interfaz de usuario de la línea de comandos de OpenStackClient para configurar los indicadores, las políticas y las arquitecturas, con el fin de admitir las aplicaciones empresariales de la nube y respaldar las operaciones diarias.
+
+El curso se basa en Red Hat OpenStack Platform 16.1 y Red Hat Enterprise Linux 8.2.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Gestión de la tecnología de organización en contenedores para los servicios overcloud
+* Indicadores para ajustar y controlar el rendimiento
+* Supervisión del flujo de red de Open Virtual Networking (OVN) y resolución de los problemas asociados a este sistema
+* Configuración del servicio de identidad mediante un almacén de Red Hat IdM externo
+* Gestión del plano de control central, incluido Pacemaker
+* Personalización de las imágenes con técnicas que se pueden adaptar a diversos casos prácticos
+* Gestión de los backends de almacenamiento en bloques y de objetos
+* Gestión de los nodos informáticos, lo que incluye los de ajuste e hiperconvergencia
+* Resolución de los problemas de Red Hat OpenStack Platform
+
+[.big]#*Público destinatario del curso*#
+
+* Operadores de nube que se encarguen de gestionar la automatización y las operaciones diarias
+* Arquitectos de infraestructura que estén interesados en el mantenimiento de una nube privada o híbrida de gran tamaño, o que se encarguen de esta tarea
+
+[.big]#*Requisitos previos para el curso*#
+
+* Es necesario tener las certificaciones https://www.redhat.com/es/services/certification/rhce[Red Hat Certified Engineer (RHCE)] o https://www.redhat.com/es/services/certification/rhcs-ansible-automation[Red Hat Certified Specialist in Ansible Automation]; o bien, demostrar que posee experiencia equivalente
+* Los candidatos que no hayan obtenido esta certificación o no cuenten con experiencia equivalente podrán https://skills.ole.redhat.com/[realizar una evaluación gratuita] para determinar si esta oferta es la más adecuada para sus habilidades.Debe haber 
+* realizar el curso https://www.redhat.com/es/services/training/cl110-red-hat-openstack-administration-i[Red Hat OpenStack Administration I: Core Operations for Domain Operators (CL110)] o demostrar que posee experiencia equivalente.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Este curso no supone requisitos especiales. Además, no hay aspectos técnicos que deba tener en cuenta.
+* No se admite el uso de dispositivos propios.
+* No necesita conexión a Internet.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/cl210-red-hat-openstack-administration

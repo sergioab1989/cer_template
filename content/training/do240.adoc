@@ -1,0 +1,44 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Cloud-native API Administration with Red Hat 3scale API Management (DO240)
+
+[.big]#*Descripción del curso*#
+
+*Gestione, rentabilice y proteja las API con Red Hat 3scale API Management*
+
+El curso práctico de laboratorio Build and Administer APIs with Red Hat 3scale API Management (DO240) ofrece a los ingenieros responsables de la confiabilidad del sitio, los desarrolladores y los administradores los conceptos básicos sobre la gestión de las API desarrolladas en la nube con Red Hat® 3scale API Management. Aprenderán a instalarlas, gestionarlas, rentabilizarlas, protegerlas y documentarlas.
+
+El curso se basa en Red Hat 3scale API Management 2.11.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* La modalidad del curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Comprender la arquitectura de 3scale API Management y las funciones principales.
+* Aprender las estrategias y los casos prácticos típicos de las API.
+* Instalar 3scale API Management en OpenShift.
+* Establecer y configurar planes de suscripción y límites de frecuencia.
+* Configurar y personalizar la puerta de enlace de la API con las políticas.
+* Supervisar y analizar el tráfico de la API.
+* Configurar y probar la detección de servicios de la API.
+* Configurar un portal para desarrolladores y rentabilizar las API.
+* Utilizar la función Single Sign-On (SSO) de Red Hat para configurar la seguridad de la API mediante tokens, pares de claves de la API, OAuth y OIDC.
+
+[.big]#*Público objetivo*#
+
+* Ingenieros de confiabilidad del sitio y administradores de OpenShift interesados en usar 3scale API Management para gestionar, supervisar, proteger y rentabilizar las API desarrolladas en la nube.
+
+[.big]#*Requisitos previos para el curso*#
+
+* Realizar nuestra https://skills.ole.redhat.com/[evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades.
+* Realizar el curso https://www.redhat.com/es/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster[Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster (DO280)] o demostrar que posee experiencia equivalente.
+* Estar familiarizado con las pruebas de la API de REST y los conceptos de seguridad, como las claves de la API, los tokens, OAuth y OIDC.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se requiere acceso a Internet.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do240-build-and-administer-apis-red-hat-3scale-api-management

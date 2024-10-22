@@ -1,0 +1,43 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat High Availability Clustering (RH436)
+
+[.big]#*Descripción del curso*#
+
+*Implemente los principales servicios de producción disponibles y confiables en un clúster de alta disponibilidad*
+
+En el curso Red Hat High Availability Clustering (RH436), aprenderá a implementar y gestionar clústeres de servidores y sistemas de almacenamiento compartido, los cuales proporcionan servicios de red de alta disponibilidad en un entorno empresarial importante. El curso, el cual se desarrollará durante cuatro días, está pensado para los administradores sénior de sistemas Linux, y hace especial hincapié en las prácticas de laboratorio.
+
+Los candidatos deberán configurar un clúster de sistemas que ejecutan el elemento Pacemaker del complemento Red Hat Enterprise Linux High Availability Add-On, e implementar servicios de Linux en ese clúster, como servidores web y bases de datos. También se abordarán los elementos de almacenamiento del clúster que pertenecen al complemento Resilient Storage Add-On. Las instalaciones y las aplicaciones que necesitan varios nodos del clúster pueden acceder al mismo almacenamiento de forma simultánea. Esto incluye grupos de volúmenes compartidos del gestor de volúmenes lógicos (LVM), Red Hat Global File System 2 (GFS2) y Device-Mapper Multipath.
+
+El curso se basa en Red Hat Enterprise Linux 8.3.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Instalación y configuración de un clúster de alta disponibilidad basado en Pacemaker
+* Creación y gestión de servicios de alta disponibilidad
+* Resolución de problemas comunes de los clústeres
+* Uso de un sistema de almacenamiento compartido (iSCSI) y configuración de múltiples rutas
+* Implementación del gestor de volúmenes lógicos (LVM) en configuraciones que reconocen los clústeres
+* Configuración de los sistemas de archivos GFS2 en un almacenamiento compartido por varios nodos
+
+[.big]#*Público objetivo*#
+
+* Administradores sénior de sistemas Linux que utilizan clústeres de alta disponibilidad y tecnologías de almacenamiento compartido con tolerancia a los errores, para aumentar la resistencia de los servicios de producción.
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidadesHaber presentado el examen
+* https://www.redhat.com/es/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam[Red Hat Certified System Administrator (RHCSA) Exam (EX200)] y haber asistido a los cursos relacionadosHaber rendido el examen
+* https://www.redhat.com/es/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux-9[Red Hat Certified Engineer (RHCE) (EX294)] y asistido a los cursos relacionados
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se requiere acceso a Internet.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh436-red-hat-enterprise-clustering-and-storage-management

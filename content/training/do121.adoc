@@ -1,0 +1,47 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Introduction to Microsoft Azure Red Hat OpenShift (DO121)
+
+[.big]#*Descripción del curso*#
+
+*Aprenda a realizar e implementar personalizaciones básicas en un clúster de Microsoft Azure Red Hat OpenShift, así como a acceder a ellas.*
+
+En el curso DO121, los operadores de plataformas aprenderán a preparar clústeres gestionados utilizando Microsoft Azure Red Hat OpenShift, y a realizar personalizaciones básicas del día 2 en ellos para integrar a los desarrolladores de aplicaciones y las aplicaciones.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* La modalidad de este curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Introducción a OpenShift gestionado
+* Identificar los requisitos previos para crear un clúster de Microsoft Azure Red Hat OpenShift
+* Acceder a un clúster de Microsoft Azure Red Hat OpenShift como administrador y desarrollador de autoservicio
+* Conectar un clúster de Microsoft Azure Red Hat OpenShift a Red Hat Services
+* Configurar clases de almacenamiento adicionales y el reenvío de registros a Azure Monitor
+* Crear conjuntos exclusivos de nodos y configurar el ajuste automático de los nodos
+
+[.big]#*Público objetivo*#
+
+* Especialistas en operaciones de TI, como administradores de sistemas, operadores de plataformas e ingenieros de nube.
+* Especialistas en infraestructura de aplicaciones y desarrollo, como ingenieros de confiabilidad del sitio e ingenieros de DevOps.
+
+[.big]#*Capacitación recomendada*#
+
+* Todos los estudiantes deben tener conocimientos sobre Microsoft Azure, lo cual incluye el funcionamiento y la gestión de los recursos informáticos, de almacenamiento y de red de Azure.
+* Se recomienda que, antes de realizar el curso DO121, los estudiantes que no estén familiarizados con Red Hat OpenShift realicen los siguientes cursos para adquirir las habilidades fundamentales de gestión de clústeres de Red Hat OpenShift:
+** https://www.redhat.com/es/services/training/red-hat-openshift-i-containers-kubernetes-exam[Red Hat OpenShift I: Containers & Kubernetes (DO180)]
+** https://www.redhat.com/es/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster[Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster (DO280)]
+* Se aconseja que los estudiantes con experiencia previa en la gestión de clústeres de Kubernetes realicen los cursos DO180 y DO280 antes de DO121; o bien, que adquieran las habilidades básicas para operar clústeres de Red Hat OpenShift utilizando los siguientes recursos gratuitos de Red Hat:
+** https://developers.redhat.com/developer-sandbox[Red Hat Developer Sandbox for OpenShift]
+** https://developers.redhat.com/learn/openshift[OpenShift and Kubernetes learning from Red Hat Developer]
+** https://www.redhat.com/es/services/training/do080-deploying-containerized-applications-technical-overview[Containers, Kubernetes and Red Hat OpenShift Technical Overview (DO080)]
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se requiere Internet para acceder a los servicios en la nube de Azure mediante el Portal y la CLI de Azure. También necesitará Internet para acceder a la consola Red Hat Hybrid Cloud Console y a los servicios en la nube de Red Hat asociados.
+* Los estudiantes deben poseer una cuenta de Azure activa con un método de pago asociado para los recursos de Azure que utilizan los clústeres de Microsoft Azure Red Hat OpenShift.
+* Los estudiantes deben tener una cuenta activa en el portal de clientes Red Hat o una https://developers.redhat.com/about[membresía gratuita del programa Red Hat Developer.]
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do121-introduction-microsoft-azure-red-hat-openshift-aro

@@ -1,0 +1,28 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Event-Driven Architecture with Apache Kafka and Red Hat OpenShift Application Services Technical Overview (AD082)
+
+[.big]#*Descripción del curso*#
+
+*Introducción para desarrolladores de aplicaciones sobre las ventajas de la arquitectura basada en eventos, Apache Kafka y Red Hat OpenShift Application Services*
+
+Event-Driven Architecture with Apache Kafka and Red Hat OpenShift Application Services Technical Overview (AD082) es un curso gratuito y en video que puede realizar cuando lo solicite. En él, se ofrece una introducción sobre los beneficios de utilizar una arquitectura basada en eventos y se demuestra cómo Red Hat Cloud Services, en especial Red Hat OpenShift Application Services, pueden simplificar el diseño, la implementación y el ajuste de la capacidad de las aplicaciones desarrolladas en la nube.
+
+[.big]#*Resumen del contenido del curso*#
+
+Los conocimientos básicos que habrán adquirido los estudiantes al finalizar el curso son:
+
+* La arquitectura basada en eventos (EDA) y sus beneficios. Entre los temas que abarca el curso, se incluyen la reducción de las conexiones directas, el ajuste de la capacidad y la resistencia.
+* La terminología de Apache Kafka, como clúster, agentes, temas, mensajes, particiones, productores y consumidores.
+* La forma en que los servicios Red Hat OpenShift Application Services pueden acelerar su proceso de adopción de una EDA.
+
+[.big]#*Público al que va dirigido el curso*#
+
+Desarrolladores de aplicaciones.
+
+[.big]#*Requisitos previos para el curso*#
+
+La realización de este curso no supone requisitos previos.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/ad082-event-driven-architecture-apache-kafka-red-hat-openshift-application-services-technical-overview

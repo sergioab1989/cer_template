@@ -1,0 +1,35 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Introduction to Red Hat OpenShift Service on AWS (ROSA) (DO120)
+
+[.big]#*Descripción general del curso*#
+
+*Preparación de un clúster de Red Hat OpenShift Service on AWS (ROSA)*:: 
+Cree un clúster de Red Hat OpenShift Service on AWS (ROSA) al que se pueda acceder a través de Internet.
+ ** *Introducción a los clústeres de OpenShift gestionados*
+** Describa la relación entre el equipo del cliente y el equipo de SRE de los proveedores de nube para administrar los clústeres de OpenShift gestionados.
+** *Requisitos previos para crear un clúster de ROSA*
+** Prepare una cuenta de AWS y una estación de trabajo de gestión para crear un clúster de ROSA.
+** *Creación de un clúster de ROSA*
+** Cree un clúster de ROSA al que se pueda acceder a través de Internet utilizando la CLI.
+** *Acceso a un clúster de ROSA como administrador*
+** Cree usuarios y contraseñas de administrador de clústeres de OpenShift para acceder a un clúster gestionado utilizando la CLI de OpenShift, la consola web de OpenShift y la CLI de Kubernetes.
+
+
+*Configuración de un clúster de Red Hat OpenShift Service on AWS (ROSA)*:: 
+Configure un clúster de Red Hat OpenShift Service on AWS (ROSA) para utilizarlo en la etapa de desarrollo.
+ ** *Configuración del acceso de autoservicio a un clúster de ROSA para desarrolladores*
+** Configure un proveedor de identidad que permita que los desarrolladores accedan a un clúster gestionado y a proyectos de autoservicio para implementar aplicaciones sin privilegios.
+** *Conexión de un clúster de ROSA a Red Hat Services*
+** Conecte un clúster gestionado a los servicios de nube de Red Hat y detalle los beneficios.
+** *Configuración de clases de almacenamiento adicionales*
+** Conecte las aplicaciones a los tipos de volumen de EBS que se ajusten a sus requisitos de costo y rendimiento.
+** *Creación de conjuntos exclusivos de nodos* 
+** Agregue grupos de nodos para ejecutar aplicaciones con diferentes tipos de instancias de EC2.
+** *Configuración del ajuste automático de los nodos*
+** Adapte un conjunto de nodos de forma automática según la carga de la aplicación.
+** *Configuración del reenvío de registros*
+** Reenvíe los registros del clúster y del pod a AWS CloudWatch.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/DO120-introduction-to-red-hat-openshift-service-on-aws

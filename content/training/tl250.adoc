@@ -1,0 +1,38 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Training: Open Practices for your DevOps Journey (TL250)
+
+[.big]#*Descripción del curso*#
+
+*Conozca las prácticas abiertas para realizar cambios graduales en los procesos que lo ayuden en su transformación de DevOps.*
+
+El curso Open Practices for your DevOps Journey (TL250) prepara a los estudiantes para que orienten a sus equipos en el proceso de identificación, planificación e implementación de proyectos en los que se desea llevar a cabo la transformación de DevOps, y para que participen en ellos. Una vez que finalicen el curso, contarán con una serie de prácticas específicas con las que podrán replantearse su forma de abordar los proyectos de los equipos interdisciplinarios. Gracias al uso de nuevas habilidades, su empresa podrá identificar con éxito el propósito del equipo, ajustarse a las opciones de los proyectos y aportar valor para lograr los resultados deseados.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* La modalidad del curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Prácticas de identificación que permiten ajustar el producto que se desea crear con el equipo o la persona que se encargará de hacerlo.
+* Prácticas de implementación que respaldan el diseño de métodos rápidos y efectivos para llevar a cabo los proyectos y reflexionar sobre ellos.
+* Prácticas fundamentales que permiten pasar de la identificación a la implementación de soluciones, y con las cuales puede dar prioridad y organizar el trabajo para que se lleve a cabo de forma lógica.
+* Prácticas esenciales que respaldan la colaboración y la comunicación entre los equipos, así como conceptos técnicos.
+* La manera de llevar a cabo la visualización del trabajo y la colaboración remota para admitir los métodos de distribución de DevOps.
+
+[.big]#*Público objetivo*#
+
+* Gestores de proyectos, especialistas en las metodologías ágiles y expertos en Scrum: personas que facilitan el proceso de planificación y ejecución de proyectos, y que desean ajustar sus enfoques e impulsar la adopción gradual de DevOps en sus empresas.
+* Administradores de sistemas, ingenieros de confiabilidad del sitio y desarrolladores de aplicaciones: los miembros de los equipos de proyectos técnicos que participan en las etapas de identificación, planificación y ejecución podrán agilizar la realización de estas prácticas con mayor detalle.
+* Equipo directivo, propietarios de los productos y principales partes interesadas: las personas con un gran interés en el éxito de los proyectos, o que se encarguen de supervisarlos y de establecer sus metas y objetivos, podrán entender mejor el proceso y se asegurarán de que se cumpla con sus requisitos.
+
+[.big]#*Capacitación recomendada*#
+
+* La realización de este curso no supone requisitos previos.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Este curso no incluye prácticas adicionales, pero es posible que deba usar un explorador de Internet para acceder a varias herramientas de colaboración, como Miro o Trello.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/red-hat-training-open-practices-your-devops-journey-tl250

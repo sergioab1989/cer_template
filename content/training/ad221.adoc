@@ -1,0 +1,32 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Cloud-native Integration with Red Hat Fuse and Apache Camel (AD221)
+
+[.big]#*Descripción del curso*#
+
+Introducción a Red Hat Fuse y Camel:: 
+Describa las arquitecturas de Red Hat Fuse y Camel y la forma en que se usan para integrar las aplicaciones.
+
+Creación de las rutas de Camel:: 
+Implemente las rutas de Camel y desarrolle procesadores personalizados.
+
+Implementación de los patrones de integración empresarial:: 
+Describa los patrones de integración empresarial más utilizados e impleméntelos con los elementos de Camel.
+
+Creación de pruebas para las rutas y el control de errores:: 
+Desarrolle rutas confiables mediante la creación de pruebas de unidad y simulacros, y el control de errores.
+
+Integración de los servicios mediante la mensajería asíncrona:: 
+Integre los microservicios con Apache Kafka y ActiveMQ (JMS).
+
+Implementación de las operaciones:: 
+Implemente las operaciones para ofrecer la integridad de los datos en el procesamiento de las rutas.
+
+Diseño y uso de los servicios de REST:: 
+Implemente y utilice los servicios de REST con Camel.
+
+Integración de los servicios originales de la nube:: 
+Implemente los microservicios de la nube basados en las rutas de Camel y los elementos de Camel K en un clúster de OpenShift.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/ad221-cloud-native-integration-with-red-hat-fuse

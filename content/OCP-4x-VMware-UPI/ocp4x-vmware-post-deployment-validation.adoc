@@ -1,0 +1,189 @@
+= Verificación del entorno DR posterior a la implementación
+
+==  Estado de Nodos, MachineConfigPool y Cluster Operators
+
+Evidencia del estado de los nodos, los MachineConfigPools y Operadores del cluster.
+
+.Nodes
+[source,bash]
+----
+$ oc get nodes
+
+
+----
+
+.MCP
+[source,bash]
+----
+$ oc get mcp
+
+
+----
+
+.Cluster Operators
+[source,bash]
+----
+$ oc get co
+
+
+----
+
+.Nodos por roles
+[source,bash]
+----
+# Nodos app
+$ oc get nodes -l node-role.kubernetes.io/app
+
+# Nodos integracion
+oc get nodes -l node-role.kubernetes.io/integracion
+
+----
+
+== ETCD disk performance
+
+En el siguiente procedimiento para la validación del performance de discos de la base de datos ETCD se observa el correcto funcionamiento del mismo.
+
+.ETCD
+[source,bash]
+----
+# Agregar a la variable master el nombre de uno de los nodos
+$ master=$(oc get nodes --selector='node-role.kubernetes.io/master' -o jsonpath='{.items[0].metadata.name }')
+
+$ oc debug node/$master
+
+# Dentro del pod de debug ejecutar lo siguiente para disponibilizar los comandos del nodo
+sh-4.4# chroot /host
+
+# Prueba de performance de disco
+sh-4.4#  podman run --volume /var/lib/etcd:/var/lib/etcd:Z quay.io/openshift-scale/etcd-perf
+
+SALIDA
+----
+
+== Almacenamiento persistente de la plataforma
+
+Las siguientes evidencias muestran el estado actual de los StorageClasses de la plataforma, los volúmenes persistentes (PVs) y las reclamaciones a volúmenes persistentes (PVCs) creados a la fecha de entrega del cluster.
+
+.Storage Class
+[source,bash]
+----
+$ oc get sc
+
+----
+
+.Persistent Volumes
+[source,bash]
+----
+$ oc get pv
+
+----
+
+.Persistent Volumes
+[source,bash]
+----
+$ oc get pvc -A
+
+----
+
+== Configuración de la sincronización de la hora en los nodos RHCOS
+
+La evidencia de aplicación de la sincronización de hora de los nodos se muestra a continuación.
+
+[source,bash]
+----
+$ for x in $(oc get nodes --no-headers -o wide| awk '{print $6}') ; do ssh $x -l core -i /root/.ssh/id_rsa_ocp "chronyc sources"; done
+
+
+----
+
+== Configuración de la zona horaria de los nodos de RHCOS
+
+A configuración se evidencia la configuración de la zona horaria de los nodos.
+
+[source,bash]
+----
+$ for x in $(oc get nodes --no-headers -o wide| awk '{print $6}') ; do ssh $x -l core -i /root/.ssh/id_rsa_ocp "echo && hostname && timedatectl| grep zone"; done
+
+
+----
+
+== Ingress Controller
+
+A continuación se evidencia el estado de los PODs del Ingress Controller o Routers.
+
+
+[source,bash]
+----
+$ oc get pod -o wide -n openshift-ingress
+
+----
+
+== Monitoring
+
+Las siguiente evidencia muestra el estado del stack del monitoreo de la plataforma.
+
+[source,bash]
+----
+$ oc get pod,pvc -o wide -n openshift-monitoring
+
+
+----
+
+== OpenShift Logging
+
+Las siguiente evidencia muestra el estado del stack del logging de la plataforma.
+
+[source,bash]
+----
+$ oc get pod,pvc -o wide -n openshift-logging
+
+
+----
+
+== Registry
+
+El registry fue implementado con una única réplica.
+
+[source,bash]
+----
+$ oc get pods,pvc -o wide -n openshift-image-registry
+
+----
+
+
+
+== Autenticación de usuarios de OpenShift
+
+A continuación se muestra los usuarios autenticados y los grupos en OCP, a la fecha de creación de este documento.
+
+[source,bash]
+----
+$ oc get users,groups
+
+----
+
+== Openshift Data Foundation
+
+Revisión de stack de storage configurado con Openshift Data Foundation
+
+.Estado pods en openshift-storage
+[source,bash]
+----
+$ oc get pods -o wide -n openshift-storage
+
+
+----
+
+
+.PersistenVolumeClaim
+[source,bash]
+----
+oc get pvc -n openshift-storage
+
+----
+
+.PersistentVolume
+[source,bash]
+----
+
+----

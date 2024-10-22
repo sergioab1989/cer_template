@@ -1,0 +1,41 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Building Resilient Microservices with Istio and Red Hat OpenShift Service Mesh (DO328)
+
+[.big]#*Descripción del curso*#
+
+*Controle, gestione, rastree, supervise y pruebe los microservicios con Red Hat OpenShift Service Mesh*
+
+En el curso Building Resilient Microservices with Istio and Red Hat OpenShift Service Mesh (DO328), los estudiantes descubren los conceptos básicos de Red Hat OpenShift Service Mesh y aprenden sobre la instalación, la supervisión, la resistencia y la seguridad de los servicios con este producto.
+
+Red Hat OpenShift diseñó una plataforma multiempresa que permite implementar y ajustar la capacidad de las aplicaciones de microservicios de manera eficiente y constante. Sin embargo, las arquitecturas crecen y se tornan más complejas, por lo que es cada vez más difícil definir la manera en que los servicios interactúan entre sí. Red Hat OpenShift Service Mesh comprende tres productos (Istio, Jaeger y Kiali) que ofrecen una red de confianza cero para gestionar la interacción segura entre los servicios, permiten realizar un seguimiento de ellos y crean una representación visual de las vías de comunicación.
+
+El curso se basa en Red Hat OpenShift® Container Platform 4.6 y Red Hat OpenShift Service Mesh 2.0.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan entornos virtuales.
+
+*Nota:* El curso se ofrece como clase virtual de cuatro días o en la modalidad autorregulada. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Instalar Red Hat OpenShift Service Mesh en un clúster de OpenShift
+* Implementar estrategias de lanzamiento controlando el tráfico de los servicios
+* Desarrollar la resistencia de los servicios con el equilibrio de carga y la tolerancia a fallos
+* Evaluar la resistencia de los servicios con pruebas de caos
+* Aplicar la seguridad en los servicios
+* Observar, medir y rastrear el tráfico de la red con OpenShift Service Mesh
+
+[.big]#*Público destinatario del curso*#
+
+El curso está diseñado para los desarrolladores que quieren implementar, gestionar y proteger las aplicaciones de microservicios en Red Hat OpenShift.
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Se recomienda asistir al curso https://www.redhat.com/es/services/training/red-hat-cloud-native-microservices-development-quarkus-do378[Red Hat Cloud-native Microservices Development with Quarkus (DO378)] o demostrar la experiencia equivalente en el diseño de aplicaciones de microservicios, aunque no es obligatorio.
+* Se recomienda especialmente asistir a los cursos https://www.redhat.com/es/node/212491[Red Hat OpenShift I: Containers & Kubernetes (DO180)] y https://www.redhat.com/es/services/training/red-hat-openshift-developer-ii-building-and-deploying-cloud-native-applications[Red Hat OpenShift Development II: Containerizing Applications (DO288)], y aprobar el examen https://www.redhat.com/es/services/training/ex288-red-hat-certified-openshift-application-developer-exam[Red Hat Certified Specialist in OpenShift Application Development Exam (EX288)], o bien contar con experiencia básica en OpenShift. 
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do328-building-resilient-microservices-with-istio-and-red-hat-openshift-service-mesh

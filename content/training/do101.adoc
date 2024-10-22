@@ -1,0 +1,21 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Introduction to OpenShift Applications (DO101)
+
+[.big]#*Descripción del curso*#
+
+*Configuración del entorno de desarrollo de aplicaciones en la nube*:: 
+Configure un entorno para desarrolladores con un control integrado y moderno de versiones y del entorno.
+*Implementación de aplicaciones en Red Hat OpenShift Container Platform*:: 
+Implemente una aplicación en OpenShift.
+*Configuración de compilaciones de aplicaciones en OpenShift*:: 
+Gestione las compilaciones de aplicaciones en Red Hat OpenShift Container Platform.
+*Expansión de aplicaciones en OpenShift*:: 
+Expanda y pruebe una aplicación con Red Hat OpenShift Container Platform.
+*Solución de problemas de aplicaciones en OpenShift*:: 
+Identifique y resuelva problemas comunes en Red Hat OpenShift Container Platform.
+
+*Nota:* La descripción del curso está sujeta a cambios en función del avance de la tecnología y a medida que la naturaleza de las tareas fundamentales evolucione. Si tiene dudas o necesita confirmación sobre cierto objetivo o tema concreto, comuníquese con un https://www.redhat.com/es/services/training-and-certification/contact-us[especialista en capacitación].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do101-introduction-openshift-applications

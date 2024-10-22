@@ -1,0 +1,63 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Python Programming with Red Hat (AD141)
+
+[.big]#*Descripción del curso*#
+
+*Programación en Python para principiantes*
+
+Python es un lenguaje de programación popular que utilizan los administradores de sistemas, los analistas de datos y los desarrolladores para crear aplicaciones web, personalizar módulos de Red Hat Ansible Automation, realizar análisis estadísticos y entrenar modelos de inteligencia artificial/aprendizaje automático. El curso realiza una introducción al lenguaje Python y presenta algunos conceptos básicos: flujo de control, bucles, estructuras de datos, funciones, E/S de archivos, expresiones regulares, conversión de JSON y depuración. El curso se basa en Python 3 y RHEL 9.0.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* La modalidad del curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#**#Resumen del contenido del curso
+
+
+
+* Aprender los conceptos básicos de la sintaxis, las funciones y los tipos de datos de Python
+
+* Depurar scripts de Python usando el depurador de Python (pdb)
+
+* Usar estructuras de datos de Python, como diccionarios, conjuntos, tuplas y listas, para manejar datos compuestos
+
+* Aprender sobre la programación orientada a objetos en Python y el manejo de excepciones
+
+* Aprender a leer y escribir archivos en Python y convertir datos de JSON
+
+* Usar potentes expresiones regulares en Python para manipular texto
+
+* Estructurar de manera efectiva grandes programas de Python usando módulos y espacios de nombres
+
+* Usar bibliotecas de terceros con la herramienta pip de la CLI
+
+
+[.big]#**#Público destinatario del curso
+
+
+
+* Administradores de sistemas y personal de DevOps que deseen usar Python para automatizar las tareas del sistema operativo
+
+* Desarrolladores de otros lenguajes de programación que quieran aprender a usar Python para escribir aplicaciones
+
+* Especialistas en inteligencia artificial/aprendizaje automático, analistas de datos e ingenieros que deseen usar Python para el análisis de datos y el aprendizaje automático
+
+
+[.big]#**#Requisitos previos para el curso
+
+
+
+* La realización de este curso no supone requisitos previos.
+
+
+[.big]#**#Aspectos tecnológicos que debe tener en cuenta
+
+
+
+* Se requiere acceso a Internet.
+
+* Se proporcionará una estación de trabajo de RHEL en la nube. Los estudiantes pueden optar por instalar Python en su propia estación de trabajo y ejecutar los ejercicios de laboratorio de forma local; sin embargo, Red Hat no solucionará los problemas de dicho entorno.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/ad141-red-hat-training-presents-introduction-to-python-programming

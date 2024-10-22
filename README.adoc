@@ -1,0 +1,135 @@
+// please don't rename these in the template - mth@redhat.com
+
+include::vars/render-vars.adoc[]
+include::vars/document-vars.adoc[]
+include::vars/redhat-vars.adoc[]
+include::vars/customer-vars.adoc[]
+include::locale/attributes-es_US.adoc[]
+
+// please don't rename these in the template - mth@redhat.com
+
+include::content/000_vars.adoc[]
+
+// Adding logo to the coverpage.
+// Change the pdfwidth to improve embedding
+ifeval::["{customerlogo}" != "empty"]
+:title-logo-image: image:{customerlogo}[pdfwidth=50%,align=center]
+endif::[]
+
+= {titulo}: {cliente} - {descripción}
+
+<<<
+toc::[]
+
+<<<
+include::content/aprobado-legalmente/prefacio.adoc[leveloffset=+1]
+
+<<<
+== Información del Proyecto
+
+=== Autor
+include::content/020_autor.adoc[leveloffset=+3]
+
+=== Propietario
+include::content/030_propietario.adoc[leveloffset=+3]
+
+=== Instrucciones
+include::content/040_conveciones-documentos.adoc[leveloffset=+3]
+
+=== Copias adicionales
+include::content/050_copias-adicionales.adoc[leveloffset=+3]
+
+[#participants]
+=== Participantes
+
+==== Red Hat
+include::content/060_participantes-red-hat.adoc[leveloffset=+4]
+
+==== {cliente}
+include::content/070_participantes-clientes.adoc[leveloffset=+4]
+
+<<<
+== Resumen Ejecutivo
+include::content/080_resumen-ejecutivo.adoc[leveloffset=+2]
+
+<<<
+== Visión general
+
+=== Acerca de {cust}
+include::content/090_sobre-el-cliente.adoc[leveloffset=+3]
+
+//=== Documentos entregados por {cust}
+//include::content/100_documentos-dado-cliente.adoc[leveloffset=+3]
+
+=== Propósito y enfoque
+include::content/110_proposito-y-enfoque.adoc[leveloffset=+3]
+
+//=== Resumen del alcance
+//include::content/120_resumen-del-alcance.adoc[leveloffset=+3]
+
+<<<
+== Detalles de implementación
+
+//=== Diario
+//include::content/130_diario.adoc[leveloffset=+3]
+
+=== Arquitectura
+include::content/140_architectura.adoc[leveloffset=+3]
+
+<<<
+=== Implementación técnica
+include::content/150_implementacion.adoc[leveloffset=+3]
+
+<<<
+=== Validación
+include::content/160_validacion.adoc[leveloffset=+3]
+
+<<<
+=== Traspaso de conocimiento
+include::content/170_conocimiento.adoc[leveloffset=+3]
+
+<<<
+//=== Incidencias, resoluciones y recomendaciones
+//include::content/180_problemas_resoluciones.adoc[leveloffset=+3]
+
+<<<
+== Recomendaciones
+
+=== Recomendaciones técnicas
+include::content/190_recomendaciones-tecnicales.adoc[leveloffset=+3]
+
+=== Formación relevante
+include::content/200_recomendaciones-entrenamiento-relevante.adoc[leveloffset=+3]
+
+//=== Otras recomendaciones
+//include::content/210_otra-recomendaciones.adoc[leveloffset=+3]
+
+<<<
+[appendix]
+== Glosario
+include::content/220_glosario.adoc[leveloffset=+2]
+
+<<<
+// It is expected that anyone using additional-appendices.adoc will include one or more [appendix] blocks
+include::content/230_apendice_adicionales.adoc[leveloffset=+1]
+
+//<<<
+//[appendix]
+//== Enlaces aplicables
+//include::content/240_enlaces-aplicable.adoc[leveloffset=+2]
+
+//<<<
+//[appendix]
+//== Declaración del trabajo
+//include::content/250_declaracion-de-trabajo.adoc[leveloffset=+2]
+
+<<<
+[appendix]
+== Revisiones
+include::content/260_revisiones.adoc[leveloffset=+2]
+
+<<<
+include::content/aprobado-legalmente/subscripciones.adoc[leveloffset=+1]
+
+<<<
+include::content/aprobado-legalmente/soporte.adoc[leveloffset=+1]

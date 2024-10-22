@@ -1,0 +1,114 @@
+////
+Purpose
+-------
+To define acronyms and terms.
+
+Sample
+------
+
+.General Terminology
+[cols="3,8",options=header]
+|===
+|Term|Definition
+
+// Term
+|RHEL
+
+// Definition
+|Red Hat Enterprise Linux
+
+
+// Term
+|RHC
+
+// Definition
+|Red Hat Consulting
+
+|===
+
+////
+
+.Terminología general
+[cols="3,8",options=header]
+|===
+|Término|Definición
+
+// Term
+|RHC
+// Definition
+|Red Hat Consulting, capaz de brindar servicios de ingeniería y análisis en el lugar y de forma remota para la generación de soluciones.
+
+
+// Term
+|GSS (también conocidos como CEE)
+// Definition
+|Red Hat Global Support Services (“support”) aka “Customer Experience and Engagement”. Servicios de Soporte Global de Red Hat (“soporte”), también conocidos como “Customer Experience and Engagement” (Experiencia y Compromiso del Cliente), capaces de solucionar errores, problemas de configuración y dirigir mejoras (RFE).
+
+// Term
+|RFE
+// Definition
+|Request for Enhancement. Solicitud de Mejoras. Solicitudes de clientes o del área de ingeniería de Red Hat de una nueva funcionalidad o comportamiento de un producto. Generalmente, se les realiza un seguimiento interno como BZ.
+
+// Term
+|BZ
+// Definition
+|Bugzilla. En este contexto se refiere a la instancia específica de Bugzilla operada por Red Hat para realizar el seguimiento de errores, RFE e información de versiones. También puede referirse a un error numerado específico de Bugzilla cuando aparece junto con un artículo o número definido.
+
+
+// Term
+|Upstream
+// Definition
+|Se refiere al origen del código fuente del proceso de desarrollo de software open source junto con la colaboración de la comunidad open source, la documentación y las pruebas correspondientes.
+
+
+// Term
+|Downstream
+// Definition
+|Se refiere al producto compatible y capaz de implementarse (binario firmado) de un proceso de desarrollo de software open source junto con la errata, los artefactos de soporte basados en eventos, la ingeniería de producto y la documentación específica del producto correspondientes.
+
+// Term
+|Caso
+// Definition
+|Caso de soporte, Caso RH, un caso de soporte de Red Hat, solicitado y priorizado por el cliente y luego respondido directamente por personal de GSS. Este número de caso difiere del número de error BZ (la mayoría de los casos de soporte de RH no tienen un BZ correspondiente y viceversa).
+
+
+// Term
+|TAM
+// Definition
+|Technical Account Manager. Gerente de Cuentas Técnicas. Un gestor de recursos de soporte de GSS con conocimiento e información específicos del sitio, que impulsa la resolución.
+
+
+// Term
+|KB
+// Definition
+|Knowledge Base. Elemento de la Base de Conocimientos, guía práctica breve y específica disponible en el portal de clientes.
+
+
+// Term
+|RHEL
+// Definition
+|Red Hat Enterprise Linux
+
+
+// Term
+|RPM
+// Definition
+|RPM Package Manager (acrónimo recursivo)
+
+
+// Term
+|DNS
+// Definition
+|Domain Name Service. Servicio de nombre de dominio
+
+
+// Term
+|FQDN
+// Definition
+|Fully Qualified Domain Name. Nombre de Dominio Completo.
+
+|RHBK
+|Red Hat Build of Keycloak
+
+
+|===

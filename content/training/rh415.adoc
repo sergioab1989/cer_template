@@ -1,0 +1,43 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Security: Linux in Physical, Virtual, and Cloud (RH415)
+
+El curso "Red Hat Security: Linux in Physical, Virtual, and Cloud" (RH415) está diseñado para el personal de seguridad y administración de sistemas que gestionan el funcionamiento seguro de los sistemas informáticos que ejecutan Red Hat Enterprise Linux en hardware físico, máquinas virtuales o como instancias de nube, tanto en los centros de datos privados como en las plataformas de nube pública.
+
+[.big]#*Descripción del curso*#
+
+* El mantenimiento de la seguridad de los sistemas informáticos es un proceso de gestión de riesgos que implica implementar procesos y estándares con el respaldo de las tecnologías y las herramientas. El curso "Red Hat Security: Linux in Physical, Virtual, and Cloud" (RH415) está diseñado para los administradores de seguridad y los de sistemas que necesitan gestionar el funcionamiento seguro de los servidores que ejecutan Red Hat Enterprise Linux, ya sea que estén implementados en hardware físico, máquinas virtuales o como instancias de nube. Aprenderá sobre las tecnologías y las herramientas que se pueden utilizar para ayudarlo a implementar los requisitos de seguridad y cumplir con ellos, lo cual incluye el subsistema de auditoría del kernel, AIDE, SELinux, OpenSCAP y SCAP Workbench, USBGuard, la autenticación PAM y el cifrado de dispositivos basado en la red. Con OpenSCAP, Red Hat Insights, Red Hat Satellite y Red Hat Ansible Automation Platform, aprenderá a supervisar el cumplimiento normativo y a identificar, priorizar y resolver problemas de manera anticipada. Obtendrá una introducción básica sobre cómo Red Hat Ansible Automation Platform automatiza la implementación de la corrección de errores en los sistemas mediante el uso de los playbooks de Ansible de OpenSCAP o Red Hat Insights.
+* Este curso se basa en RHEL 9.2, Ansible Core 2.14, Red Hat Ansible Automation Platform 2.4, Satellite 6.14 y OpenSCAP 1.3.7.
+* El mantenimiento de la seguridad de los sistemas informáticos es un proceso de gestión de riesgos que implica implementar procesos y estándares con el respaldo de las tecnologías y las herramientas. En este curso, aprenderá sobre los recursos que pueden utilizarse para implementar requisitos de seguridad y cumplir con ellos.
+* Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+* *Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulada. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+
+[.big]#*Resumen del curso*#
+
+* Gestión del cumplimiento con OpenSCAP
+* Habilitación de SELinux en un servidor desde un estado deshabilitado, análisis básico de la política del sistema y reducción de los riesgos con técnicas avanzadas de SELinux
+* Identificación y resolución de los problemas de manera anticipada con Red Hat Insights
+* Supervisión de la actividad y los cambios en un servidor con Linux Audit y AIDE
+* Protección de los datos contra riesgos con USBGuard y el cifrado de almacenamiento
+* Gestión de los controles de autenticación con PAM
+* Aplicación manual de los playbooks de Ansible provistos para automatizar la disminución de los problemas de seguridad y cumplimiento normativo
+* Ajuste de la gestión de OpenSCAP y Red Hat Insights con Red Hat Satellite y Red Hat Ansible Automation Platform
+
+[.big]#*Público al que va dirigido el curso*#
+
+* *Administrador del sistema*: es el responsable de brindar soporte a la infraestructura física y virtual, los sistemas y los servidores de la empresa.
+* *Especialista en seguridad de la TI/cumplimiento y auditoría*: es el responsable de garantizar que el entorno tecnológico esté protegido contra los ataques y cumpla con las normas y los reglamentos de seguridad y privacidad.
+* *Arquitecto de automatización*: es el ingeniero o arquitecto responsable del desarrollo de la automatización de la empresa y de la optimización de las herramientas y la infraestructura de la nube para lograr los objetivos de automatización.
+
+[.big]#*Capacitación recomendada*#
+
+* https://skills.ole.redhat.com/en[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Obtener la certificación Red Hat Certified Engineer (EX294 / RHCE) o tener conocimientos y experiencia equivalentes en Red Hat Enterprise Linux.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Si el instructor tiene la intención de realizar una demostración de Red Hat Insights, se requiere acceso a Internet y los derechos correspondientes.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh415-red-hat-security-linux-physical-virtual-and-cloud

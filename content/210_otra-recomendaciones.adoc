@@ -1,0 +1,41 @@
+////
+Proposito
+-------
+This section should provide recomendación which are not directly related to
+the technologies deployed by the engagement or training related (as those each
+have their own place).  One of the main goals of the Red Hat Services
+organization is to earn the status of trusted adviser with each customer.
+
+Candidates for recomendación:
+- Organizational/Policy Suggestions
+- Modernization Opportunities
+- Upgrade recomendación
+- General Security improvements (not specific to the products being delivered)
+
+
+Ejemplo
+
+== Service Account Credentials vs. Personal Credentials
+=== Indication
+CloudForms has a documented requirement for a root-level, unrestricted administrative account to properly manage VMware.  {{cust}} has elected to attempt to use a limited-access service account for CloudForms citing security concerns and an internal security policy intended to govern individual user accounts.
+
+=== recomendación
+Cultivate a security posture specific to automation tools such as CloudForms as distinct from a security policy intended to govern individual user accounts.
+
+
+== Ansible Vault
+=== Indication
+While configuration of Ansible Tower was outside the scope of this RHV engagement, it was observed that playbooks were being created with plain text passwords inline.
+
+=== recomendación
+Consider implementing Ansible Vault to protect passwords at rest.
+
+== Automation Adoption Program
+=== Indication
+Although automation was not part of this delivery, several challenges encountered were related to the turnaround time required to get updates performed manually via BASH scripts.
+=== recomendación
+Many of the challenges {{cust}} seems to be facing may be alleviated by the introduction of an automation platform such as Ansible.  Consider speaking with your Red Hat representative about the Automation Adoption program as it seems it would be a good fit here.
+
+////
+
+#TODO#

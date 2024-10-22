@@ -1,0 +1,11 @@
+////
+Proposito
+-------
+Provide instructions for requesting additional copies of this document.
+
+Ejemplo
+------
+To request additional copies of this Consulting Engagement Report, please contact the Red Hat Project Manager identified in <<Participantes>> section or your current Red Hat account team.
+////
+
+Para solicitar copias adicionales de este Consulting Engagement Report, póngase en contacto con el Gerente de Proyecto de Red Hat que se indica en la sección <<Participantes>> o con su equipo de cuenta de Red Hat.

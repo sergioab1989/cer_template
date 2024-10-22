@@ -1,0 +1,40 @@
+////
+Proposito
+-------
+This section serves as a preamble to the Consulting Engagement Report.
+
+Copyright, confidentiality and disclaimer have legal implications and the
+wording so far established has been reviewed and approved by the legal
+department.  Do not alter the populated headings of this section without prior
+approval from legal.
+
+Sample
+------
+N/A
+
+////
+
+= Prólogo
+
+== Confidencialidad, copyright y cláusula de exención de responsabilidad
+Este es un documento orientado al cliente elaborado por Red Hat, Inc. para {customer} (el “Cliente”).
+
+Copyright (C) {docyear} Red Hat, Inc. Todos los derechos reservados. Queda prohibida la reproducción o utilización de cualquier porción de este trabajo amparado por este copyright de cualquier forma o por cualquier medio (sea gráfico, electrónico o mecánico, incluido el fotocopiado, el registro, la grabación en cinta o los sistemas de almacenamiento y recuperación de información) sin el permiso por escrito de Red Hat, excepto en la medida en que sea necesario compartir esta información con las partes confidenciales antedichas.
+
+Este documento no constituye una cotización y no incluye ningún compromiso vinculante por parte de Red Hat. De resultar aceptable, se podrá emitir una cotización formal a solicitud, la cual incluirá el alcance del trabajo, el costo y cualquier requisito del cliente que sea necesario.
+
+Este Consulting Engagement Report (CER) contiene Información Confidencial de Red Hat e Información Confidencial del Cliente sujetas a los términos de confidencialidad del acuerdo que rige los Servicios provistos por Red Hat.
+
+
+== Destinatarios
+Este documento está dirigido al personal técnico del Cliente responsable del entorno.
+
+== Antecedentes adicionales y documentos relacionados
+Este documento no contiene información pormenorizada sobre la instalación u otras tareas dado que dicha información figura en la documentación respectiva disponible en http://access.redhat.com/. Los enlaces a los documentos correspondientes se brindarán cuando corresponda.
+
+== Scripts y playbooks
+Todos los scripts se brindan en la condición en que se encuentran, sin ninguna clase de soporte o garantía. +
+El cliente podrá modificar todos los scripts provistos a discreción.
+
+== Encuesta de satisfacción del cliente (CSat)
+Red Hat está comprometido con brindar una experiencia de calidad superior al cliente y mejorar continuamente los servicios que provee. Su opinión es el factor más importante para determinar si hemos alcanzado sus expectativas y qué podemos hacer para mejorar. Una vez finalizado el proyecto, recibirá una encuesta de satisfacción del cliente. Rogamos que le dedique unos minutos y que nos comparta una impresión honesta de su experiencia. Mientras tanto, si existe alguna inquietud, cuestión o problema en relación con el proyecto, no dude en contactarse con {rhprojectmanager}.

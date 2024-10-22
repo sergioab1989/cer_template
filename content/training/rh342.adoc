@@ -1,0 +1,33 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Enterprise Linux Diagnostics and Troubleshooting (RH342)
+
+[.big]#*Descripción del curso*#
+
+Introducción a la solución de problemas:: 
+Describa una estrategia generalizada para la solución de problemas.
+Medidas preventivas para evitar problemas pequeños:: 
+Evite que los problemas pequeños se conviertan en grandes problemas con técnicas preventivas de administración de sistemas.
+Resolución de los problemas de arranque:: 
+Identifique y resuelta los problemas que pueden afectar la capacidad de arranque de un sistema.
+Identificación de los problemas de hardware:: 
+Identifique los problemas de hardware que pueden afectar la capacidad de funcionamiento de un sistema.
+Resolución de los problemas de almacenamiento:: 
+Identifique y solucione los problemas relacionados con el almacenamiento.
+Resolución de los problemas de RPM:: 
+Identifique y solucione los problemas relacionados con el subsistema de gestión de paquetes y con su uso.
+Resolución de los problemas de redes:: 
+Identifique y solucione los problemas de conectividad de la red.
+Resolución de los problemas relacionados con las aplicaciones:: 
+Depure los problemas relacionados con las aplicaciones.
+Gestión de los problemas de seguridad:: 
+Identifique y solucione los problemas relacionados con los subsistemas de seguridad.
+Resolución de los problemas del kernel:: 
+Identifique los problemas del kernel y ayude a Soporte de Red Hat a resolverlos.
+Repaso integral de Red Hat Enterprise Linux Diagnostics and Troubleshooting:: 
+Ponga en práctica y demuestre los conocimientos y las habilidades adquiridos en Red Hat Enterprise Linux Diagnostics and Troubleshooting.
+
+*Nota:* La descripción del curso está sujeta a cambios según avance la tecnología y evolucione la naturaleza de las tareas fundamentales. Si tiene dudas o necesita confirmación sobre cierto objetivo o tema concreto, https://www.redhat.com/training/contact[comuníquese nosotros].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh342-red-hat-enterprise-linux-diagnostics-and-troubleshooting

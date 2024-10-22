@@ -1,0 +1,48 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications (DO288)
+
+[.big]#*Descripción del curso*#
+
+*Diseñe, desarrolle e implemente aplicaciones en contenedores en Red Hat OpenShift*
+
+En el curso Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications (DO288), aprenderá a diseñar, compilar e implementar aplicaciones de software en contenedores en un clúster de OpenShift.
+
+Ya sea que busque trasladar las aplicaciones actuales o diseñar otras directamente en los contenedores, aprenderá a aumentar la productividad de los desarrolladores con Red Hat® OpenShift Container Platform, una plataforma de aplicaciones en contenedores que permite que las empresas gestionen las implementaciones de los contenedores y utilicen Kubernetes para ajustar la capacidad de sus aplicaciones.
+
+Podrá poner en práctica las habilidades que adquiera en este curso con todas las versiones de Red Hat OpenShift, como Red Hat OpenShift on AWS (ROSA), Azure Red Hat OpenShift (ARO) y Red Hat OpenShift Container Platform.
+
+El curso se basa en Red Hat OpenShift 4.14.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* Este curso se ofrece en modalidad presencial con una duración de cuatro días, en modalidad virtual con una duración de cinco días, o como curso autorregulado. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Conocer las funciones para los desarrolladores en la consola web de Red Hat OpenShift
+* Diseñar y publicar imágenes de contenedores para Red Hat OpenShift
+* Gestionar las implementaciones de contenedores en Red Hat OpenShift
+* Diseñar e implementar aplicaciones en varios contenedores en Red Hat OpenShift
+* Implementar las aplicaciones en varios contenedores con las plantillas Charts de Helm y Kustomize
+* Crear comprobaciones de estado para supervisar y mejorar la confiabilidad de las aplicaciones
+* Crear flujos de trabajo de CI/CD con Red Hat OpenShift Pipelines
+
+[.big]#*Público al que va dirigido el curso*#
+
+* Desarrolladores de software
+* Arquitectos de software
+
+[.big]#*Recomendaciones para el curso*#
+
+* https://skills.ole.redhat.com/[Realice una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades.
+* Complete el curso https://www.redhat.com/es/services/training/do188-red-hat-open-shift-development-introduction-containers-with-podman[Red Hat OpenShift I: Containers & Kubernetes (DO188)] o cuente con los conocimientos equivalentes.
+* Se recomienda tener la acreditación Red Hat Certified System Administrator (RHCSA) u otras superiores, porque resultan útiles para la navegación y el uso de la línea de comandos, pero no son obligatorias.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Este curso utiliza un entorno de laboratorio que se implementa en la nube de Red Hat Online Learning (ROL).
+* Debe tener acceso a Internet para ejecutar los ejercicios y los laboratorios.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do288-red-hat-openshift-development-i-containerizing-applications

@@ -1,0 +1,38 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Developing Event-Driven Applications with Apache Kafka and Red Hat AMQ Streams (AD482)
+
+[.big]#*Descripción del curso*#
+
+*Desarrolle y adapte las aplicaciones de microservicios basadas en eventos, y solucione los problemas asociados a ellas.*
+
+Aprenda a utilizar Kafka y AMQ Streams para diseñar, desarrollar y probar aplicaciones basadas en eventos. Los microservicios basados en eventos se pueden ampliar de manera masiva, almacenan y transmiten los datos de los procesos, y brindan información con baja latencia a los clientes. Este curso está dirigido a los desarrolladores de aplicaciones y se basa en Red Hat AMQ Streams 1.8 y Red Hat OpenShift Container Platform 4.6.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan entornos virtuales.
+
+*Nota:* El curso se ofrece como clase virtual de cuatro días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del curso*#
+
+* Descripción de los conceptos básicos de Kafka y su arquitectura
+* Desarrollo de aplicaciones con la API de Kafka Streams
+* Integración de aplicaciones con Kafka Connect
+* Detección de los cambios en la base de datos con Debezium
+* Resolución de los problemas comunes de transmisión de las aplicaciones
+
+[.big]#*Público destinatario del curso*#
+
+Desarrolladores de aplicaciones con experiencia en los microservicios
+
+[.big]#*Requisitos previos para el curso*#
+
+* Se necesita experiencia en el desarrollo y el diseño de aplicaciones de microservicios, como la que se adquiere con el curso DO378, o experiencia equivalente.
+* Se recomienda tener experiencia en OpenShift, aunque no es obligatorio.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se proporcionará el entorno del aula donde deberá usar su propio dispositivo con acceso al clúster compartido.
+* También habrá un entorno de aprendizaje disponible en la nube.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/ad482-developing-event-driven-applications-apache-kafka-and-red-hat-amq-streams

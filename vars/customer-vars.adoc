@@ -1,0 +1,25 @@
+// --------------------------------
+// Document Information
+// The customer-vars.adoc is meant for customer specific information such as the name,
+// short name, and gss information
+// --------------------------------
+
+:description: Habilitación Openshift  - Core Bancario - Ambiente DR
+
+// This is where the customer name, customer, and short-name cust are inserted
+:customer: Banco G&T Continental
+:cust: Banco G&T
+
+// add name of customer logo here (store in images directory)
+// Leave it "empty" WITHOUT QUOTES if not there.
+:customerlogo: empty
+
+:custprojectmanager: TODO_name_of_customer_engagement_project_manager
+
+// these are required for the support chapter.
+:custgss: rmayen
+:nogss: 6068745
+
+// --------------------------------
+// Other Vars
+// --------------------------------

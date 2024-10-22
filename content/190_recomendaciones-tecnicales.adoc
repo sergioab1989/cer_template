@@ -1,0 +1,89 @@
+////
+Proposito
+-------
+This section is a placeholder which should be replaced by technical (next-step)
+recommendations specific to the product(s) being delivered.  Technical
+recommendations for products not being delivered, including non-Red Hat
+products should be placed under 'recommedations-other'.
+
+If you are trying to generate a product specific version of this placeholder,
+please observe the following guidelines and the structure demonstrated in the
+Sample area.
+
+Candidates for recommendation:
+- Follow-on engagements
+- Advice for customer-led expansion
+- Upgrade recommendations
+- Security improvements (specific to the product)
+- Permanent solutions to replace workarounds
+
+
+Ejemplo
+------
+== Additional Satellite Capsules
+=== Indication
+During this engagement a single Satellite Server was implemented as that was sufficient for the scope of management.  During the course of the engagement it became clear that {cust} was considering management of additional sites based on performance.
+=== Recommendation
+Red Hat recommends utilizing separate Capsule Servers for remote locations or to balance the load as environments grow.  Documentation is available at https://access.redhat.com/documentation/en-us/red_hat_satellite (look for "Installing Capsule Server").  Adding of Capsule Servers and expansion of the environment can be handled by {cust} or as a follow-on engagement with Red Hat Consulting.
+
+== Satellite Hardening
+=== Indication
+Although out of scope for this engagement, interest was expressed in making Satellite more secure.
+=== Recommendation
+Consider reviewing the documentation on Satellite Security compliance here:
+https://access.redhat.com/documentation/en-us/red_hat_satellite/6.6/html-single/administering_red_hat_satellite/index#chap-Red_Hat_Satellite-Administering_Red_Hat_Satellite-Security_Compliance_Management
+
+
+== Ansible Tower Performance
+=== Indication
+Provisioning callbacks to Ansible Tower are being impacted by a significant variance in the time required to complete Jobs. The same Job may take 10 minutes for one server and 45 minutes for the next.  Rudimentary investigation suggests that the cause is related to locality.
+=== Recommendation
+Consider a more in-depth analysis of the slower systems to see if the issue may be caused by network failures or DNS configuration problems.
+
+
+////
+
+= Respaldos de plataforma
+
+Los siguientes puntos son recomendaciones y aclaraciones técnicas sobre los procesos de respaldo que se podrían implementar en el cluster de OpenShift.
+
+- Hay dos tipos de copias de seguridad que se deben realizar en OpenShift: copia de seguridad del plano de control (datastore ETCD) y copia de seguridad de las aplicaciones.
+
+- Estas copias de seguridad son complementarias y ninguna sustituye a la otra.
+
+- La copia de seguridad del plano de control se puede utilizar para recuperar los nodos Control Plane en caso que se dañe y se deba reinstalar.
+
+- En caso de que un nodo Worker esté dañado, el procedimiento de reinstalación para este nodo es diferente y no requiere copia de seguridad.
+
+Información adicional sobre la copia de seguridad del plano de control: https://docs.openshift.com/container-platform/4.16/backup_and_restore/control_plane_backup_and_restore/backing-up-etcd.html[Control plane backup and restore]
+
+- La copia de seguridad de las aplicaciones se puede realizar a los namespaces (proyectos) deseados, y guarda todos los objetos definidos en los namespaces de los que se realizó la copia de seguridad.
+
+- La copia de seguridad de la aplicación depende de que el clúster OpenShift funcione correctamente para poder usarse. Si el clúster no está operativo, no se puede restaurar una aplicación desde la copia de seguridad de la aplicación.
+
+- Es posible que se puedan realizar copias de seguridad adicionales (por ejemplo, una copia de seguridad del almacenamiento a nivel LUN), pero estarán fuera del control de OpenShift.
+
+Red Hat no limita la solución o mecanismo de copia de seguridad y restauración que el cliente elija utilizar.
+
+Red Hat certifica el uso del operador OpenShift APIs for Data Protection (OADP) en un cluster OCP 4.X, si es necesario puede utilizarlo según la documentación oficial disponible en https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html-single/backup_and_restore/index#application-backup-and-restore[Application backup and restore]
+
+Puede consultar las preguntas frecuentes del operador de OADP en el enlace: https://access.redhat.com/articles/5456281 [OpenShift APIs for Data Protection (OADP) FAQ].
+
+= Renovación de certificados personalizados
+
+Con el fin de evitar inconvenientes en la plataforma y sus aplicaciones, es necesario renovar los certificados SSL personalizados que fueron cargados durante del despliegue de la plataforma, antes de la fecha de expiración.
+
+Para ello, puede ejecutar el mismo procedimiento que se ejecutó y se documentó aquí, o puede consultar mayor información en los siguientes enlaces.
+
+[NOTE]
+Tenga en cuenta que en algunos casos sera necesario eliminar el recurso creado, antes de crear el nuevo que lo sustituye.
+
+- Procedimiento de reemplazo del certificado wildcard por defecto: https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html-single/security_and_compliance/index#replacing-default-ingress_replacing-default-ingress[Replacing the default ingress certificate].
+
+- Procedimiento de carga del certificado de la API: https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html-single/security_and_compliance/index#api-server-certificates[Adding API server certificates].
+
+- Procedimiento de actualización del certificado CA bundle: https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html-single/security_and_compliance/index#updating-ca-bundle[Updating the CA bundle]
+
+
+
+

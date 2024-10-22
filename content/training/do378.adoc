@@ -1,0 +1,42 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Cloud-native Microservices Development with Quarkus (DO378)
+
+[.big]#*Descripción del curso*#
+
+*Desarrolle aplicaciones basadas en microservicios con Quarkus y OpenShift.*
+
+Las empresas comienzan a adoptar arquitecturas de microservicios diseñadas en la nube. Quarkus es una tecnología nueva y emocionante que ofrece la confianza, la familiaridad y la consolidación de Java Enterprise, con un tiempo de implementación extremadamente rápido y listo para los contenedores. Red Hat Cloud-native Microservices Development with Quarkus (DO378) se centra en el aprendizaje de los principios de arquitectura y en la implementación de microservicios basados en la compilación de Quarkus de Red Hat y Red Hat OpenShift. A partir de los aspectos fundamentales del desarrollo de aplicaciones, se centrará en el desarrollo, la supervisión, las pruebas y la implementación de las aplicaciones modernas de microservicios.El curso se basa en OpenShift 4.14 y la compilación de Quarkus 3.8 de Red Hat.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota: *El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulada. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Implementar aplicaciones de microservicios en Red Hat® OpenShift Container Platform
+* Diseñar una aplicación de microservicios con Quarkus
+* Implementar pruebas de unidad e integración para los microservicios
+* Usar la especificación de configuración para introducir datos en un microservicio
+* Utilizar OAuth para proteger los microservicios
+* Implementar las comprobaciones de estado, el seguimiento y la supervisión de los microservicios
+* Diseñar aplicaciones reactivas y asíncronas con Quarkus
+
+[.big]#*Público al que va dirigido*#
+
+El curso está destinado a los desarrolladores de aplicaciones Java.
+
+[.big]#*Capacitación recomendada*#
+
+* Tener experiencia en el desarrollo de aplicaciones Java o haber completado el curso https://www.redhat.com/es/services/training/ad183-red-hat-application-development-i-programming-java-ee[Red Hat Application Development I: Programming in Java EE (AD183)]
+* Tener experiencia en el uso de un IDE como Visual Studio Code
+* Experiencia en Maven y el control de versiones, aunque no es un requisito obligatorio
+* Tener experiencia con https://www.redhat.com/es/services/training/do101-introduction-openshift-applications[OpenShift o haber realizado el curso Introduction to OpenShift Applications (DO101) (recomendado)]
+* https://skills.ole.redhat.com/[Realizar nuestra evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Ninguno
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/red-hat-cloud-native-microservices-development-quarkus-do378

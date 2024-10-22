@@ -1,0 +1,179 @@
+#!/usr/bin/env bash
+
+#
+# Wrapper to refresh-training.py that runs the training course files update
+# process in a container
+#
+
+# if you want the script to show all commands it runs, then remove the '#' in front of the next 'set -x' line.
+# set -x
+
+CUR_WORK_PTH="${BASH_SOURCE[0]}"
+CUR_WORK_SCT="${CUR_WORK_PTH##*/}"
+
+TOP_LEVEL=$(git rev-parse --show-toplevel)
+CUR_DIR=$(pwd -P)
+RELATIVE=${CUR_DIR##"$TOP_LEVEL"}
+
+# Manage SELinux Context Handling for podman volume
+if [[ `uname` == Darwin ]]; then
+  DOCUMENTS="documents"
+else
+  DOCUMENTS="documents:Z"
+fi
+
+# shellcheck source=/dev/null
+source "${TOP_LEVEL}/.cer-config"
+
+RUN_CODE=250
+
+REFRESH_CMD=("python3" "/documents/scripts/refresh-training.py")
+
+# Usage Function
+# Defines the Usage output
+function USAGE() {
+  USAGE_ARR=(
+    "# Usage for ${CUR_WORK_SCT}"
+    ""
+    "   ${CUR_WORK_SCT} [options] [arguments]"
+    ""
+    "   OPTIONAL ARGUMENTS:"
+    ""
+    "     -l|--language    Provide -l <LANGUAGE> to update training course files"
+    "                         languages available are en, es, pt-br, de"
+    ""
+    "     -a|--all         Update training course files for all supported languages"
+    ""
+    "     -c|--course      Provide -c <COURSENUM> to only update specified course file"
+    ""
+    "     -d|--directory   Provide -d <DIRECTORY> as the output directory to place"
+    "                         the training files in"
+    ""
+    "     --clean          Remove all training course files for courses no longer offered"
+    ""
+    "     -q|--quiet       Supress printing of messages"
+    ""
+    "     --podman         Try to generate using podman"
+    ""
+    "     --docker         Try to generate using Docker"
+    ""
+    "     -h,--help        Prints this help usage message"
+    ""
+  )
+}
+
+# function to use podman
+function runpodman() {
+  if command -v podman > /dev/null ; then
+    echo "Updating training documents using podman... "
+
+    podman run --rm --name cer-refresh-training \
+      --userns=keep-id \
+      --user="$(id -u):$(id -g)" \
+      -v "${TOP_LEVEL}/:/${DOCUMENTS}" \
+      -w "/documents${RELATIVE}" \
+          "${IMAGE}" \
+          "${REFRESH_CMD[@]}" \
+          "${CMD_OPTS[@]}"
+
+    GENERATE_PDF_EXIT_CODE=$?
+    RUN_CODE=0
+  else
+    GENERATE_PDF_EXIT_CODE=2
+  fi
+}
+
+# function to use Docker
+function rundocker() {
+  if command -v docker > /dev/null ; then
+    echo "Updating training documents using docker... "
+
+    docker run --rm --name cer-refresh-training \
+        -v "${TOP_LEVEL}/:/documents/" \
+        -w "/documents${RELATIVE}" \
+           "${IMAGE}" \
+           "${REFRESH_CMD[@]}" \
+           "${CMD_OPTS[@]}"
+
+    GENERATE_PDF_EXIT_CODE=$?
+    RUN_CODE=0
+  else
+    GENERATE_PDF_EXIT_CODE=3
+  fi
+}
+
+## start script ##
+USAGE
+
+while [ -n "$1" ] ; do
+  case "$1" in
+    -l|--language  ) LANGUAGE=$2 ; shift  ;;
+    -a|--all       ) ALL_LANG=1 ;;
+    -c|--course    ) COURSE=$2 ; shift ;;
+    -d|--directory ) DIRECTORY=$2 ; shift ;;
+    -q|--quiet     ) QUIET=1 ;;
+    --clean        ) CLEAN=1 ;;
+    --podman       ) GENERATE=P ;;
+    --docker       ) GENERATE=D ;;
+    -h|--help      ) printf "%s\n" "${USAGE_ARR[@]}"
+                     exit 0
+                   ;;
+    *              ) printf "%s\n" "${USAGE_ARR[@]}" "Unknown option $1"
+                     exit 1
+                   ;;
+  esac
+  shift
+done
+
+CMD_OPTS=()
+
+# Set the language options
+if [[ -n ${LANGUAGE} ]] && [ ${ALL_LANG} ]; then
+    echo "Specify either -a|-all or -l|--language, but not both."
+    exit 1
+elif [ ${ALL_LANG} ]; then
+    CMD_OPTS+=(-a)
+elif [[ -n ${LANGUAGE} ]]; then
+    CMD_OPTS+=(-l "${LANGUAGE}")
+fi
+
+# Set the course options
+if [[ -n ${COURSE} ]]; then
+    CMD_OPTS+=(-c "${COURSE}")
+fi
+
+# Set the directory options
+if [[ -n ${DIRECTORY} ]]; then
+    CMD_OPTS+=(-d "${DIRECTORY}")
+fi
+
+# Set the clean options
+if [ ${CLEAN} ]; then
+    CMD_OPTS+=(--clean)
+fi
+
+# Set the quiet options
+if [ ${QUIET} ]; then
+    CMD_OPTS+=(-q)
+fi
+
+# run the correct thing one.
+if [ "${GENERATE}" = "P" ] ; then
+  runpodman
+elif [ "${GENERATE}" = "D" ] ; then
+  rundocker
+else
+  runpodman
+  [ "${RUN_CODE}" -eq "250" ] && rundocker
+fi
+
+case "${GENERATE_PDF_EXIT_CODE}" in
+    0) echo "Generated training files" ;;
+    2) echo "ERROR: Podman not found, please use other option." ;;
+    3) echo "ERROR: Docker not found, please use other option." ;;
+    125) echo "ERROR: Attempted to use docker but Docker daemon wasn't running" ;;
+    *) echo "ERROR: Something unknown went wrong" ;;
+esac
+
+exit $GENERATE_PDF_EXIT_CODE
+

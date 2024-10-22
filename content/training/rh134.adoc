@@ -1,0 +1,33 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat System Administration II (RH134)
+
+[.big]#*Descripción del curso*#
+
+Mayor productividad de la línea de comandos:: 
+Ejecute los comandos con mayor eficiencia utilizando las funciones avanzadas del shell Bash, los scripts de shell y los diversos servicios que ofrece Red Hat Enterprise Linux.
+Programación de las tareas futuras:: 
+Programe los comandos que deben ejecutarse en el futuro, ya sea una o varias veces.
+Análisis y almacenamiento de registros:: 
+Localice e interprete correctamente los registros de eventos del sistema para resolver problemas.
+Almacenamiento y transferencia de archivos:: 
+Almacene los archivos y cópielos de un sistema a otro.
+Ajuste del rendimiento del sistema:: 
+Mejore el rendimiento del sistema estableciendo los parámetros de ajustes y la prioridad de programación de los procesos.
+Gestión de la seguridad de SELinux:: 
+Proteja y gestione la seguridad de un servidor con SELinux.
+Gestión de volúmenes lógicos:: 
+Cree y gestione volúmenes lógicos que contengan sistemas de archivos y espacios de intercambio desde la línea de comandos.
+Acceso al almacenamiento adjunto a la red:: 
+Utilice el protocolo NFS para administrar el almacenamiento adjunto a la red.
+Control del proceso de arranque:: 
+Gestione el proceso de arranque para controlar los servicios que se ofrecen y solucionar problemas.
+Gestión de la seguridad de la red:: 
+Controle las conexiones de red a los servicios con el firewall del sistema y las reglas de SELinux.
+Instalación de Red Hat Enterprise Linux:: 
+Instale Red Hat Enterprise Linux en los servidores y las máquinas virtuales.
+Ejecución de contenedores:: 
+Obtenga, ejecute y gestione servicios ligeros y sencillos como contenedores en un solo servidor de Red Hat Enterprise Linux.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh134-red-hat-system-administration-ii

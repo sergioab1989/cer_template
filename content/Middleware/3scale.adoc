@@ -1,0 +1,262 @@
+== Red Hat 3scale Api Manager
+
+En la barra lateral izquierda, haga clic en “Operators” y luego haga clic en “OperatorHub” y en la barra de busqueda, escribir 3scale y selecciona Red Hat 3scale Api Manager
+
+image::middleware/ocp-4-3scale-install.png[pdfwidth=99%,width=99%]
+
+Seleccionamos la versión “stable”, selecciona namespace “3scale-config” y Update approval “Manual”. para luego darle “install”
+
+
+image::middleware/ocp-4-3scale-install-options.png[pdfwidth=99%,width=99%]
+
+=== Creación de instancia Api Manager
+
+Desde el operador de 3scale, accedemos a la pestaña APIManager y damos click a Create APIManager, se utilizo el siguiente yaml para la creación de la instancia
+
+    apiVersion: apps.3scale.net/v1alpha1
+    kind: APIManager
+    metadata:
+      name: apimanager-nonprod
+      namespace: 3scale-config
+    spec:
+      imageStreamTagImportInsecure: false
+      resourceRequirementsEnabled: true
+      system:
+        appSpec: {}
+        searchdSpec: {}
+        sidekiqSpec: {}
+      appLabel: 3scale-api-management
+      zync:
+        appSpec: {}
+        queSpec: {}
+      backend:
+        cronSpec: {}
+        listenerSpec: {}
+        workerSpec: {}
+      tenantName: 3scale
+      apicast:
+        managementAPI: status
+        openSSLVerify: false
+        productionSpec: {}
+        registryURL: 'http://apicast-staging:8090/policies'
+        responseCodes: true
+        stagingSpec: {}
+      wildcardDomain: apps.os-nonprod.domcoin.net
+
+
+La creación de el APIManager generará la creación de recursos necesarios
+
+image::middleware/ocp-4-3scale-apimanager-pods.png[pdfwidth=99%,width=99%]
+
+image::middleware/ocp-4-3scale-apimanager-pvc.png[pdfwidth=99%,width=99%]
+
+
+
+=== Tenant Master
+
+3scale una vez configurada la instancia de APIManager habilita un tenant llamado Master, este tenat permite crear otros tenant.
+
+
+Para acceder se deben utilizar las credenciales seteadas en el secret system-seed del proyecto 3scale-config
+
+
+image::middleware/ocp-4-3scale-credentials-master.png[pdfwidth=99%,width=99%]
+
+image::middleware/ocp-4-3scale-master-interface.png[pdfwidth=99%,width=99%]
+
+=== Creación de Tenants
+
+Una vez accedemos al Tenant Master se debe ir a *Audience*, donde definiremos los Tenants (Accounts) que sean necesarios.
+
+Para este proyecto se habilito el tenant 3scale-admin
+
+image::middleware/ocp-4-3scale-master-tenant-creation.png[pdfwidth=99%,width=99%]
+
+=== Tenants 3scale Admin
+
+Una vez creado el tenant 3scale admin, podemos acceder a través de admin domain
+
+image::middleware/ocp-4-3scale-tenant-admin.png[pdfwidth=99%,width=99%]
+
+
+Desde el 3scale Admin Portal, ir a Accounts Settings > Personal > Tokens y clickear en Add Access Token
+
+
+image::middleware/ocp-4-3scale-admin-access-token.png[pdfwidth=99%,width=99%]
+
+
+Seteamos el nombre apicast, tildamos todas las opciones, le damos permiso Read & Write y presionamos Create access token
+
+
+image::middleware/ocp-4-3scale-admin-create-access-token.png[pdfwidth=99%,width=99%]
+
+=== Creación APIcast
+
+En la barra lateral izquierda, haga clic en “Operators” y luego haga clic en “OperatorHub” y en la barra de busqueda, escribir 3scale y selecciona Red Hat Integration - 3scale APIcast gateway
+
+image::middleware/ocp-4-apicast-install.png[pdfwidth=99%,width=99%]
+
+Seleccionamos la versión “stable”, selecciona namespace “3scale-config” y Update approval “Manual”. para luego darle “install”
+
+
+image::middleware/ocp-4-apicast-install-options.png[pdfwidth=99%,width=99%]
+
+
+Desde el operador de 3scale APIcast, accedemos a la pestaña APICast y damos click a Create APICast, se utilizo el siguiente yaml para la creación de la instancia
+
+    apiVersion: apps.3scale.net/v1alpha1
+    kind: APIcast
+    metadata:
+      annotations:
+        apicast.apps.3scale.net/operator-version: 0.8.0
+      name: 3scale-apicast
+      namespace: 3scale-apigw
+      labels:
+        secret.apicast.apps.3scale.net/1059c5d6-ab2e-4dec-bcb5-f1493923585d: 'true'
+    spec:
+      adminPortalCredentialsRef:
+        name: secret-admin-apicast
+      cacheConfigurationSeconds: 30
+      cacheMaxTime: '30'
+      configurationLoadMode: boot
+      logLevel: info
+      managementAPIScope: debug
+      pathRoutingEnabled: true
+
+
+
+=== Integración de Red Hat Build of Keycloak  
+
+Para la integración del operador Red Hat Build to Keycloak para que realice la gestión de acceso se utilizo el reino llamado 3scale.
+
+image::middleware/ocp-4-3scale-keycloak-realm.png[pdfwidth=99%,width=99%]
+
+Y dentro de este Reino se creo el cliente llamado *threescale* en donde se configuraron los siguientes campos 
+
+    Client ID: threescale
+    Name: 3scale
+    Root URL: https://3scale-admin.apps.os-nonprod.domcoin.net/
+    Valid redirect URIs: *
+    Web origins: * 
+    Client authentication: ON
+    Authorization: ON
+    Authentication flow: Standard flow
+    Exclude Issuer From Authentication Response: ON
+
+Y tambien en la pestaña Credentials, se debe configurar los siguientes campos:
+
+    Client Authenticator: Client ID and Secret
+
+Aquí se habilitará el Client Secret necesario para la configuración.
+
+
+Desde el 3scale Admin Portal, ir a Accounts Settings > User > SSO Integrations y clickear en New SSO Integration
+
+image::middleware/ocp-4-3scale-admin-sso-integration.png[pdfwidth=99%,width=99%]
+
+Una vez se entregan los valores necesarios, hacer click en *Create Authentication Provider*
+
+En este momento se encuentra creada la integración, pero aún oculta, para publicar la integración se debe ingresar nuevamente y configurar los siguientes campos
+
+    le damos check a la siguiente opción Edit > Skip ssl certificate verification y *Create Authentication Provider*
+    Clickear en el campo OAuth Flow Tested > Test Authentication Flow
+
+Hacer click en *Publish*
+
+Una vez publicada los usuarios creados en el Reino de 3scale en Keycloak podrán acceder a 3scale.
+
+
+=== Creación de API Gateway
+
+Desde el 3scale Admin Portal, ir a Backends > Create Backends
+
+
+image::middleware/ocp-4-3scale-admin-create-backends.png[pdfwidth=99%,width=99%]
+
+Y hacemos click en Create Backend
+
+Opcionalmente podemos acceder al Backend que acabamos de crear y aquí podemos configurar los Method and Metrics como los mapping rules como sea necesario.
+
+
+Una vez creado y configurado el Backend, ir a Products > Create Products
+
+
+
+image::middleware/ocp-4-3scale-admin-create-product.png[pdfwidth=99%,width=99%]
+
+Se debe seleccionar “Define manually” y llenar cada campo como se muestra en la imagen, para este caso es recomendable que “Name” y “System Name” sean iguales, la estructura del nombre es una definición propia de la organización, luego de cargar todos los campos se procede a pulsar el botón “Create Product” a continuación se mostrará la ventana principal del producto. 
+
+
+image::middleware/ocp-4-3scale-admin-product-overview.png[pdfwidth=99%,width=99%]
+
+Para continuar con la configuración se debe ir a la sección “integration” y luego “Configuration”  donde pulsaremos el botón “Add a Backend and promote the configuration”.
+
+image::middleware/ocp-4-3scale-admin-add-backend.png[pdfwidth=99%,width=99%]
+
+En la nueva ventana que se desplegó se debe seleccionar el “Backend” haciendo click sobre el campo “Select a Backend” y se mostrará un listado de los mismos que deberá seleccionar el que corresponda. 
+
+image::middleware/ocp-4-3scale-admin-add-backend-path.png[pdfwidth=99%,width=99%]
+
+En el “Path” deberá colocar “/nombre” que haga o determine una referencia  al backend o al servicio que está integrando ya que un mismo producto puede integrar varios backend y colocar solo “/” o dejar el campo en blanco no permitirá adicionar más Backends.
+
+Se pueden agregar los backend que se requieran solo debe ir al apartado en el lado izquierdo inferior “Backend” y seleccionar el botón verde “Add Backend”
+
+Después de agregar el Backend se procede a establecer los parámetros en el menú “Setting” :
+
+
+image::middleware/ocp-4-3scale-admin-overview-settings.png[pdfwidth=99%,width=99%]
+
+
+En esta sección se debe seleccionar APIcast self-managed, las URLs en la seccion API GATEWAY son URLs que se deben configurar sobre el namespace donde se encuentran los gateway Staging y Production.
+
+Luego se debe configurar la sección de  “AUTHENTICATION” seleccionado la opción *"OpenID Connect"*
+
+En este punto se debe seleccionar “OpenID Connect Issuer Type” a “Red Hat Single Sign-on” y en el campo “OpenID Connect Issuer” de debe colar la URL que se compone de la siguiente manera:
+
+
+  https://<ID_CLIENTE>:<SECRET_DEL_CLIETE>@<HOST_DEL_RHBK>:<PUERTO>/auth/realms/<NOMBRE_DEL_REINO_RHBK>
+
+
+Luego de configurar esta URL debemos seguir con los otros puntos del Setting los cuales se resumen a continuación:
+
+- Authorization Code Flow
+
+- Direct Access Grant Flow
+
+
+
+image::middleware/ocp-4-3scale-settings-auth.png[pdfwidth=99%,width=99%]
+
+
+Para continuar con los pasos de configuración del “Product” se debe crear un “Application Plans” , para lo cual se debe ir en el menú del producto seleccionar Applications > Application Plans y ya estando en la ventana se pulsa Create Application Plan, donde solo se crea un Name y un SysteName que al igual en los casos anteriores debería ser el mismo y luego se hace clic sobre “Create Application Plan”.  
+
+image::middleware/ocp-4-3scale-create-applications-plan.png[pdfwidth=99%,width=99%]
+
+
+A continuación, los pasos de configuración para el “Product” se debe crear un “Application” , para lo cual se debe ir en el menú del producto seleccionar Applications > Listing y ya estando en la ventana se pulsa Create Application.
+
+image::middleware/ocp-4-3scale-admin-create-application.png[pdfwidth=99%,width=99%]
+
+En este punto se debe presionar el botón “Regenerate” y obtener un nuevo “Client Secret” , si y sólo si la configuración del OpenID Connect está correctamente realizada se obtendrá un nuevo “Client Secret”,  luego se procede a pulsar el botón “Edit” en “Redirect URL” y se agrega un “*” para continuar. El “Client ID”  y “Client Secret” deben ser copiados para ser utilizados para consumir el servicio.
+
+
+Para aplicar esta configuración se debe ir al menú Integrations > Policies > Add Policy. 
+
+image::middleware/ocp-4-3scale-admin-add-policies.png[pdfwidth=99%,width=99%]
+
+
+Al seleccionar "Add Policy" se mostrará un listado de políticas que pueden utilizar según la necesidad, a continuación un listado de las policies
+
+image::middleware/ocp-4-3scale-admin-listing-policies.png[pdfwidth=99%,width=99%]
+
+
+Luego de realizar todas las configuraciones y modificaciones pertinentes, en esta misma ventana en el menú al costado izquierdo de la ventana se hace clic sobre Integration > Configuration > Promote v.1 to Staging APIcast.
+
+
+La ventana se actualizará y mostrará la URL “Staging APICast” la cual podemos utilizar para hacer pruebas del servicio y corroborar si funcionamiento es correcto: 
+
+image::middleware/ocp-4-3scale-admin-promote-staging.png[pdfwidth=99%,width=99%]
+
+
+Al corroborar que el funcionamiento es correcto se puede proceder a pulsar el botón “Promote v.1 to Production APICast”
+

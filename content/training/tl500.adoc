@@ -1,0 +1,37 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Training: DevOps Culture and Practice Enablement (TL500)
+
+[.big]#*Conozca las posibilidades de DevOps a través de las prácticas y la cultura abiertas comprobadas que utiliza Red Hat para respaldar la innovación de sus clientes*#
+
+Red Hat Training: DevOps Culture and Practice Enablement (TL500) es un curso intensivo de cinco días que ofrece a los estudiantes la oportunidad de implementar y experimentar los cambios culturales que se utilizan en varios procesos de adopción exitosos de DevOps. Muchas ofertas de capacitación sobre la metodología ágil se centran puntualmente en un solo marco, mecanismo de distribución o tecnología. En cambio, DevOps Culture and Practice reúne las mejores herramientas de diversos marcos líderes para combinar el descubrimiento constante y la distribución continua con las prácticas y las técnicas culturales. El resultado es una experiencia única y muy atractiva en la que se simulan casos y aplicaciones reales.
+
+Para lograr los objetivos de capacitación, se necesita la participación de personal que cumpla distintas funciones en una empresa. Los dueños de productos comerciales, los arquitectos, los desarrolladores y los ingenieros de confiabilidad del sitio obtendrán la experiencia de desempeñar sus funciones fuera del entorno de trabajo tradicional. El curso simula un equipo de distribución real, donde los grupos interdisciplinarios aprenden a generar innovaciones a través de la cooperación. El equipo cuenta con experiencias compartidas y prácticas recomendadas que puede aplicar para beneficiar la cultura y la misión de la empresa, en la búsqueda de proyectos nuevos y procesos mejorados.
+
+El curso incluye una copia del libro de texto Red Hat Training: Open Practices for your DevOps Journey, que les sirve a los estudiantes como recurso a medida que adquieren los conocimientos de las clases y aplican lo aprendido a otras situaciones reales.
+
+*Nota:* Este curso dura cinco días. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Diferencia entre este curso y cualquier otra capacitación técnica sobre la metodología ágil o de DevOps*#
+
+* La mayoría de las capacitaciones en la metodología ágil se centran en un marco en particular o solo en el proceso de distribución o en la tecnología; sin embargo, este curso integra las mejores herramientas de los marcos principales.
+* El plan de estudios combina el descubrimiento permanente y la distribución continua con las prácticas técnicas y culturales en una experiencia única y muy interesante, repleta de aplicaciones reales. Aprenderá las prácticas individuales y la forma en que se utilizan para desarrollar las próximas, lo cual mejora la eficiencia del ajuste y la distribución.
+* Algunas capacitaciones técnicas sobre DevOps solo se centran en la implementación de esta tecnología para llevar a cabo tareas específicas, en lugar de también abordar su integración y el hecho de que permite distribuir las funciones y correcciones de errores que los clientes necesitan. En esta clase, se fomenta el estudio de la distribución desde una perspectiva sistémica.
+
+[.big]#*Público al que va dirigido*#
+
+En esta experiencia se demuestra que, para obtener resultados positivos e impulsar la innovación, las personas deben aprender a compartir, colaborar y trabajar de forma conjunta para lograr un objetivo común, independientemente de la función que cumplan en la empresa. Particularmente, los dueños de productos empresariales, los desarrolladores, los ingenieros de confiabilidad del sitio y otros ingenieros podrán aprovechar este evento, el cual incluye algunos aspectos técnicos que se basan en el trabajo con los sistemas de software. Al entender mejor las necesidades cambiantes de los clientes y la posibilidad de comercializar las ideas nuevas más rápido, podrán ofrecerles más valor de forma permanente. Nuestros instructores compartirán las experiencias y las prácticas recomendadas aprendidas al interactuar directamente con los clientes cuando solicitan el servicio de Red Hat Services.
+
+[.big]#*Requisitos previos*#
+
+* Tener conocimiento de las prácticas ágiles es útil
+* Tener experiencia en el uso de las prácticas y las metodologías ágiles, como scrum
+
+[.big]#*Requisitos de tecnología*#
+
+* Necesitará tener conexión a Internet para acceder a ciertos sitios (AWS, YouTube, Google Drive, herramientas para la comunicación en línea por chat).
+* Como se trata de un curso con "estación de trabajo personal del desarrollador" (https://www.redhat.com/es/resources/red-hat-training-and-certification-classroom-requirements[BYDW]), deberá traer su propio dispositivo.
+* Se recomienda utilizar el explorador Chrome.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/tl500-devops-culture-and-practice-enablement

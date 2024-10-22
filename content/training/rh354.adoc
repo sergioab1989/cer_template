@@ -1,0 +1,44 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Enterprise Linux 8 New Features for Experienced Linux Administrators (RH354)
+
+[.big]#*Descripción del curso*#
+
+*Conozca los cambios en el sistema operativo y prepárese para utilizar Red Hat Enterprise Linux 8*
+
+En el curso Red Hat Enterprise Linux 8 New Features for Experienced Linux Administrators (RH354), se presentan las actualizaciones que se incluyen en la próxima versión de Red Hat® Enterprise Linux®. Este curso está destinado a los administradores de los sistemas Linux con experiencia, y ofrece una introducción rápida a Red Hat Enterprise Linux 8 basada en la versión beta previa al lanzamiento. La oferta prepara a los operadores, los gerentes, los administradores principales de sistemas y demás especialistas de TI con experiencia en Red Hat Enterprise Linux 7 para la implementación y la adopción de la versión nueva.
+
+Este curso se basa en Red Hat Enterprise Linux 8.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan entornos virtuales.
+
+*Nota:* La modalidad del curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Instalación de Red Hat Enterprise Linux 8 con las funciones nuevas de empaquetado, modularidad y flujo de aplicaciones
+* Actualización de la versión Red Hat Enterprise Linux 7 a la versión 8 usando herramientas nuevas
+* Ejecución de la gestión integrada de volúmenes y sistemas de archivos con Stratis
+* Uso de Cockpit para la gestión del sistema
+* Creación de imágenes del sistema con Composer
+* Configuración de la gestión de identidad con authselect
+* Comprensión del servidor gráfico Wayland
+* Implementación de contenedores usando las nuevas herramientas y el tiempo de ejecución de OCI nuevo integrados
+* Configuración de las reglas del firewall que usan el nuevo backend NFT
+
+[.big]#*Público destinatario del curso*#
+
+Este curso está diseñado para brindar una presentación preliminar de Red Hat Enterprise Linux 8 a los especialistas en TI experimentados, entre los que se incluyen:
+
+* Administradores de sistemas Linux
+* Ingenieros de DevOps
+* Administradores de nubes
+
+[.big]#*Requisitos previos para el curso*#
+
+* Debe tener la certificación https://www.redhat.com/es/services/certification/rhcsa-991[Red Hat Certified System Administrator (RHCSA)] o demostrar los conocimientos y la experiencia equivalentes en Red Hat Enterprise Linux
+
+.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh354-red-hat-enterprise-linux-8-new-features-experienced-linux-administrators

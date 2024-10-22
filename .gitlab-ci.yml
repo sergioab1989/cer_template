@@ -1,0 +1,41 @@
+---
+.base:
+  image: quay.io/redhat-cop/ubi8-asciidoctor:v2.0
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+
+
+stages:
+  - build
+
+
+generate_pdf:
+  extends: .base
+  stage: build
+  script:
+    - "./generate-pdf"
+  artifacts:
+    name: "CER PDF"
+    expire_in: 2 weeks
+    paths:
+    - "*.pdf"
+
+add-to-parcer:
+  extends: .base
+  stage: build
+  image: registry.access.redhat.com/ubi8-minimal:latest
+  rules:
+    - exists:
+        - ".skip-parcer"
+      when: never
+    - when: always
+  script:
+    - "./scripts/add-to-parcer"

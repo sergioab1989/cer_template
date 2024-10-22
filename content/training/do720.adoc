@@ -1,0 +1,37 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Container Adoption Boot Camp for Developers (DO720)
+
+[.big]#*Descripción del curso*#
+
+*Un respaldo para adoptar la tecnología de contenedores con el desarrollo de las aplicaciones en la nube*
+
+El curso Container Adoption Boot Camp for Developers (DO720) le permitirá desarrollar de manera práctica e intensiva las aplicaciones en la nube que se utilizan en la implementación de Kubernetes de Red Hat: Red Hat® OpenShift® Container Platform. Como parte de la inscripción, recibirá un año de suscripción a https://www.redhat.com/es/services/training/learning-subscription[Red Hat Learning Subscription Standard], con la cual obtiene acceso ilimitado a todos sus cursos en línea, además de hasta cinco exámenes de certificación y dos repeticiones de estos. El curso intensivo está destinado a quienes buscan dar un gran salto en su camino hacia la transformación digital. Para lograrlo, es necesario desarrollar sistemas de software en intervalos ajustados que permitan obtener beneficios empresariales en menos tiempo. Además, esta oferta puede facilitar la adopción de las aplicaciones en la nube, entre ellas los microservicios.
+
+Todos estos cursos se basan en Red Hat OpenShift Container Platform 4.14 y la versión 3.8 de Red Hat Build Quarkus.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Introduction to Containers, Kubernetes, and Red Hat OpenShift
+* Implementación y gestión de aplicaciones en un clúster de OpenShift
+* Diseño y desarrollo de aplicaciones en contenedores para OpenShift
+* Creación de aplicaciones basadas en microservicios con Quarkus
+* Implementación de los microservicios basados en Quarkus y Node.js en un clúster de OpenShift
+* Conocimiento práctico sobre las pruebas, la seguridad y la supervisión de los microservicios de Quarkus
+* Implementación de la tolerancia a los errores de los microservicios de Quarkus
+
+[.big]#*Público destinatario*#
+
+* Desarrolladores que deseen adoptar la tecnología de los contenedores y desarrollar los microservicios
+
+[.big]#*Capacitación recomendada*#
+
+* Obtener una certificación https://www.redhat.com/es/services/certification/rhcsa-991[Red Hat Certified System Administrator (RHCSA)] o demostrar una experiencia equivalente
+* Completar el curso https://www.redhat.com/es/services/training/ad183-red-hat-application-development-i-programming-java-ee[Red Hat Application Development I: Programming in Java EE (AD183)] o tener experiencia en el desarrollo de Java EE
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Debe tener conexión a Internet para acceder a los clústeres compartidos de OpenShift de este curso.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do720-container-adoption-boot-camp-for-developers

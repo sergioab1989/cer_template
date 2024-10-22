@@ -1,0 +1,41 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat System Administration I (RH124)
+
+[.big]#*Descripción del curso*#
+
+Introducción a Red Hat Enterprise Linux:: 
+Describa y defina la tecnología de open source, las distribuciones de Linux y Red Hat Enterprise Linux.
+Acceso a la línea de comandos:: 
+Inicie sesión en un sistema Linux y ejecute comandos simples utilizando el shell.
+Gestión de archivos desde la línea de comandos:: 
+Copie, traslade, cree, elimine y organice los archivos mientras trabaja desde el shell Bash.
+Soporte para Red Hat Enterprise Linux:: 
+Resuelva los problemas utilizando los sistemas de ayuda locales.
+Creación, visualización y edición de archivos de texto:: 
+Gestione los archivos de texto desde la salida de comando o en un editor de texto.
+Gestión de los grupos y los usuarios locales:: 
+Cree, gestione y elimine los usuarios y los grupos locales, y administre las políticas de contraseña locales.
+Control de acceso a los archivos:: 
+Configure los permisos del sistema de archivos de Linux en los archivos e interprete los efectos de seguridad de los distintos parámetros de configuración de los permisos.
+Supervisión y gestión de los procesos de Linux:: 
+Evalúe y controle los procesos que se ejecutan en un sistema Red Hat Enterprise Linux.
+Control de los servicios y los daemons:: 
+Controle y supervise los servicios de red y los daemons del sistema con el servicio systemd.
+Configuración y protección de SSH:: 
+Configure el servicio seguro de línea de comandos en los sistemas remotos con OpenSSH.
+Análisis y almacenamiento de registros:: 
+Localice e interprete correctamente los registros de eventos del sistema para resolver problemas.
+Gestión de las redes:: 
+Configure los ajustes y las interfaces de red en los servidores de Red Hat Enterprise Linux.
+Instalación y actualización de los paquetes de software:: 
+Descargue, instale, actualice y gestione paquetes de software de los repositorios de DNF y Red Hat.
+Acceso a los sistemas de archivos de Linux:: 
+Acceda a los sistemas de archivos actuales en el almacenamiento conectado a un servidor de Linux y, además, analícelos y utilícelos.
+Análisis de los servidores y soporte:: 
+Investigue y resuelva los problemas en la interfaz de gestión en Internet, gracias al soporte de Red Hat.
+Repaso completo:: 
+Revise el contenido del curso mediante ejercicios prácticos.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh124-red-hat-system-administration-i

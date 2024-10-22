@@ -1,0 +1,34 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Developing Cloud-Native Applications with Microservices Architectures (DO092)
+
+[.big]#*Descripción del curso*#
+
+*Video 1:* Developing Cloud-Native Applications with Microservices Architectures
+
+*Video 2:* Microservices Overview: What and Why?
+
+*Video 3:* API: Building and Deploying a Microservice (con demostración)
+
+*Video 4:* Discovery and Invocation (con demostración)
+
+*Video 5:* Microservices Patterns (con demostración)
+
+*Video 6:* Circuit Breakers (con demostración)
+
+*Video 7:* Pipelines (con demostración)
+
+*Video 8:* Authentication (con demostración)
+
+*Video 9:* Logging, Monitoring, and Tracing (con demostración)
+
+*Video 10:* Blue/Green Deployment (con demostración)
+
+*Video 11:* Canary Deployment (con demostración)
+
+*Video 12:* Moving from Monolith to Microservices
+
+*Nota:* La descripción del curso está sujeta a cambios en función del avance de la tecnología y a medida que evolucione la naturaleza de las tareas relacionadas. Si tiene alguna duda o necesita confirmación sobre cierto objetivo o tema concreto, https://www.redhat.com/es/services/training-and-certification/contact-us[póngase en contacto con alguno de los representantes de Red Hat].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do092-developing-cloud-native-applications-microservices-architectures

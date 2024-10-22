@@ -1,0 +1,13 @@
+////
+Proposito
+-------
+In the "Base" directory, this section is a placeholder which is to be
+overwritten by validation steps specific to the product or products being
+delivered.
+
+If "TODO" appears in your document after the init script has been run, then
+your product directory is missing a corresponding "validation.adoc" which
+should be implemented to provide a basic validation framework for that product.
+////
+= Red Hat OpenShift Container Platform 4 DR - VMware vSphere
+include::OCP-4x-VMware-UPI/ocp4x-vmware-post-deployment-validation.adoc[leveloffset=+1]

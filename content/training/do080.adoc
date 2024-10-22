@@ -1,0 +1,32 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Containers, Kubernetes and Red Hat OpenShift Technical Overview (DO080)
+
+*Introducción a la gestión de las aplicaciones en contenedores con Kubernetes y Red Hat OpenShift*
+
+[.big]#*Descripción del curso*#
+
+El curso Containers, Kubernetes and Red Hat OpenShift Technical Overview (DO080) consiste en una serie de videos disponibles según se soliciten con información básica sobre los contenedores de Linux y la tecnología de organización en contenedores usando Kubernetes y Red Hat OpenShift.
+
+El curso se basa en Red Hat OpenShift Container Platform 4.12.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Describir las nociones de los contenedores y las aplicaciones organizadas en ellos
+* Presentación de Kubernetes y OpenShift
+* Crear un clúster de OpenShift
+* Interconectarse con OpenShift desde la línea de comandos y la consola web
+* Gestionar las máquinas y los nodos con los operadores de OpenShift
+* Implementar las aplicaciones con Helm y source-to-image (S2I)
+* Controlar el acceso a OpenShift
+
+[.big]#*Público objetivo del curso*#
+
+Toda persona interesada en conocer los beneficios de la tecnología de contenedores, la organización de las aplicaciones en ellos y su implementación en un clúster de OpenShift según sea necesario.
+
+[.big]#*Requisitos previos para el curso*#
+
+No hay requisitos previos para realizar este curso.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do080-deploying-containerized-applications-technical-overview

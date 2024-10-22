@@ -1,0 +1,40 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Satellite 6 Administration (RH403)
+
+[.big]#*Descripción del curso*#
+
+*Aprenda a configurar Red Hat Satellite 6 para implementar y gestionar el software y los sistemas Red Hat Enterprise Linux*
+
+En el curso práctico Red Hat Satellite 6 Administration (RH403), conocerá los conceptos y los métodos necesarios para la gestión exitosa a gran escala de los sistemas Red Hat® Enterprise Linux®. Aprenderá a configurar Red Hat Satellite 6 en un servidor y a incorporar paquetes de software en él. Utilizará Red Hat Satellite para gestionar el ciclo de vida de desarrollo del software de un host suscrito y su configuración. Además, aprenderá a preparar los hosts integrados en el sistema de software y la herramienta de gestión de la configuración de Ansible®, luego de la implementación.
+
+El curso se basa en Red Hat Enterprise Linux 8 y Red Hat Satellite 6.11.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Comprobación de la instalación de Red Hat Satellite 6.11
+* Regulación de Red Hat Satellite con las empresas, las ubicaciones, los usuarios y las funciones
+* Gestión del software con los entornos y las vistas de contenido de Red Hat Satellite
+* Uso de Red Hat Satellite para configurar los hosts con los playbooks y las funciones de Ansible
+* Preparación de los hosts con las herramientas integradas de gestión de la configuración y los sistemas de software
+* Implementación de servidores dedicados como servicio (MaaS) con la detección y la preparación de los hosts sin implementar de Satellite
+
+[.big]#*Público al que se dirige el curso*#
+
+* Administradores sénior de los sistemas Red Hat Enterprise Linux que se encarguen de gestionar varios servidores y empresas de nube híbrida de gran tamaño
+
+[.big]#*Recomendaciones para el curso*#
+
+* Se debe obtener la certificación https://www.redhat.com/es/services/certification/rhce[Red Hat Certified Engineer (RHCE)] o contar con experiencia equivalente.
+* Se recomienda que los candidatos estén familiarizados con Red Hat Satellite 6, pero no es obligatorio.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* No necesita conexión a Internet.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh403-red-hat-satellite-6-administration

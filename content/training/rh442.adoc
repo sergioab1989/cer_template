@@ -1,0 +1,35 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Performance Tuning: Linux in Physical, Virtual, and Cloud (RH442)
+
+[.big]#*Descripción del curso*#
+
+*Ajuste de rendimiento y planificación de la capacidad para Red Hat Enterprise Linux*
+
+En el curso Red Hat Performance Tuning: Linux in Physical, Virtual, and Cloud (RH442), los administradores sénior de sistemas Linux® aprenderán la metodología de ajuste de rendimiento. Analizarán la arquitectura del sistema para comprender sus implicaciones en el rendimiento del sistema, los ajustes de rendimiento, las utilidades de indicadores open source, el rendimiento de las redes y las configuraciones de ajuste para casos prácticos y cargas de trabajo específicos del servidor.
+
+Este curso se basa en Red Hat Enterprise Linux 8.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Analizar y ajustar escenarios específicos de recursos
+* Aplicar perfiles de ajuste con la herramienta tuned
+* Ajustar los entornos virtuales (hosts y guests)
+* Crear perfiles de eventos y actividades del sistema y realizar un seguimiento de ellos
+* Ajustar los límites y el uso de los recursos con grupos de control integrados en systemd
+* Recopilar indicadores de rendimiento y datos de evaluación comparativa
+
+[.big]#*Público al que va dirigido este curso*#
+
+* Administradores sénior de sistemas Linux responsables de ajustar el rendimiento para ampliar el uso de los recursos
+
+[.big]#*Requisitos previos para el curso*#
+
+* Obtener la certificación https://www.redhat.com/es/services/certification/rhce[Red Hat Certified Engineer (RHCE®)] o demostrar experiencia equivalente
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh442-red-hat-enterprise-performance-tuning

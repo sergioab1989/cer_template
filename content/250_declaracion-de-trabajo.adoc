@@ -1,0 +1,23 @@
+////
+Proposito
+-------
+The declaración de trabajo (SOW) for this engagement should be provided inline in
+the engagement report for reference and review.  The SOW represents the
+agreement made between Red Hat and the customer and can be essential for
+tracking progress and managing scope changes.
+
+The SOW can be inserted as an image or as a textual copy of the original
+statement of work.  Either way the task list and any amendments need to be
+clearly legible.
+
+////
+
+#TODO#
+Tarea principal::
+* Subtarea
+- Detalle
+- Detalle
+Tarea principal::
+* Subtarea
+- Detalle
+- Detalle

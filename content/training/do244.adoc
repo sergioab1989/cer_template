@@ -1,0 +1,41 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Developing Applications with Red Hat OpenShift Serverless and Knative (DO244)
+
+[.big]#*Descripción del curso*#
+
+*Desarrolle e implemente funciones y aplicaciones sin servidor, las cuales se ajustan automáticamente y son impulsadas por eventos*
+
+Aprenda a desarrollar, implementar y ajustar automáticamente las aplicaciones sin servidor y basadas en eventos en https://www.redhat.com/es/technologies/cloud-computing/openshift/container-platform[Red Hat OpenShift Container Platform]utilizando la plataforma https://www.redhat.com/es/topics/microservices/why-choose-openshift-serverless[Red Hat OpenShift Serverless], la cual se encarga de las tareas operativas y los servicios de infraestructura, para que los desarrolladores y los https://www.redhat.com/es/topics/cloud-computing/sre[ingenieros de confiabilidad del sitio (SRE)] se concentren en la lógica empresarial principal de sus aplicaciones y funciones.
+
+El curso se basa en Red Hat OpenShift Serverless 1.23 y OpenShift Container Platform 4.10.
+
+Al finalizarlo, obtendrá una extensión de 45 días de acceso a los laboratorios prácticos para cualquier curso que incluya un entorno virtual.
+
+*Nota: *El curso se ofrece como clase virtual de dos días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Comprender la arquitectura de OpenShift Serverless y las funciones principales de https://www.redhat.com/es/topics/microservices/what-is-knative[Knative] para las aplicaciones sin servidor
+* Implementar aplicaciones sin servidor desarrolladas en la nube utilizando Knative Serving
+* Implementar aplicaciones sin servidor basadas en eventos utilizando Knative Eventing
+* Implementar aplicaciones sin servidor utilizando OpenShift Serverless Functions
+
+[.big]#*Público al que va dirigido este curso*#
+
+* Desarrolladores de aplicaciones en la nube a quienes les interese desarrollar aplicaciones sin servidor
+* Ingenieros de confiabilidad del sitio y administradores de OpenShift a quienes les interese usar las tecnologías sin servidor para automatizar las operaciones y desarrollar herramientas para gestionar y supervisar las aplicaciones
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Realizar el curso https://www.redhat.com/es/node/212491[Red Hat OpenShift I: Containers & Kubernetes (DO180) ]o contar con los conocimientos equivalentes
+* Realizar el curso https://www.redhat.com/es/services/training/red-hat-openshift-developer-ii-building-and-deploying-cloud-native-applications[Red Hat OpenShift Development II (DO288) ]o contar con los conocimientos equivalentes
+* Tener experiencia en la programación de las API de REST en Java o JavaScript (Node.js)
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se requiere acceso a Internet.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do244-developing-applications-with-red-hat-openshift-serverless-and-knative

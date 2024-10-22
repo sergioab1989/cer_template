@@ -1,0 +1,282 @@
+== Red Hat Streams for Apache Kafka
+
+= Creación de namespaces para la implementación
+
+Creamos un proyecto en el cual se encontrará nuestro despliegue de AMQ Streams.
+
+    $ oc new-project amq-streams-kafka
+
+= Instalación operador 
+
+Buscar el operador Red Hat Streams for Apache Kafka en OperatorHub y seleccionar la opción install.
+
+image::middleware/ocp-4-amq-streams-install.png[pdfwidth=99%,width=99%]
+
+
+= Creación de un cluster de Kafka
+
+Creamos un cluster de Kafka para comenzar con nuestra implementación de AMQ Streams.
+
+.cluster-nonprod01
+
+    apiVersion: kafka.strimzi.io/v1beta2
+    kind: Kafka
+    metadata:
+      name: cluster-nonprod01
+      namespace: amq-streams-kafka
+    spec:
+      entityOperator:
+        topicOperator: {}
+        userOperator: {}
+      kafka:
+        config:
+          default.replication.factor: 3
+          inter.broker.protocol.version: '3.7'
+          min.insync.replicas: 2
+          offsets.topic.replication.factor: 3
+          transaction.state.log.min.isr: 2
+          transaction.state.log.replication.factor: 3
+        listeners:
+          - name: plain
+            port: 9092
+            tls: false
+            type: internal
+          - name: tls
+            port: 9093
+            tls: true
+            type: internal
+          - name: external
+            port: 9094
+            tls: true
+            type: route
+        replicas: 3
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 1000m
+            memory: 1Gi
+        storage:
+          size: 10Gi
+          type: persistent-claim
+        version: 3.7.0
+      zookeeper:
+        replicas: 3
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 1000m
+            memory: 1Gi
+        storage:
+          size: 5Gi
+          type: persistent-claim
+
+
+.cluster-nonprod02
+
+    apiVersion: kafka.strimzi.io/v1beta2
+    kind: Kafka
+    metadata:
+      name: cluster-nonprod02
+      namespace: amq-streams-kafka
+    spec:
+      entityOperator:
+        topicOperator: {}
+        userOperator: {}
+      kafka:
+        config:
+          default.replication.factor: 3
+          inter.broker.protocol.version: '3.7'
+          min.insync.replicas: 2
+          offsets.topic.replication.factor: 3
+          transaction.state.log.min.isr: 2
+          transaction.state.log.replication.factor: 3
+        listeners:
+          - name: plain
+            port: 9092
+            tls: false
+            type: internal
+          - name: tls
+            port: 9093
+            tls: true
+            type: internal
+          - name: external
+            port: 9094
+            tls: true
+            type: route
+        replicas: 3
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 1000m
+            memory: 1Gi
+        storage:
+          size: 10Gi
+          type: persistent-claim
+        version: 3.7.0
+      zookeeper:
+        replicas: 3
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 1000m
+            memory: 1Gi
+        storage:
+          size: 5Gi
+          type: persistent-claim
+
+.cluster-nonprod03
+
+    apiVersion: kafka.strimzi.io/v1beta2
+    kind: Kafka
+    metadata:
+      name: cluster-nonprod03
+      namespace: amq-streams-kafka
+    spec:
+      entityOperator:
+        topicOperator: {}
+        userOperator: {}
+      kafka:
+        config:
+          default.replication.factor: 3
+          inter.broker.protocol.version: '3.7'
+          min.insync.replicas: 2
+          offsets.topic.replication.factor: 3
+          transaction.state.log.min.isr: 2
+          transaction.state.log.replication.factor: 3
+        listeners:
+          - name: plain
+            port: 9092
+            tls: false
+            type: internal
+          - name: tls
+            port: 9093
+            tls: true
+            type: internal
+          - name: external
+            port: 9094
+            tls: true
+            type: route
+        replicas: 3
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 1000m
+            memory: 1Gi
+        storage:
+          size: 10Gi
+          type: persistent-claim
+        version: 3.7.0
+      zookeeper:
+        replicas: 3
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 1000m
+            memory: 1Gi
+        storage:
+          size: 5Gi
+          type: persistent-claim
+
+
+Validamos que se hayan creado correctamente los PVC de nuestro cluster Kafka.
+
+    $ oc get pvc -n <namespaces>
+
+Visualizamos el detalle de los pods, como también podemos visualizar todos los componentes que se encuentran.
+
+    $ oc get all
+    $ oc get pods -o wide
+
+= Creación de los tópicos
+
+Creamos tópicos dentro de cada uno de nuestros cluster kafka.
+
+.cluster-nonprod01
+
+    apiVersion: kafka.strimzi.io/v1beta2
+    kind: KafkaTopic
+    metadata:
+      name: topico-nonprod01
+      namespace: amq-streams-kafka
+      finalizers:
+        - strimzi.io/topic-operator
+      labels:
+        strimzi.io/cluster: cluster-nonprod01
+    spec:
+      config:
+        retention.ms: 7200000
+        segment.bytes: 1073741824
+      partitions: 1
+      replicas: 1
+
+
+.cluster-nonprod02
+
+    apiVersion: kafka.strimzi.io/v1beta2
+    kind: KafkaTopic
+    metadata:
+      name: topico-nonprod02
+      namespace: amq-streams-kafka
+      finalizers:
+        - strimzi.io/topic-operator
+      labels:
+        strimzi.io/cluster: cluster-nonprod02
+    spec:
+      config:
+        retention.ms: 7200000
+        segment.bytes: 1073741824
+      partitions: 1
+      replicas: 1
+
+
+.cluster-nonprod03
+
+    apiVersion: kafka.strimzi.io/v1beta2
+    kind: KafkaTopic
+    metadata:
+      name: topico-nonprod03
+      namespace: amq-streams-kafka
+      finalizers:
+        - strimzi.io/topic-operator
+      labels:
+        strimzi.io/cluster: cluster-nonprod03
+    spec:
+      config:
+        retention.ms: 7200000
+        segment.bytes: 1073741824
+      partitions: 1
+      replicas: 1
+
+Para poder validar los tópicos que se encuentran dentro de nuestro cluster, utilizamos el siguiente comando.
+
+    $ oc get kt
+
+
+
+= Pruebas Funcionales
+
+Utilizaremos el siguiente comando para poder enviar una cantidad de mensajes a uno de los tópicos creados anteriormente.
+
+    oc run kafka-producer-nonprod01 -ti --image=registry.redhat.io/amq-streams/kafka-37-rhel9:2.7.0 --rm=true --restart=Never -- bin/kafka-console-producer.sh --bootstrap-server cluster-nonprod01-kafka-bootstrap:9092 --topic topico-nonprod01
+
+
+Y con el siguiente comando para recibir los mensajes enviados.
+
+    oc run kafka-consumer -ti --image=registry.redhat.io/amq-streams/kafka-37-rhel9:2.7.0 --rm=true --restart=Never -- bin/kafka-console-consumer.sh --bootstrap-server cluster-nonprod01-kafka-bootstrap:9092 --topic topico-nonprod01
+
+
+Una vez ejecutado los comandos anteriores, escribimos varios mensajes que luego serán consumidos desde otro cluster Kafka.
+
+image::middleware/ocp-4-amq-streams-prueba.png[pdfwidth=99%,width=99%]

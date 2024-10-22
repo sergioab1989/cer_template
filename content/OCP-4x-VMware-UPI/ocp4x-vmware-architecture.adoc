@@ -1,0 +1,5 @@
+Todos los entornos de OpenShift en ambiente on premise utilizarán el hardware disponible para alcanzar algún nivel de redundancia. Cada master y componente de la infrastructura (EFK, metrics, router y registry) deberá residir en un hardware físico diferente. La siguiente imagen ilustra un ejemplo de un cluster simple
+
+image::OCP-4x-VMware-UPI/ocp-4-cluster-diagrams-on-prem.png[pdfwidth=99%,width=99%]
+
+//TODO: Add description about the architecture diagram

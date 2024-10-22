@@ -1,0 +1,46 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Multicluster Management with Red Hat OpenShift Platform Plus (DO480)
+
+[.big]#*Descripción del curso*#
+
+*Mejore su capacidad para gestionar los contenedores con automatización, control y seguridad en todos los clústeres.*
+
+En el curso Multicluster Management with https://www.redhat.com/es/technologies/cloud-computing/openshift/platform-plus[Red Hat OpenShift Platform Plus] obtendrá las habilidades necesarias para mantener una cartera diversa de aplicaciones que se ejecutan en una flota de clústeres de OpenShift. Las aplicaciones siguen las reglas de colocación determinadas por la capacidad y el nivel de importancia; las configuraciones de los clústeres cumplen con las políticas de seguridad y control; todo automatizado de acuerdo con los principios de https://www.redhat.com/es/topics/devops[DevOps].
+
+El curso se basa en Red Hat OpenShift Container Platform 4.10 y Red Hat Advanced Cluster Management 2.4.
+
+*Nota:* Este curso dura cinco días. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Implementación de https://www.redhat.com/es/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes (RHACM)] en un clúster central
+* Adición de un clúster administrado a RHACM (configuración de un clúster para administrarlo con RHACM)
+* Definición y aplicación de políticas de configuración de los clústeres
+* Detección y corrección del incumplimiento de las políticas de configuración del clúster
+* Visualización y comparación de la configuración de los distintos clústeres
+* Definición y aplicación de políticas de colocación de aplicaciones
+* Identificación y comparación de los recursos de aplicaciones de varios clústeres
+* Implementación de https://www.redhat.com/es/technologies/cloud-computing/quay[Red Hat Quay] en el clúster central
+* Implementación de Red Hat Advanced Cluster Management for Kubernetes (RHACS) en el clúster central
+* Integración de Red Hat Quay y RHACS con RHACM
+
+[.big]#*Público al que va dirigido el curso*#
+
+* Administradores de sistemas, desarrolladores, ingenieros de confiabilidad del sitio y arquitectos de TI interesados en gestionar y automatizar la administración de una flota de clústeres de OpenShift, posiblemente en diferentes centros de datos y proveedores de nube.
+
+[.big]#*Requisitos previos para este curso*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades Obligatorio: 
+** Realizar el curso https://www.redhat.com/es/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster[Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster (DO280)] y presentar el examen https://www.redhat.com/es/services/training/red-hat-certified-openshift-administrator-exam[Red Hat Certified OpenShift Administrator Certification (EX280)], o contar con habilidades básicas equivalentes para la gestión de Kubernetes y OpenShift
+* Recomendado y opcional: 
+** Realizar el curso https://www.redhat.com/es/services/training/do380-red-hat-openshift-administration-iii-scaling-deployments-in-the-enterprise[Red Hat OpenShift Administration III: Scaling Kubernetes Deployments in the Enterprise (DO380)], en el cual aprenderá a configurar, registrar y supervisar todo el clúster y a automatizar Ansible con OpenShift
+** Realizar el curso https://www.redhat.com/es/services/training/do322-red-hat-openshift-installation-lab/es/services/training/do322-red-hat-openshift-installation-lab[Red Hat OpenShift Installation Lab (DO322)], donde aprenderá a instalar OpenShift utilizando IPI y UPI
+** Comprender los conceptos básicos de https://www.redhat.com/es/technologies/management/ansible[Ansible], como la escritura y la ejecución de playbooks sencillos; o bien, tener experiencia equivalente
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Necesita conexión a Internet y su propio dispositivo.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do480-multicluster-management-red-hat-openshift-platform-plus

@@ -1,0 +1,38 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Enterprise Linux Technical Overview (RH024)
+
+[.big]#*Descripción del curso*#
+
+*Video 1.* Los conceptos de Linux, el software open source y la distribución
+
+*Video 2.* Introducción al shell
+
+*Video 3.* El kernel y los espacios de usuario
+
+*Video 4.* Orientación sobre la interfaz gráfica de usuario
+
+*Video 5.* Gestión de archivos en Linux
+
+*Video 6.*  La jerarquía del sistema de archivos
+
+*Video 7.* Cómo editar archivos con Vim
+
+*Video 8.* Cómo organizar usuarios y grupos
+
+*Video 9.* Permisos de acceso a los archivos
+
+*Video 10.* Cómo gestionar el software
+
+*Video 11.* Cómo configurar las redes
+
+*Video 12.* Cómo controlar los procesos de arranque del sistema
+
+*Video 13.* Introducción a los contenedores
+
+*Video 14.* Descripción general de Cockpit
+
+*Video 15.* Más información sobre Red Hat Enterprise Linux 8
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh024-red-hat-linux-technical-overview

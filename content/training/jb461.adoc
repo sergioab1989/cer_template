@@ -1,0 +1,23 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Authoring Rules with Red Hat JBoss BRMS (JB461)
+
+[.big]#*Descripción del curso*#
+
+:: 
+ 
+Descripción de Red Hat JBoss Business Rules Management System (BRMS):: 
+Conozca la arquitectura y la necesidad de un sistema de gestión de reglas comerciales para Red Hat JBoss BRMS.
+Creación de reglas comerciales básicas:: 
+Identifique la estructura y los componentes de las reglas comerciales, incluidos las memorias de trabajo de datos y los componentes de reglas, y aprenda a crear reglas con Business Central.
+Plantillas de reglas y tablas de decisión de reglas comerciales:: 
+Cree hojas de cálculo con reglas y plantillas de reglas.
+Lenguajes específicos de dominio de reglas comerciales:: 
+Utilice lenguajes específicos de dominio creados por los desarrolladores para crear las reglas.
+Comprobación de reglas comerciales:: 
+Pruebe las reglas comerciales con la interfaz web de Business Central.
+Creación de reglas complejas:: 
+Cree reglas empresariales complejas utilizando restricciones de campo y condiciones avanzadas, controle su ejecución y aprenda a evitar los conflictos relacionados con ellas.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/jb461-authoring-rules-red-hat-jboss-brms

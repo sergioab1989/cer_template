@@ -1,0 +1,30 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Virtualization and Infrastructure Migration Technical Overview (RH018)
+
+[.big]#*Descripción del curso*#
+
+*Video 1.* Introduction to Virtualization and Infrastructure Migration
+
+*Video 2.* Introduction to Virtualization
+
+*Video 3.* Essentials of Infrastructure Migration
+
+*Video 4.* The Role of Cloud Management Platform in Infrastructure Migration (demostración)
+
+*Video 5.* Red Hat Virtualization and vSphere (demostración)
+
+*Video 6.* Cloud Management Platform Setup with CloudForms (demostración)
+
+*Video 7.* Open Virtualization with Red Hat Virtualization (demostración)
+
+*Video 8.* Infrastructure Migration Architecture and Usage
+
+*Video 9.* Infrastructure Migration (demostración)
+
+*Video 10.* IT Optimization Recap and Beyond
+
+*Nota:* La descripción del curso está sujeta a cambios en función del avance de la tecnología y a medida que evolucione la naturaleza de las tareas relacionadas. Si tiene alguna duda o necesita confirmación sobre cierto objetivo o tema concreto, https://www.redhat.com/es/services/training-and-certification/contact-us[comuníquese con algún especialista en capacitación a través de Internet].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh018-virtualization-and-infrastructure-migration-technical-overview

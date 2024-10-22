@@ -1,0 +1,158 @@
+////
+Proposito
+-------
+This section is a placeholder which should be replaced by training
+recommendations specific to the product(s) being delivered.
+
+If you are building this document for a specific product, please use the format
+shown in the examples below.
+
+
+Ejemplo
+------
+== Red Hat Satellite Technical Overview (RH053)
+Red Hat(R) Satellite is a scalable platform used to manage the patching, provisioning, and subscription management of your Red Hat infrastructure. Learn about the core capabilities of Red Hat Satellite and see how Satellite can help meet your business needs.
+
+Through online, on-demand videos you will learn about
+
+- Patching and software management.
+- Subscription management using Red Hat Satellite.
+- Provisioning using Red Hat Satellite.
+- Configuration management using Red Hat Satellite.
+- Integrating Red Hat Satellite with Red Hat Ansible® Automation and Red Hat Insights.
+
+For full details, or to enroll: +
+https://www.redhat.com/en/services/training/rh053-red-hat-satellite-technical-overview
+
+== Red Hat Satellite 6 Administration (RH403)
+Red Hat Satellite 6 Administration (RH403) is a lab-based course that explores the concepts and methods necessary for successful large-scale management of Red Hat® Enterprise Linux® systems. Course participants will learn how to install Red Hat Satellite 6 on a server and populate it with software packages.
+
+This course is based on Red Hat Enterprise Linux 7 and Red Hat Satellite 6.
+
+Students will use Red Hat Satellite to manage the software development life cycle of a subscribed host and its configuration, and learn how to provision hosts integrated with software and Puppet configuration management upon deployment.
+
+Course content summary
+
+- Install Red Hat Satellite 6.
+- Red Hat Network organizations, locations, users and roles.
+- Manage software with Red Hat Satellite environments and content views.
+- Create custom RPM packages.
+- Use Red Hat Satellite to configure hosts with Puppet.
+- Provision hosts with integrated software and configuration management.
+- Implement Metal-as-a-Service (MaaS) with Satellite discovery and provisioning of unprovisioned hosts.
+
+For full details, or to enroll: +
+https://www.redhat.com/en/services/training/rh403-red-hat-satellite-6-administration
+
+////
+
+
+= Red Hat Training
+
+Las descripciones y disponibilidad de cursos específicos pueden ser encontrados en la página de Red Hat, en la sección de Entrenamiento y Certificación. Los siguientes cursos son recomendados:
+
+
+== Red Hat Learning Subscription
+
+Complete los vacíos de sus habilidades y aborde los retos de su negocio tomando ventaja del acceso ilimitado a nuestro plan de estudios integral.
+
+Para más detalle, o para inscribirse: +
+https://www.redhat.com/en/services/training/learning-subscription#tab.rhls.1
+
+== Red Hat Skills Assessment
+
+Use la herramienta de evaluación de habilidades para descubrir las oportunidades de entrenamiento que te pueden beneficiar.
+
+Para más detalle, o para inscribirse: +
+https://www.redhat.com/rhtapps/assessment
+
+== Platform Courses
+
+//include::training/cl010.adoc[leveloffset=+2]
+include::training/rh124.adoc[leveloffset=+2]
+include::training/rh134.adoc[leveloffset=+2]
+//include::training/rh199.adoc[leveloffset=+2]
+//include::training/rh236.adoc[leveloffset=+2]
+//include::training/rh254.adoc[leveloffset=+2]
+//include::training/rh299.adoc[leveloffset=+2]
+//include::training/rh318.adoc[leveloffset=+2]
+//include::training/rh342.adoc[leveloffset=+2]
+//include::training/rh354.adoc[leveloffset=+2]
+//include::training/rh358.adoc[leveloffset=+2]
+//include::training/rh362.adoc[leveloffset=+2]
+//include::training/rh403.adoc[leveloffset=+2]
+//include::training/rh415.adoc[leveloffset=+2]
+//include::training/rh436.adoc[leveloffset=+2]
+//include::training/rh442.adoc[leveloffset=+2]
+
+//== Cloud Courses
+//
+//include::training/cl110.adoc[leveloffset=+2]
+//include::training/cl210.adoc[leveloffset=+2]
+//include::training/cl260.adoc[leveloffset=+2]
+
+//== DevOps Courses
+//
+//include::training/do080.adoc[leveloffset=+2]
+//include::training/do101.adoc[leveloffset=+2]
+//include::training/do180.adoc[leveloffset=+2]
+//include::training/do188.adoc[leveloffset=+2]
+//include::training/do250.adoc[leveloffset=+2]
+include::training/do280.adoc[leveloffset=+2]
+//include::training/do285.adoc[leveloffset=+2]
+//include::training/do288.adoc[leveloffset=+2]
+//include::training/do295.adoc[leveloffset=+2]
+//include::training/do322.adoc[leveloffset=+2]
+//include::training/do326.adoc[leveloffset=+2]
+//include::training/do328.adoc[leveloffset=+2]
+//include::training/do370.adoc[leveloffset=+2]
+//include::training/do378.adoc[leveloffset=+2]
+//include::training/do380.adoc[leveloffset=+2]
+//include::training/do400.adoc[leveloffset=+2]
+//include::training/do401.adoc[leveloffset=+2]
+//include::training/do402.adoc[leveloffset=+2]
+//include::training/do417.adoc[leveloffset=+2]
+//include::training/do467.adoc[leveloffset=+2]
+//include::training/do480.adoc[leveloffset=+2]
+//include::training/tl500.adoc[leveloffset=+2]
+
+//== Application Development Courses
+//
+//include::training/do040.adoc[leveloffset=+2]
+//include::training/ad082.adoc[leveloffset=+2]
+//include::training/ad141.adoc[leveloffset=+2]
+//include::training/ad183.adoc[leveloffset=+2]
+//include::training/ad221.adoc[leveloffset=+2]
+//include::training/ad240.adoc[leveloffset=+2]
+//include::training/ad244.adoc[leveloffset=+2]
+//include::training/ad248.adoc[leveloffset=+2]
+//include::training/ad348.adoc[leveloffset=+2]
+//include::training/ad364.adoc[leveloffset=+2]
+//include::training/ad371.adoc[leveloffset=+2]
+//include::training/ad373.adoc[leveloffset=+2]
+//include::training/ad421.adoc[leveloffset=+2]
+//include::training/ad427.adoc[leveloffset=+2]
+//include::training/ad440.adoc[leveloffset=+2]
+//include::training/ad482.adoc[leveloffset=+2]
+//include::training/ad483.adoc[leveloffset=+2]
+
+//== Ansible Courses
+
+//include::training/do007.adoc[leveloffset=+2]
+//include::training/rh294.adoc[leveloffset=+2]
+//include::training/do374.adoc[leveloffset=+2]
+//include::training/do447.adoc[leveloffset=+2]
+//include::training/do457.adoc[leveloffset=+2]
+
+// Other Courses
+//
+//include::training/do040.adoc[leveloffset=+2]
+//include::training/do092.adoc[leveloffset=+2]
+//include::training/do700.adoc[leveloffset=+2]
+//include::training/do720.adoc[leveloffset=+2]
+//
+//include::training/rh018.adoc[leveloffset=+2]
+//include::training/rh024.adoc[leveloffset=+2]
+//include::training/rh045.adoc[leveloffset=+2]
+//include::training/rh053.adoc[leveloffset=+2]
+//include::training/rh065.adoc[leveloffset=+2]

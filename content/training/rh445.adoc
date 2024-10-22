@@ -1,0 +1,41 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat High Availability Clustering for SAP Solutions (RH445)
+
+Implemente SAP HANA en Red Hat Enterprise Linux for SAP Solutions en un entorno de alta disponibilidad.
+
+[.big]#*Descripción del curso*#
+
+* Aprenda a implementar, proteger y adaptar la infraestructura de SAP con Red Hat Enterprise Linux for SAP Solutions. En este curso aprenderá las prácticas recomendadas para implementar SAP HANA y SAP S/4HANA en una configuración de alta disponibilidad. También conocerá la forma eficiente de automatizar las implementaciones con Red Hat Ansible Automation Platform y las funciones de Ansible específicas de SAP que respalda Red Hat.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* La modalidad de este curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Instalar SAP HANA y S/4HANA en RHEL for SAP Solutions
+* Configurar el clúster de alta disponibilidad mediante las soluciones de RHEL HA para SAP
+* Usar las funciones del sistema RHEL y los conjuntos de Red Hat Ansible para configurar el clúster de HA de SAP
+* Describir los conceptos y los elementos de la HA de SAP que deben gestionarse
+* Realizar las operaciones del día 2, incluidas la introducción a la resolución de problemas y los aspectos a considerar sobre la actualización del sistema operativo
+
+[.big]#*Público objetivo*#
+
+* Administradores de sistemas SAP y Red Hat Enterprise Linux que necesitan respaldar implementaciones esenciales de SAP en un entorno de alta disponibilidad.
+
+[.big]#*Requisitos previos para este curso*#
+
+* https://www.redhat.com/rhtapps/assessment/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Tener un usuario S-User de SAP con permiso de descarga 
+** https://blogs.sap.com/2021/03/09/learn-all-about-s-user-ids/[https://blogs.sap.com/2021/03/09/learn-all-about-s-user-ids/]
+** .Los clientes de SAP pueden descargar los instaladores si tienen la licencia del sistema de software. Los socios de SAP obtienen licencias de desarrollo y prueba. El software de instalación es válido por 90 días sin licencia (tiene límite de tiempo).
+* Realizar el examen https://www.redhat.com/es/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux-9[Red Hat Certified Engineer (RHCE) Exam (EX294)] o demostrar tener experiencia equivalente en Linux y Ansible.
+* https://www.redhat.com/es/services/training/rh436-red-hat-enterprise-clustering-and-storage-management[Tener la certificación Red Hat Enterprise Linux High Availability Clustering (RH436)]
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Se requiere acceso a Internet para descargar y obtener la licencia de SAP HANA Express Edition.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/rh445-red-hat-high-availability-clustering-for-sap-solutions

@@ -1,0 +1,7 @@
+
+Los siguientes servicios son los requerimientos para la instalación de OpenShift {ocp_version} en vSphere (https://docs.openshift.com/container-platform/{ocp_version}/installing/installing_vsphere/installing-vsphere.html#installation-infrastructure-user-infra_installing-vsphere[más Información en la documentación official de OpenShift]) :
+
+- DHCP
+- DNS
+- Load Balancer AVI
+- vSphere 7.0 U2 ó superior

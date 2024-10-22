@@ -1,0 +1,30 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenStack Technical Overview (CL010)
+
+[.big]#*Descripción del curso*#
+
+*Video 1.* Descripción técnica de Red Hat OpenStack Platform 
+
+*Video 2.* Definición de la nube (con demostración) 
+
+*Video 3.* Definición de Red Hat OpenStack Platform 
+
+*Video 4.* Caso práctico: la infraestructura como servicio (IaaS) y una nube privada 
+
+*Video 5.* La computación en Red Hat OpenStack Platform (con demostración) 
+
+*Video 6.* Almacenamiento en Red Hat OpenStack Platform
+
+*Video 7.* Caso práctico: almacenamiento de objetos con transmisión de video 
+
+*Video 8.* Redes en Red Hat OpenStack Platform
+
+*Video 9.* Caso práctico: conexión en red para una empresa de telecomunicaciones 
+
+*Video 10.* Red Hat OpenStack Platform con alta disponibilidad
+
+*Video 11.* Cómo implementar Red Hat OpenStack Platform
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/cl010-red-hat-openstack-technical-overview

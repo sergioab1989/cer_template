@@ -1,0 +1,51 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenShift Development I: Introduction to Containers with Podman (DO188)
+
+[.big]#*Descripción del curso*#
+
+*Introducción para desarrolladores al diseño y la gestión de contenedores con Podman para la implementación de aplicaciones en Red Hat OpenShift.*
+
+En el curso Red Hat OpenShift Development I: Introduction to Containers with Podman (DO188), los estudiantes aprenderán los conceptos básicos acerca del diseño, la ejecución y la gestión de contenedores con Podman y Red Hat OpenShift. A través de actividades prácticas, adquirirán las habilidades esenciales para desarrollar aplicaciones en contenedores y utilizarlas en todas las versiones de OpenShift, como Red Hat OpenShift on AWS (ROSA), Azure Red Hat OpenShift y OpenShift Container Platform.
+
+El curso se basa en Red Hat® Enterprise Linux® 9, Podman 4.4 y Red Hat OpenShift® 4.14.
+
+Una vez que lo haya completado, recibirá acceso extendido a laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:*El curso se ofrece como clase presencial de tres días, clase virtual de cuatro días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Introducción a los https://www.redhat.com/es/topics/containers[contenedores]
+* Ejecutar contenedores con la CLI de Podman y Podman Desktop
+* Diseñar imágenes de contenedores personalizadas
+* Gestionar imágenes de contenedores
+* Depurar con contenedores de forma remota
+* Realizar una conexión sencilla de contenedores
+* Conservar datos con los contenedores
+* Ejecutar aplicaciones en varios contenedores
+* Solucionar problemas relacionados con la implementación de contenedores
+* Organizar los contenedores con OpenShift y https://www.redhat.com/es/topics/containers/what-is-kubernetes[Kubernetes]
+
+[.big]#*Público destinatario del curso*#
+
+* Desarrolladores e https://www.redhat.com/es/topics/cloud-computing/sre[ingenieros de confiabilidad del sitio] sin experiencia en las tecnologías de contenedores
+* Los administradores de sistemas y los operadores de plataformas que estén interesados en administrar clústeres de OpenShift y aplicaciones organizadas en contenedores deben inscribirse en https://www.redhat.com/es/services/training/red-hat-openshift-administration-i-operating-a-production-cluster[Red Hat OpenShift Administration I: Containers & Kubernetes (DO180)]
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Tener cierta experiencia en las arquitecturas de aplicaciones web y las respectivas tecnologías
+* Se recomienda saber utilizar una sesión terminal de https://www.redhat.com/es/topics/linux[Linux,] emitir comandos del sistema operativo y estar familiarizado con la programación de los scripts de shell
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Para los estudiantes virtuales o a su propio ritmo:
+** Se necesita una conexión a Internet.
+** No se admite BYOD/BYDW.
+* Para los estudiantes presenciales:
+** En un principio, no habrá aulas disponibles para la capacitación guiada por el instructor (ILT). Se habilitarán tras el lanzamiento, pero aún no hay un cronograma definido.
+** No se admite BYOD/BYDW.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do188-red-hat-open-shift-development-introduction-containers-with-podman

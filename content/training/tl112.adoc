@@ -1,0 +1,39 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Transformational Learning: Introduction to Pragmatic Site Reliability Engineering (TL112)
+
+[.big]#*Descripción del curso*#
+
+*Introducción pragmática a la implementación de la ingeniería de confiabilidad del sitio de DevOps*
+
+En el curso Red Hat Transformational Learning: Introduction to Pragmatic Site Reliability Engineering (TL112), aprenderá el vocabulario, los conceptos y los aspectos culturales que lo prepararán para adoptar la implementación de DevOps que se conoce como ingeniería de confiabilidad del sitio (SRE). Conocerá la historia y las definiciones de esta práctica, como también el punto de vista específico de Red Hat sobre ella, mientras se prepara para continuar con el plan de capacitación que le permitirá unirse a un equipo de SRE o ponerlo en marcha.
+
+Una vez que haya completado el curso, recibirá acceso extendido a laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* La modalidad del curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para obtener la información completa sobre el curso, el cronograma y los precios, seleccione su ubicación y, luego, "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Introducción a los conceptos básicos sobre la ingeniería de confiabilidad del sitio
+* Determinación de la capacidad operativa
+* Descripción del trabajo repetitivo e implementación de la automatización
+* Explicación y cálculo de los márgenes de error disponibles
+* Explicación de la gestión de los incidentes
+* Implementación de la ingeniería de confiabilidad del sitio
+
+[.big]#*Público objetivo*#
+
+* Especialistas de DevOps
+* Administradores de sistemas
+* Desarrolladores de software
+
+[.big]#*Requisitos previos para el curso*#
+
+* La realización de este curso no supone requisitos previos.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Solo se usará el libro de texto; no se realizan prácticas de laboratorio.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/tl112-pragmatic-introduction-site-reliability-engineering-implementation-devops

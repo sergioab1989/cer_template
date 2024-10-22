@@ -1,0 +1,44 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat JBoss Application Administration I (AD248)
+
+[.big]#*Descripción del curso*#
+
+*Instalación, configuración y gestión de Red Hat JBoss Enterprise Application Platform*
+
+En el curso Red Hat JBoss Application Administration I, aprenderá las prácticas recomendadas para instalar y configurar https://www.redhat.com/es/technologies/jboss-middleware/application-platform-old[Red Hat® JBoss® Enterprise Application Platform (JBoss EAP) 7]. En los laboratorios prácticos, desarrollará las tareas principales que necesitan conocer los administradores de sistemas en la práctica real para implementar y gestionar aplicaciones de forma eficaz en JBoss EAP.
+
+El curso se basa en Red Hat JBoss® Enterprise Application Platform 7.4.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan entornos virtuales.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Instalar y ejecutar JBoss EAP 7 en modo independiente y de dominio
+* Configurar y administrar un dominio de JBoss EAP
+* Implementar aplicaciones en JBoss EAP 7 en modo independiente y de dominio
+* Configurar el subsistema de fuentes de datos
+* Configurar Java^™^ Message Service (JMS)
+* Configurar el subsistema de registro
+* Configurar el subsistema web
+* Implementar la seguridad de las aplicaciones en JBoss EAP 7
+* Configurar y ajustar JVM para JBoss EAP
+* Agrupar las instancias de JBoss EAP
+
+[.big]#*Público destinatario del curso*#
+
+Administradores de sistemas que no estén familiarizados con JBoss o que tengan experiencia con Red Hat JBoss Enterprise Application Platform 7
+
+[.big]#*Requisitos previos para el curso*#
+
+* https://skills.ole.redhat.com/en[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+* Contar con experiencia básica en la administración de sistemas operativos Microsoft Windows, UNIX o Linux^®^
+* Comprender de manera básica las redes TCP/IP
+* No se requiere conocimiento previo de Java o scripts de shell
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Sin requisitos específicos
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/ad248-red-hat-jboss-application-administration-i

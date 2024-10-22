@@ -1,0 +1,25 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat OpenShift Administration III: Scaling Deployments in the Enterprise (DO380)
+
+[.big]#*Descripción del curso*#
+
+Autenticación y gestión de identidades:: 
+Configure los clústeres de OpenShift para autenticarse con los sistemas de identidad empresarial LDAP y OIDC y para reconocer los grupos que estos definen.
+Copia de seguridad, restauración y migración de aplicaciones con OADP:: 
+Cree copias de seguridad y restaure la configuración y los datos de las aplicaciones con OpenShift APIs for Data Protection (OADP). 
+Partición de clústeres:: 
+Configure un subconjunto de nodos de clúster para que se dedique a un tipo de carga de trabajo.
+Programación de pods:: 
+Configure las cargas de trabajo para que se ejecuten en un conjunto específico de nodos de clúster y para evitar que otras cargas de trabajo los usen.
+OpenShift GitOps:: 
+Implemente OpenShift GitOps para gestionar clústeres y aplicaciones.
+Sistema de supervisión de OpenShift:: 
+Solucione problemas de rendimiento y disponibilidad con aplicaciones y clústeres.
+Registro de OpenShift:: 
+Implemente el registro de OpenShift y consulte las entradas de registro de las cargas de trabajo y los nodos del clúster.
+
+*Nota:* La descripción del curso está sujeta a cambios según avance la tecnología y evolucione la naturaleza de las tareas fundamentales. Si tiene dudas o necesita confirmación sobre algún objetivo o tema concreto, https://www.redhat.com/es/services/training-and-certification/contact-us[póngase en contacto con uno de nuestros representantes de Red Hat].
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do380-red-hat-openshift-administration-iii-scaling-deployments-in-the-enterprise

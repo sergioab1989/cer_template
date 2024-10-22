@@ -1,0 +1,21 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Agile Integration Technical Overview (DO040)
+
+[.big]#*Descripción del curso*#
+
+*Aprenda los conceptos básicos sobre la integración ágil*
+
+En el curso Red Hat Agile Integration Technical Overview (DO040), se ofrece una introducción técnica al conjunto completo de tecnologías de integración y mensajería de Red Hat.
+
+[.big]#*Resumen del curso*#
+
+Mediante una serie de videos gratuitos, en línea y disponibles según se soliciten, aprenderá a conectar las aplicaciones y los datos en todas las infraestructuras híbridas.
+
+[.big]#*Público objetivo del curso*#
+
+* Desarrolladores, arquitectos y administradores de sistemas
+* Desarrolladores y administradores de aplicaciones
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do040-red-hat-agile-integration-technical-overview

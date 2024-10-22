@@ -1,0 +1,50 @@
+////
+Purpose
+-------
+Explains the meaning of certain visual queues used in the document.
+
+Only the actual conventions used in the document should be included.
+
+Note About Commands:
+It is important to explain beforehand exactly which system and context the
+command should be run in (i.e. 'on the master node as root')
+
+Note About Code Blocks/File Contents:
+The system and full path of the file should be listed directly prior to the
+code block (i.e. 'on the RHVM server at /etc/yum/repos.d/redhat.repo')
+
+Sample
+------
+N/A
+
+////
+
+= Advertencias e indicaciones
+[NOTE]
+====
+La información adicional sobre un tema se indicará mediante el símbolo de “información”.
+====
+
+TIP: Los consejos y sugerencias figurarán con una “bombilla” como advertencia.
+
+WARNING: Las advertencias y fuertes recomendaciones aparecerán junto a un signo de exclamación de atención.
+
+IMPORTANT: La información y los consejos y críticos aparecerán junto a un signo de exclamación de color rojo.
+
+
+= Comandos y códigos en una sola línea
+Cuando se indique escribir un solo comando, este figurará en fuente Monospace resaltado del siguiente modo:
+
+`ipa -vvv cert-find --all`
+
+= Comandos en múltiples línea, código/contenido de archivos
+
+Cuando se indique escribir comandos en múltiples líneas, crear o modificar bloques de código o contenido de archivos, la información figurará en fuente Monospace dentro de un recuadro como el siguiente:
+
+```ruby
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+```

@@ -1,0 +1,51 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Enterprise Kubernetes Storage with Red Hat OpenShift Data Foundation (DO370)
+
+[.big]#*Descripción del curso*#
+
+*En este curso, aprenderá las habilidades esenciales que se necesitan para diseñar, implementar y gestionar un clúster de Red Hat OpenShift Data Foundation y para llevar a cabo las tareas diarias de gestión del almacenamiento de Kubernetes.*
+
+Las opciones de almacenamiento tradicionales que tienen a disposición los administradores de Kubernetes son limitadas y carecen de versatilidad y flexibilidad. Red Hat OpenShift Data Foundation ofrece beneficios concretos, incluso si cuenta con el respaldo del almacenamiento en la nube, como AWS EBS, y los almacenamientos locales heredados complejos, como las matrices SAN. Muchas empresas confían en las soluciones de terceros para gestionar las backups y la recuperación ante desastres en la producción. Sin embargo, si quieren planificar su implementación de forma adecuada, necesitarán tener conocimientos sobre las API CSI y OADP para Kubernetes. En este curso, el estudiante aprenderá los pasos que deben seguir para configurar y gestionar los servicios de almacenamiento para los de los contenedores y de Kubernetes.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todos los cursos que incluyan un entorno virtual.
+
+*Nota:* El curso se ofrece como clase virtual de cinco días o en la modalidad autorregulado. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Contenido del curso*#
+
+* Implementar Red Hat OpenShift Data Foundation de forma interna y externa
+* Preparar el almacenamiento en bloques no compartido para las aplicaciones, como las bases de datos
+* Preparar el almacenamiento en bloques compartido para las aplicaciones, como las máquinas virtuales
+* Preparar el almacenamiento de archivos compartido para las aplicaciones, como los canales de CI/CD y la IA y el ML
+* Preparar el almacenamiento de objetos compartido para las aplicaciones, como la IA, el ML y la transmisión de contenidos multimedia
+* Preparar el almacenamiento para los servicios del clúster de Red Hat OpenShift, como la supervisión y el registro
+* Supervisar y ampliar el rendimiento y la capacidad de almacenamiento
+* Conectar y desconectar el almacenamiento de una aplicación para realizar las copias de seguridad y el archivado
+* Crear clones e instantáneas de los volúmenes, y acceder a ellos
+* Solucionar los problemas de los elementos internos de Ceph de Red Hat OpenShift Data Foundation
+* Realizar backups y restauraciones mediante la API de OADP
+
+[.big]#*Público objetivo*#
+
+Público al que va dirigido el curso:
+
+* *Administradores de clústeres* (administradores de sistemas, administradores de nubes e ingenieros de nubes)
+* *Ingenieros de clústeres* (administradores de sistemas, administradores de nubes e ingenieros de nubes)
+* *Ingenieros de confiabilidad del sitio* (SRE)
+
+[.big]#*Capacitación recomendada*#
+
+* https://rhtapps.redhat.com/assessment/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades.Se recomienda haber aprobado el examen 
+* https://www.redhat.com/es/services/training/ex280-red-hat-certificate-expertise-platform-service-exam[Red Hat Certified Specialist in OpenShift Administration Exam (EX280)] o poseer conocimientos equivalentes para los puestos de trabajo de SRE o ingeniero de clústeres de Red Hat OpenShift.
+* Se recomienda haber aprobado el examen https://www.redhat.com/es/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam[Red Hat Certified System Administrator Exam (EX200)] o tener conocimientos equivalentes sobre la administración de los sistemas Linux, para todos los puestos de trabajo.
+* Si bien no es obligatorio obtener la credencial https://www.redhat.com/es/services/training/do380-red-hat-openshift-administration-iii-scaling-deployments-in-the-enterprise[Red Hat OpenShift Administration III: Scaling Kubernetes Deployments in the Enterprise (DO380)], los estudiantes que cuenten con ella tendrán conocimientos avanzados sobre la plataforma Red Hat OpenShift. Esto les servirá como preparación para implementar la solución Red Hat OpenShift Data Foundation (anteriormente Red Hat OpenShift Container Storage), y trabajar con ella.
+* Se recomienda tener conocimientos básicos sobre Red Hat Ansible Automation Platform, aunque no es obligatorio.
+* Se recomienda tener conocimientos básicos sobre las tecnologías de almacenamiento, como los tipos de disco, SAN y NAS.
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+* Necesita tener acceso a Internet para ingresar al entorno de aprendizaje y a los clústeres de Red Hat OpenShift en la nube de Red Hat Training.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do370-enterprise-kubernetes-storage-with-red-hat-openshift-data-foundation

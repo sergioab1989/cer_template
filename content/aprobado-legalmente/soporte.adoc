@@ -1,0 +1,200 @@
+////
+Proposito
+-------
+This section describes options for contacting Red Hat support.  In general this
+information should not need to be altered. If you do find a need to alter it,
+please submit a merge request/pull request to the CER github so the update can
+be incorporated going forward.
+
+Sample
+------
+N/A
+
+////
+[appendix]
+= Involucrando los servicios de Red Hat Global Support
+
+[.normal]
+Red Hat(R) Support lo ayuda a obtener el máximo provecho de las suscripciones de Red Hat. A continuación, encontrará información acerca del Portal de Clientes de Red Hat, el soporte telefónico de Red Hat, sus puntos de contacto personal y cómo comunicarse con el servicio de ventas y atención al cliente.
+
+Estamos siempre a su disposición para asistirlo. Si en cualquier momento no puede localizar a sus contactos personales de Red Hat Support, tenga a mano la siguiente información de contacto del equipo de liderazgo de soporte global que estará disponible para ayudarlo a solicitud.
+
+
+== Portal de Clientes de Red Hat: link:https://access.redhat.com/[access.redhat.com]
+El Portal de Clientes de Red Hat es una plataforma digital galardonada que brinda información sobre los productos de la empresa, las opciones de suscripción y los conocimientos técnicos que solo pueden provenir de Red Hat. Utilice el Portal de Clientes para acceder a nuestra Knowledgebase o Base de Conocimientos técnicos, colaborar con pares y expertos de Red Hat, crear, seguir y gestionar la actividad de sus casos y mucho más.
+
+Para usar el Portal de Clientes se requiere un nombre de usuario/una contraseña (vinculados con su cuenta RHN). Si tiene alguna pregunta acerca de su nombre de usuario o contraseña, póngase en contacto con su <TAM o CSM> asignado, de tener uno.
+
+
+== Soporte telefónico de Red Hat:
+Los ingenieros de soporte técnico de Red Hat están disponibles a través del soporte telefónico para diagnosticar y solucionar problemas con rapidez. Encontrará más información sobre el número de contacto regional y el horario comercial en: link:https://access.redhat.com/support/contact/technicalSupport[https://access.redhat.com/support/contact/technicalSupport].
+
+.RED HAT SUPPORT CONTACTS
+[cols=3,options=header,cols="1,2,2",width=90%]
+|===
+|NIVEL
+|NOMBRE E INFORMACIÓN DE CONTACTO +
+Teléfono: directo (D)/móvil (M)
+|DISPONIBILIDAD
+|1
+|North America Production Support +
++888-GO-REDHAT +
+(+888-467-3342) +
+link:https://access.redhat.com/support/[]^1^
+|24x7x365 +
+En función de la gravedad, como primer punto de contacto del soporte de Red Hat.
+|1
+|EMEA Production Support +
++800-GO-REDHAT^1^ +
+(+800 4673 3428) +
+link:https://access.redhat.com/support/[]^1^
+|24x7x365 +
+En función de la gravedad, como primer punto de contacto del soporte de Red Hat.
+3+^|En el siguiente enlace encontrará otros contactos para la elevación de casos a Gestión Global: +
+link:https://access.redhat.com/support/policy/mgt_escalation/[]
+|===
+^1.^ El uso del Portal de Clientes requiere contar con un nombre de usuario de Red Hat y una contraseña. +
+^2.^ Presione **3** para “RHEL”, luego **1** para “Soporte Premium.” Informe al técnico que está con **{custgss}**, número de cuenta **{nogss}**
+
+
+<<<
+== Servicio al cliente
+Además de Red Hat Support, usted cuenta con la asistencia de las áreas de ventas y atención al cliente de Red Hat. Si tiene alguna pregunta con respecto a ventas, futuras necesidades de productos o derechos, utilice la siguiente información de contacto.
+
+.Servicio al cliente
+[cols=2,stripes="none",options=header,cols="1,<.<2"]
+|===
+|NOMBRE E INFORMACIÓN DE CONTACTO |NOTAS
+|Atención al cliente, North America +
+888-467-3342
+.2+|Para todas las preguntas relacionadas con su cuenta, sus suscripciones o derechos, póngase en contacto con el servicio de atención al cliente, visite  +
+link:https://access.redhat.com/support/contact/customerService[https://access.redhat.com/support/contact/customerService] o la información de contacto global. +
+Póngase en contacto con Soporte Técnico para cualquier pregunta o problema de índole técnica relacionado con productos de Red Hat.
+|Atención al cliente, EMEA +
+Alemania: 0800 1828065 +
+Francia (Hors Dom-Tom): 0800907101 +
+Francia (Dom-Tom): +353 212303445 +
+UK: 0800 032 9515 +
+Italia: 800 979 269 +
+España & Portugal: 900 811 831 +
+El resto de los países: +353 21 2303 445 +
+customerservice-emea@redhat.com +
+|PORTAL DE CLIENTES DE RED HAT: +
+link:https://access.redhat.com[https://access.redhat.com] +
+SOPORTE TELEFÓNICO DE RED HAT: +
+1-888-GO-REDHAT (1-888-467-3342)
+|RECOMENDACIONES PARA UNA EXPERIENCIA DE SOPORTE ÓPTIMA: +
+link:https://access.redhat.com/articles/280093[https://access.redhat.com/articles/280093] +
+PARA ESCALAR UN CASO DE SOPORTE: +
+link:https://access.redhat.com/support/escalation[https://access.redhat.com/support/escalation]
+|===
+
+== Términos de servicio de soporte
+
+link:https://access.redhat.com/support/offerings/production/sla[https://access.redhat.com/support/offerings/production/sla]
+
+[cols=4,options=header,cols="1,3,3,1,2"]
+|===
+|
+|Self-support
+|Standard
+2+|Premium
+
+|Horas de cobertura
+|N/A
+|Horario comercial estándar ^2^
+2+|Horario comercial estánda (24x7 para Severidad 1 y 2) ^3^
+
+|Canal de soporte
+|Ninguno
+|Web y telefónico
+2+|Web y telefónico
+
+|Cantidad de casos
+|N/A
+|Ilimitado
+2+|Ilimitado
+
+|Tiempos de respuesta
+|Respuesta inicial y siguientes
+|Respuesta inicial y siguientes
+|Respuesta inicial
+|Respuestas siguientes
+
+|Severidad 1
+|N/A
+|1 hora hábil (Comercial)
+|1 hora
+|1 hora o según lo acordado
+
+|Severidad 2
+|N/A
+|4 horas hábiles (Comercial)
+|2 horas
+|4 horas o según lo acordado
+
+|Severidad 3
+|N/A
+|1 día hábil
+|4 horas hábiles
+|8 horas hábiles o según lo acordado
+
+|Severidad 4
+|N/A
+|2 días hábiles
+|8 horas hábiles
+|2 días hábiles o según lo acordado
+
+|===
+
+== Definición de los niveles de severidad
+link:https://access.redhat.com/support/policy/severity/[https://access.redhat.com/support/policy/severity/]
+
+Abrir un caso de soporte en línea puede ayudar a compartir datos técnicos, mensajes de error e información del sistema con su representante de Red Hat Support. Si realiza el seguimiento de la presentación con una llamada telefónica, puede reducir el tiempo de respuesta y posibles errores en la captura de información.
+
+Red Hat recomienda que realice el seguimiento de las presentaciones de casos de soporte en línea de Gravedad 1 y 2 con una llamada telefónica a su centro de soporte local.
+
+Red Hat Global Support Services utiliza las siguientes definiciones para clasificar los problemas:
+
+=== Severidad 1 (urgente)
+Un problema que afecta gravemente el uso del software en un entorno de producción (como la pérdida de datos de producción o en el cual los sistemas de producción no funcionen). La situación interrumpe las operaciones comerciales y no existe un procedimiento para eludir el problema.
+
+=== Severidad 2 (alta)
+Un problema en el cual el software funciona, pero su uso en un entorno de producción se ve gravemente disminuido. La situación afecta mucho a diversos aspectos de las operaciones comerciales y no existe un procedimiento para eludir el problema.
+
+=== Severidad 3 (media)
+Un problema que involucra la pérdida parcial, no crítica, de uso del software en un entorno de producción o de desarrollo. Para los entornos de producción, existe un impacto mediano a bajo en su empresa, pero esta continúa operando, incluso mediante la aplicación de un procedimiento para eludir el problema. Para los entornos de desarrollo, la situación interrumpe el proyecto o lo migra a producción.
+
+=== Severidad 4 (baja)
+Una pregunta de uso general, una denuncia de un error en la documentación o una recomendación para la futura mejora o modificación de un producto. Para entornos de producción, existe un impacto bajo a nulo en su empresa o en el rendimiento o la funcionalidad de su sistema. Para los entornos de desarrollo, existe un impacto mediano a bajo en su empresa, pero esta continúa operando, incluso mediante la aplicación de un procedimiento para eludir el problema.
+
+== Consejos para crear un caso de soporte
+
+. Complete el número de cuenta y su nombre. Se recomienda utilizar una cuenta individual y no global.
+. Seleccione el producto afectado.
+. Indique la versión del producto.
+. Exponga el problema con precisión para ver si existe algún KCS que lo ayude en la resolución. Lea el KCS sugerido antes de abrir un caso. Recuerde utilizar el nombre del componente que tiene problemas: Ceph, Nova… Las palabras clave son muy importantes.
+. Explique el problema con la mayor cantidad de detalles y añada los comandos que está utilizando junto con los resultados.
+. La exposición del problema debe ser descriptiva, como: [Componente][Región] Descripción del problema. +
+Ejemplos: +
+_[Nova][NL Region] Nova falla en un compute_ +
+_[Ceph][Singapore Region] Ceph sin OSD_
+. Explique el problema con la mayor cantidad de detalles y añada los comandos que está utilizando con los resultados.
+
+.Portal: caso
+image::support/portal-ss.png[Red Hat Portal]
+
+. Es importante indicar cuál es el entorno afectado, si de preproducción o producción, y qué región es la afectada: Londres, Nueva York +
+Recuerde los niveles de gravedad y asígnelos correctamente..
+. Adjunte los informes sosreports de los servidores/componentes afectados para acelerar el caso: link:https://access.redhat.com/solutions/3592[https://access.redhat.com/solutions/3592]
+. Seleccione el nivel de soporte, añada premium en cualquier momento en que disponga de esa opción.
+
+.Portal: detalles del caso
+image::support/portal-ss-2.png[Red Hat Portal]
+
+. Seleccione el nivel de gravedad/severidad.
+. Añada en la notificación a una persona o lista de distribución.
+. De estar disponible esta opción, seleccione un grupo de casos para notificar a otro miembro, por ejemplo, Cloud; alerte a todos los miembros de Cloud de su equipo para que también puedan trabajar en el caso.
+
+.Portal: indique la gravedad y añada la notificación
+image::support/portal-ss-3.png[Red Hat Portal]

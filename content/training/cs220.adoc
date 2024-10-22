@@ -1,0 +1,13 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Creating and Configuring Production ROSA Clusters (CS220)
+
+Clústeres privados de Red Hat OpenShift on AWS (ROSA):: 
+Cree un clúster PrivateLink de ROSA con STS y permita que los desarrolladores o los administradores accedan a la API y los extremos del enrutador del clúster.
+Ajuste automático de los nodos y los pods:: 
+Configure un clúster de ROSA y una carga de trabajo para ajustar la cantidad de nodos de los clústeres y pods de las aplicaciones de manera dinámica según la carga.
+Supervisión de clústeres de ROSA con Amazon CloudWatch:: 
+Configure los clústeres de ROSA para reenviar registros a Amazon CloudWatch de manera que se analicen, agrupen y almacenen a largo plazo, y para autenticar a los usuarios de OpenShift con Amazon Cognito.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/creating-and-configuring-production-rosa-clusters-cs220

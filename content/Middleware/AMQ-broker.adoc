@@ -1,0 +1,145 @@
+= Red Hat Integration - AMQ Broker for RHEL 8 (Multiarch)
+
+Buscar el operador Red Hat Integration - AMQ Broker for RHEL 8 (Multiarch) en OperatorHub y seleccionar la opción instalar.
+
+image::middleware/ocp-4-amq-broker-install.png[pdfwidth=99%,width=99%]
+
+Para instalar se deben utilizar las siguientes opciones:
+
+    Update channel: 7.12x (versión)
+    Installation mode: A specific namespace on the cluster
+    Installed Namespace: AMQ-BROKER-DEV
+    Update approval: Manual
+
+Y hacemos click en Install
+
+
+image::middleware/ocp-4-amq-broker-installing-operator.png[pdfwidth=99%,width=99%]
+
+
+= Creación de instancia
+
+Acceder a Operator > Installed operators > Red Hat Integration - AMQ Broker for RHEL 8 (Multiarch)  
+
+
+== Creación de ActiveMQ Artemis
+
+Dar Click a la pestaña de ActiveMQArtemis y luego a "Create ActiveMQArtemis" 
+
+El archivo yaml que se utilizo para crear esta instancia fue la siguiente:
+
+    apiVersion: broker.amq.io/v1beta1
+    kind: ActiveMQArtemis
+    metadata:
+      name: amq-broker
+      namespace: amq-broker-dev
+    spec:
+      acceptors:
+        - connectionsAllowed: 10
+          expose: true
+          name: amqp
+          port: 5672
+          protocols: amqp
+      adminPassword: ***************
+      adminUser: admin
+      console:
+        expose: true
+      deploymentPlan:
+        size: 2
+        persistenceEnabled: true
+        requireLogin: true
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 4Gi
+          requests:
+            cpu: 1000m
+            memory: 2Gi
+        readinessProbe:
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        messageMigration: true
+        managementRBACEnabled: true
+        livenessProbe:
+          initialDelaySeconds: 15
+          periodSeconds: 10
+        journalType: nio
+        enableMetricsPlugin: true
+        jolokiaAgentEnabled: false
+        image: placeholder
+        storage:
+          size: 50Gi
+
+Luego hacer click en "Create"
+
+Esto hará que se desplieguen recursos dentro del namespace seleccionado anteriormente
+
+
+image::middleware/ocp-4-amq-broker-recursos.png[pdfwidth=99%,width=99%]
+
+Para acceder a la consola web de AMQ Broker, hacer click en Networking > routes
+
+Las rutas correspondiente a la consola web son los que poseen la siguiente estructura 
+
+    amq-broker-wconsj-X-svc-rte
+
+image::middleware/ocp-4-amq-broker-rutas.png[pdfwidth=99%,width=99%]
+
+
+
+== Creación de ActiveMQ Address
+
+Para crear un cola especifica dentro de AMQ Broker, Dar Click a la pestaña de ActiveMQAddress y luego a "Create ActiveMQAddress" 
+
+El archivo yaml que se utilizo para crear esta cola fue la siguiente:
+
+
+    apiVersion: broker.amq.io/v1beta1
+    kind: ActiveMQArtemisAddress
+    metadata:
+      name: ex-aaoaddress
+      namespace: amq-broker-dev
+    spec:
+      addressName: principalQueue
+      queueName: principalQueue
+      routingType: anycast
+
+= Pruebas de consumo de colas
+
+
+image::middleware/ocp-4-amq-broker-consola-web.png[pdfwidth=99%,width=99%]
+
+
+
+Para realizar las pruebas entramos al pod *amq-broker-ss-X*, hacer click pestaña Terminal  y a través del siguiente comando se generaron colas a través de "Producer":
+
+====
+
+    ./amq-broker/bin/artemis producer --destination queue://principalQueue --user admin "mensaje de prueba" --message-count 4000 --verbose
+
+====
+
+image::middleware/ocp-4-amq-broker-colas-producer.png[pdfwidth=99%,width=99%]
+
+Una vez finalizado el comando, se hará la carga de 4000 mensajes en la cola de *principalQueue* como señala la evidencia.
+
+image::middleware/ocp-4-amq-broker-evidencia-mensajes.png[pdfwidth=99%,width=99%]
+
+
+
+Para consumir las colas debemos repetir el acceso al pod y utilizar el comando:
+
+
+
+====
+
+    ./amq-broker/bin/artemis consumer --destination queue://principalQueue --user admin  --message-count 2000 --verbose
+
+====
+
+
+Una vez finalizado el comando, se consumirán 2000 mensajes de la cola *principalQueue* como lo señala la evidencia
+
+
+image::middleware/ocp-4-amq-broker-colas-consumer.png[pdfwidth=99%,width=99%]
+

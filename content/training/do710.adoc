@@ -1,0 +1,61 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat Ansible Automation Platform Boot Camp (DO710)
+
+Introducción a Red Hat Ansible Automation Platform:: 
+Describa los conceptos básicos y el modo de uso de Red Hat Ansible Automation Platform, e instale la plataforma.
+Implementación de los playbooks de Ansible:: 
+Cree un inventario de hosts gestionados, escriba un playbook sencillo de Ansible y ejecútelo para automatizar las tareas en los hosts.
+Gestión de variables y datos de sistemas remotos:: 
+Redacte playbooks que utilicen variables para simplificar su gestión, y que usen los datos de los sistemas remotos para ubicar la información sobre los hosts gestionados.
+Implementación del control de tareas:: 
+Gestione el control y los errores de las tareas, así como los controladores en los playbooks de Ansible.
+Implementación de archivos en los hosts gestionados:: 
+Implemente, gestione y ajuste los archivos en los hosts gestionados con Ansible Automation Platform.
+Gestión de plays y playbooks complejos:: 
+Redacte playbooks para respaldar plays y playbooks más grandes y complejos.
+Simplificación de los playbooks con las funciones:: 
+Use las funciones de Ansible Automation Platform para desarrollar playbooks con mayor rapidez y para reutilizar el código de Ansible.
+Solución de problemas de Red Hat Ansible Automation Platform:: 
+Solucione los problemas relacionados con los playbooks y los hosts gestionados.
+Automatización de las tareas de administración de Linux:: 
+Automatice las tareas comunes de administración de los sistemas Linux con Ansible Automation Platform.
+Desarrollo de playbooks con Ansible Automation Platform 2:: 
+Desarrolle playbooks de Ansible con Red Hat Ansible Automation Platform 2 teniendo en cuenta las prácticas recomendadas.
+Gestión de los conjuntos Content Collections y los entornos de ejecución:: 
+Ejecute los playbooks que utilizan los conjuntos Ansible Content Collections que no están incluidos en Ansible Core, ya sea desde un entorno de ejecución actual o al descargarlos desde el centro de automatización.
+Ejecución de playbooks con el controlador de la automatización:: 
+Explique el concepto del controlador de la automatización y úselo para ejecutar los playbooks que desarrolló con el navegador del contenido de automatización.
+Uso de las configuraciones de Ansible:: 
+Analice y ajuste la configuración de Ansible y del navegador del contenido de automatización para simplificar el desarrollo y solucionar los problemas.
+Gestión de inventarios:: 
+Gestione los inventarios con las funciones avanzadas de Ansible.
+Gestión de la ejecución de tareas:: 
+Controle y optimice la ejecución de las tareas de los playbooks de Ansible.
+Transformación de datos con los filtros y los plugins:: 
+Complete, manipule y gestione los datos en variables utilizando filtros y plugins.
+Coordinación de las actualizaciones progresivas:: 
+Utilice las funciones avanzadas de Ansible para gestionar las actualizaciones graduales, y así reducir el tiempo de inactividad y garantizar el mantenimiento y la sencillez de los playbooks de Ansible.
+Creación de los conjuntos Content Collections y los entornos de ejecución:: 
+Escriba sus propios conjuntos Ansible Content Collections, publíquelos, intégrelos en un entorno de ejecución de la automatización personalizado y ejecútelos en los playbooks con el controlador de la automatización.
+Instalación de Red Hat Ansible Automation Platform:: 
+Explique el concepto de Red Hat Ansible Automation Platform y realice una instalación básica del controlador de la automatización y el centro de automatización.
+Gestión del acceso de los usuarios:: 
+Cree cuentas de usuario y organícelas en equipos o grupos en el controlador de la automatización y el centro de automatización. Luego, asígneles permisos para administrar los recursos y acceder a ellos en cada servicio.
+Gestión de los inventarios y las credenciales de las máquinas:: 
+Cree inventarios de las máquinas que deba gestionar y configure las credenciales necesarias para que los nodos de ejecución del controlador de la automatización inicien sesión y ejecuten las tareas de Ansible en esos sistemas.
+Gestión de proyectos e inicio de trabajos de Ansible:: 
+Cree proyectos y plantillas de trabajos en la interfaz de usuario (UI) web y utilícelos para iniciar los playbooks de Ansible almacenados en los repositorios de Git con los que automatizará las tareas en los hosts gestionados.
+Configuración avanzada de los trabajos:: 
+Configure las funciones avanzadas del controlador de la automatización para implementar los trabajos de manera más efectiva y eficiente.
+Creación de flujos de trabajo de las tareas:: 
+Utilice las funciones avanzadas de las plantillas de trabajo para mejorar el rendimiento, simplificar la personalización de las tareas, iniciar varias de ellas, programar las repetitivas de forma automática y notificar sus resultados.
+Gestión de inventarios avanzados:: 
+Gestione los inventarios que se generan de manera dinámica desde los scripts o la función inventario inteligente del controlador de la automatización.
+Automatización de la configuración de Ansible Automation Platform:: 
+Automatice la configuración e implementación de los servicios de Red Hat Ansible Automation Platform con los conjuntos de contenido Ansible Content Collections, la API del controlador de automatización y los webhooks de Git.
+Mantenimiento de Red Hat Ansible Automation Platform:: 
+Realice el mantenimiento y la administración rutinarios de Red Hat Ansible Automation Platform.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do710-ansible-automation-platform-bootcamp

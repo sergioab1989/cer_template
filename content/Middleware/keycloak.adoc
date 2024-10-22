@@ -1,0 +1,136 @@
+== Red Hat Build of Keycloak 
+
+= Certificados TLS
+
+Certificado TLS Obligatorio para la correcta ejecución del producto
+
+    openssl req -subj '/CN=<namespace>.<wildcard>/O=Keycloak./C=US' -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 730 -out certificate.pem
+
+
+Creación secret con certificado tls creado en paso anterior
+
+    oc create secret tls certificate-keycloak-tls-secret --cert certificate.pem --key key.pem
+
+
+
+= Habilitación de instancia de RHBK
+
+En la barra lateral izquierda, haga clic en “Operators” y luego haga clic en “OperatorHub” y en la barra de busqueda, escribir keycloak y selecciona keycloak Operator provided by Red Hat
+
+image::middleware/ocp-4-keycloak-install.png[pdfwidth=99%,width=99%]
+
+Seleccionamos la versión “stable”, selecciona namespace “keycloak” y Update approval “Manual”. para luego darle “install”
+
+
+image::middleware/ocp-4-keycloak-install-options.png[pdfwidth=99%,width=99%]
+
+Desde el operador RHBK en el apartado keycloak > Create Keycloak
+
+
+Se recomienda personalizar el nombre de la instancia “name: keycloak” y Seleccionamos “Create”. 
+
+Evidencia de ejecución
+
+
+    apiVersion: k8s.keycloak.org/v2alpha1
+    kind: Keycloak
+    metadata:
+      name: keycloak
+      namespace: keycloak
+    spec:
+      db:
+        host: postgres-db
+        passwordSecret:
+          key: password
+          name: keycloak-db-secret
+        usernameSecret:
+          key: username
+          name: keycloak-db-secret
+        vendor: postgres
+      hostname:
+        hostname: keycloak.apps.os-nonprod.domcoin.net
+      http:
+        httpEnabled: true
+        tlsSecret: certificate-keycloak-tls-secret
+      instances: 1
+
+
+Esto creó recursos necesarios para el funcionamiento de la herramienta.
+
+
+image::middleware/ocp-4-keycloak-pods.png[pdfwidth=99%,width=99%]
+
+
+image::middleware/ocp-4-keycloak-route.png[pdfwidth=99%,width=99%]
+
+
+= Creación de Realms
+
+
+Para comenzar debemos crear un reino, el cual se desea administrar. En este caso el reino tendrá el nombre de Desarrollo
+
+image::middleware/ocp-4-keycloak-create-realms.png[pdfwidth=99%,width=99%]
+
+
+image::middleware/ocp-4-keycloak-realm.png[pdfwidth=99%,width=99%]
+
+
+= Usuario administrador Realms
+
+Una vez agregado el reino, procedemos a registrar el usuario el cual estará destinado al manejo de los usuarios dentro del reino que acabamos de crear.
+
+image::middleware/ocp-4-keycloak-realm.png[pdfwidth=99%,width=99%]
+
+Luego en la pestaña de Credentials debemos asignarle una constraseña.
+
+image::middleware/ocp-4-keycloak-set-passwd.png[pdfwidth=99%,width=99%]
+
+Se asigna rol de administrador para realizar pruebas en reinos
+
+image::middleware/ocp-4-keycloak-user-admin.png[pdfwidth=99%,width=99%]
+
+Se selecciona ¨Assign¨
+
+image::middleware/ocp-4-keycloak-assign-role.png[pdfwidth=99%,width=99%]
+
+
+= Prueba de login
+
+Se realiza prueba login con usuario Prueba en reino UAT_Implementación
+
+En el apartado ¨Action -> Impersonate¨
+
+image::middleware/ocp-4-keycloak-actions-desarrollo.png[pdfwidth=99%,width=99%]
+
+Se selecciona ¨Impersonate¨ para obtener link de login hacia el reino Desarrollo
+
+image::middleware/ocp-4-keycloak-impersonate.png[pdfwidth=99%,width=99%]
+
+Se selecciona ¨Sing in¨
+
+image::middleware/ocp-4-keycloak-sign-in.png[pdfwidth=99%,width=99%]
+
+Se visualiza el login exitoso
+
+image::middleware/ocp-4-keycloak-info.png[pdfwidth=99%,width=99%]
+
+= Realms creados - User administrador
+
+[cols=2,options=header,cols="1,2",width=90%]
+|===
+|Reino
+|Usuario admin
+|Desarrollo
+|prueba_desarrollo
+|3scale
+|admin3scale
+|CalidadSoftware
+|prueba_calidadsoftware
+|Capacitacion
+|prueba_capacitacion
+|keycloakclient
+|usuario
+|UAT_Implementacion
+|prueba_uat
+
+|===

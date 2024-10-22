@@ -1,0 +1,48 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Red Hat DevOps Pipelines and Processes: CI/CD with Jenkins, Git, and Test Driven Development (DO400)
+
+[.big]#*Descripción del curso*#
+
+*Aprendizaje de las habilidades esenciales para implementar los flujos de trabajo y los procesos de desarrollo ágiles y de DevOps*
+
+Gracias a las prácticas de DevOps, las empresas inician la transformación digital y pasan de los enfoques monolíticos en cascada a los procesos ágiles basados en la nube, los cuales se implementan con rapidez. Si se quiere alcanzar esta transformación, los equipos de desarrolladores deben saber usar aquellas herramientas que les permitirán dedicar más tiempo a la codificación y las pruebas, y menos a la resolución de problemas. El curso Red Hat DevOps Pipelines and Processes: CI/CD with Jenkins, Git, and Test Driven Development (TDD) es una introducción práctica a DevOps orientada a los desarrolladores, que conocerán las habilidades y las tecnologías necesarias para diseñar aplicaciones en la nube e implementarlas de forma automática.
+
+Una vez que lo haya completado, recibirá acceso extendido a los laboratorios prácticos durante 45 días para todo curso que incluya un entorno virtual.
+
+*Nota:* La modalidad de este curso es autorregulada. Los tiempos pueden variar conforme lo realice. Para conocer toda la información del curso, el cronograma y los precios, seleccione su ubicación y, luego, el botón "Explorar ahora" en el menú de la derecha.
+
+[.big]#*Resumen del contenido del curso*#
+
+* Control de versiones con Git
+* Diseño y ejecución de los canales de Jenkins
+* Estrategias de lanzamiento
+* Diseño de aplicaciones con el método de desarrollo basado en pruebas (TDD)
+* Revisión de la seguridad y análisis del código de las aplicaciones
+* Supervisión de las aplicaciones y los canales
+* Uso de los canales de desarrollo y solución de los problemas asociados a ellos
+
+[.big]#*Público al que se dirige el curso*#
+
+El curso está destinado a los desarrolladores de aplicaciones.
+
+[.big]#*Capacitación recomendada*#
+
+Es necesario tener experiencia en el desarrollo de aplicaciones en Java, Node.js, Python u otros
+
+Tener experiencia en el desarrollo de aplicaciones o haber completado el curso https://www.redhat.com/es/services/training/ad183-red-hat-application-development-i-programming-java-ee[Red Hat Application Development I: Programming in Java EE (AD183), aunque no es obligatorio]
+
+Dominar el uso de entornos de desarrollo integrado (IDE), como Red Hat® Developer Studio o VSCode
+
+Haber completado el curso https://www.redhat.com/es/services/training/do101-introduction-openshift-applications[Introduction to OpenShift Applications (DO101)], aunque no es obligatorio
+
+https://rhtapps.redhat.com/assessment/[Realizar una evaluación sin costo] para determinar si esta oferta es la más conveniente en función de sus habilidades
+
+[.big]#*Aspectos tecnológicos que debe tener en cuenta*#
+
+Se necesita una conexión a Internet.
+
+Utilizará sus propias máquinas, así que es necesario que pueda instalar sistemas de software en su dispositivo. Si esto no fuera posible, puede utilizar la máquina virtual incorporada en ROL o recibir una en la capacitación guiada por el instructor (ILT).
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do400-red-hat-devops-pipelines-and-processes-with-jenkins-git-and-test-driven-development

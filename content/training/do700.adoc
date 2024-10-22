@@ -1,0 +1,69 @@
+// Este archivo se mantiene ejecutando scripts/refresh-training.py script
+
+= Container Adoption Boot Camp (DO700)
+
+[.big]#*Descripción del curso*#
+
+[.big]#*Introducción a la tecnología de contenedores*#
+
+Describa cómo se ejecutan las aplicaciones en los contenedores organizados con OpenShift Container Platform.
+
+Creación de servicios organizados en contenedores:: 
+Implemente un servicio utilizando la tecnología de contenedores.
+Gestión de los contenedores:: 
+Manipule las imágenes en contenedores previamente diseñadas para crear y gestionar servicios en ellos.
+Gestión de las imágenes de contenedores:: 
+Gestione el ciclo de vida de las imágenes de contenedores, desde su creación hasta su eliminación.
+Creación de imágenes de contenedores personalizadas:: 
+Diseñe y codifique un Dockerfile para crear una imagen de contenedor personalizada. 
+Implementación de las aplicaciones en contenedores en OpenShift:: 
+Implemente las aplicaciones de contenedores individuales en OpenShift Container Platform.
+Implementación de aplicaciones en varios contenedores:: 
+Implemente aplicaciones que estén organizadas en contenedores utilizando imágenes de varios contenedores.
+Publicación de imágenes de contenedores empresariales:: 
+Participe en el registro empresarial y publique imágenes de contenedores en él.
+Implementación de aplicaciones en varios contenedores:: 
+Implemente las aplicaciones en varios contenedores con las plantillas charts de Helm y Kustomize.
+Gestión de la implementación de aplicaciones:: 
+Supervise el estado de las aplicaciones y utilice varios métodos de implementación para las aplicaciones originales de la nube.
+Descripción de Red Hat OpenShift Container Platform:: 
+Describa la arquitectura de OpenShift Container Platform.
+Verificación del estado de un clúster:: 
+Describa los métodos de instalación de OpenShift y compruebe el estado de un clúster recientemente instalado.
+Configuración de la autenticación y la autorización:: 
+Configure la autenticación con el proveedor de identidad htpasswd y asigne funciones a los usuarios y los grupos.
+Configuración de la seguridad de las aplicaciones:: 
+Limite los permisos de las aplicaciones con las restricciones del contexto de seguridad y proteja las credenciales de acceso con los secretos.
+Configuración de la redes de OpenShift para las aplicaciones:: 
+Solucione los problemas de las redes definidas por software (SDN) de OpenShift y configure las políticas de red.
+Control de la programación de pods:: 
+Controle los nodos en que se ejecuta un pod.
+Descripción de las actualizaciones de los clústeres:: 
+Describa la manera de actualizar un clúster.
+Gestión de los clústeres con la consola web:: 
+Gestione un clúster de Red Hat OpenShift con la consola web.
+Traslado desde Kubernetes hacia OpenShift:: 
+Implemente en OpenShift aplicaciones creadas originalmente en Kubernetes y demuestre la equivalencia entre ambos.
+Incorporación de la automatización con OpenShift:: 
+Automatice OpenShift con los scripts y los playbooks de Ansible.
+Gestión de los operadores de OpenShift:: 
+Gestione los operadores generales y los del clúster de OpenShift.
+Implementación de GitOps con Jenkins:: 
+Implemente un flujo de trabajo de GitOps con un servidor Jenkins organizado en contenedores para administrar un clúster de OpenShift.
+Configuración de las autenticaciones empresariales:: 
+Configure la integración de OpenShift con los proveedores de identidad empresarial.
+Configuración de los certificados TLS de confianza:: 
+Configure los certificados TLS de confianza para que los recursos externos puedan acceder a las aplicaciones y los servicios del clúster.
+Configuración de los conjuntos exclusivos de nodos:: 
+Agregue nodos a un clúster de OpenShift con configuraciones personalizadas.
+Configuración del almacenamiento permanente:: 
+Configure los proveedores y las clases de almacenamiento para garantizar que los usuarios del clúster puedan acceder a recursos de volumen permanente.
+Gestión de los indicadores y la supervisión de los clústeres:: 
+Configure y gestione la stack de supervisión de OpenShift.
+Implementación y revisión de los registros de los clústeres:: 
+Implemente los registros de los clústeres, realice las consultas que considere necesarias y diagnostique los problemas comunes asociados a ellos usando herramientas.
+Recuperación de los nodos de trabajo con errores:: 
+Analice los nodos de trabajo e identifique y solucione los problemas relacionados con distintos casos de error.
+
+Para más detalles, o para inscribirse:
+https://www.redhat.com/es/services/training/do700-container-adoption-boot-camp

@@ -1,0 +1,12 @@
+////
+Proposito
+-------
+This indicates the group who initialized this document.  It should normally be
+"Red Hat Services."
+
+Ejemplo
+------
+Red Hat Services
+////
+
+Red Hat Services

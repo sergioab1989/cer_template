@@ -1,0 +1,18 @@
+////
+Proposito
+-------
+In the "Base" directory, this section is a placeholder which is to be
+overwritten by architecture specific to the product or products being
+delivered.
+
+If "TODO" appears in your document after the init script has been run, then your product directory is missing a corresponding "architecture.adoc" which should be implemented to provide a basic architecture framework for that product.
+////
+
+= Diagrama de alto nivel
+A continuación se presenta el diagrama de arquitectura de alto nivel de la solución implementada.
+
+image::./Implementacion/arq_noprod_gyt.png[]
+
+
+= Red Hat OpenShift Container Platform 4 - VMware vSphere Architecture
+include::OCP-4x-VMware-UPI/ocp4x-vmware-architecture.adoc[leveloffset=+1]
